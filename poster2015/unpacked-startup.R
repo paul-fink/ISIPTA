@@ -11,26 +11,26 @@ library(ggplot2)
 library(plyr)
 library(stringr)
 
-load("../Package/data/authors_locations.RData")
-load("../Package/data/conferences.RData")
-load("../Package/data/papers.RData")
-load("../Package/data/papers_authors.RData")
-load("../Package/data/papers_keywords.RData")
+load("../package/data/authors_locations.RData")
+load("../package/data/conferences.RData")
+load("../package/data/papers.RData")
+load("../package/data/papers_authors.RData")
+load("../package/data/papers_keywords.RData")
  
-setwd("../Package/demo")                   # depends on...
-source("simple-summary.R")        #
-source("authors-locations.R")     #                        (produces some warnings, please ignore them)
-source("country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
-source("authors-per-paper.R")     #
-source("regular-contributors.R")  # simple-summary.R
-source("papers-per-author.R")     #
-source("coauthors-per-author.R")  # authors-per-paper.R
-source("coauthors-network.R")     # regular-contributors.R (this takes a while)
-source("coauthors-worldmap.R")    # coauthors-network.R
-source("coauthors-network2013.R") # coauthors-network.R    (produces / overwrites pdfs!!!)
+                                                  # depends on...
+source("../package/demo/simple-summary.R")        #
+source("../package/demo/authors-locations.R")     #                        (produces some warnings, please ignore them)
+source("../package/demo/country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
+source("../package/demo/authors-per-paper.R")     #
+source("../package/demo/regular-contributors.R")  # simple-summary.R
+source("../package/demo/papers-per-author.R")     #
+source("../package/demo/coauthors-per-author.R")  # authors-per-paper.R
+source("../package/demo/coauthors-network.R")     # regular-contributors.R (this takes a while)
+source("../package/demo/coauthors-worldmap.R")    # coauthors-network.R
+source("../package/demo/coauthors-network2013.R") # coauthors-network.R    (produces / overwrites pdfs!!!)
 
 #setwd("./..")
-#source("./R/graph.R")
+source("../package/R/graph.R")
 
 # now all should be ready!
 

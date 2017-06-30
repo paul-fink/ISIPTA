@@ -30,7 +30,7 @@ source("../package/demo/coauthors-network.R")     # regular-contributors.R (this
 source("../package/demo/coauthors-worldmap.R")    # coauthors-network.R
 
 #setwd("./..")
-#source("./R/graph.R")
+#source("../package/R/graph.R")
 
 # now all should be ready!
 
