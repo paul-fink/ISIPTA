@@ -24,10 +24,14 @@ authors_locations[grepl("Coolen-Schrijner", authors_locations$author) & authors_
 authors_locations[grepl("^Gavle$", authors_locations$city),"city"] <- "Gaevle"
 authors_locations[grepl("^Gent$", authors_locations$city),"city"] <- "Ghent"
 authors_locations$city <- factor(authors_locations$city)
-
+authors_locations$author <- as.character(authors_locations$author)
+authors_locations[grepl("^Itz..k Gilboa$", authors_locations$author), "author"] <- "Itzhak Gilboa"
+authors_locations[grepl("^Tu Duong LE DUY$", authors_locations$author), "author"] <- "Tu Duong Le Duy"
+authors_locations$author <- factor(authors_locations$author)
 authors_locations$country_code <- factor(as.character(authors_locations$country_code))
 authors_locations$country_name <- factor(as.character(authors_locations$country_name))
-save(authors_locations, file = "../../data/authors_locations.RData")
+authors_locations$year <- as.integer(as.character(authors_locations$year))
+save(authors_locations, file = "../../data/authors_locations2.RData")
 
 # conferences
 load("../../data/conferences.RData")

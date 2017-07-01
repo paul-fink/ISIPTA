@@ -1,24 +1,35 @@
 # wordcloud
 library(wordcloud)
+library(RColorBrewer)
 
-keywords <- papers_keywords$keyword[papers_keywords$year> 2011]
+write.table(cbind(unique(sort(papers_keywords$keyword)),unique(sort(papers_keywords$keyword))), "keywords.txt", row.names = FALSE)
+papers_keywords$keyword <- as.character(papers_keywords$keyword)
+papers_keywords$sid <- seq_len(NROW(papers_keywords))
 
-tabkeywords <- table(keywords)
-df_kewordcounts  <- data.frame(word = tabkeywords, freq = tabkeywords)
+cleankeywords <- read.table("keywords.txt", col.names = c("keyword","normkeyword"), stringsAsFactors = FALSE)
 
-wordcloud(names(tabkeywords), tabkeywords, scale = c(1.9,0.1), min.freq = 1, random.order = TRUE)
-
-library(webshot)
-webshot::install_phantomjs()
-library(htmlwidgets)
+mergekeywords <- merge(papers_keywords, cleankeywords, by = "keyword", sort = FALSE, all.x =TRUE)
+mergekeywords <- mergekeywords[order(mergekeywords$sid),-4]
 
 
-# Make the graph
-my_graph = wordcloud2(tabkeywords, size=0.2)
+tabkeywords_early <- table(mergekeywords$normkeyword[mergekeywords$year < 2005])
+tabkeywords_late <- table(mergekeywords$normkeyword[mergekeywords$year> 2011])
 
-# save it in html
+pale <- brewer.pal(9, "YlOrRd")[-(1:2)]
 
-saveWidget(my_graph,"tmp.html",selfcontained = F)
+set.seed(12)
+pdf("keywords_cloud_late.pdf")
+opar <- par(bg = "black")
+wordcloud(names(tabkeywords_late), tabkeywords_late, scale = c(1.9,0.2), min.freq = 1, random.order = FALSE, colors = pale)
+par(opar)
+dev.off()
 
-# and in pdf
-webshot("tmp.html","fig_1.pdf", delay =10, vwidth = 900, vheight=900, zoom=0.5)#, zoom=10)
+
+set.seed(12)
+pdf("keywords_cloud_early.pdf")
+opar <- par(bg = "black")
+wordcloud(names(tabkeywords_early), tabkeywords_early, scale = c(1.9,0.2), min.freq = 1, random.order = FALSE, colors = pale)
+par(opar)
+dev.off()
+
+
