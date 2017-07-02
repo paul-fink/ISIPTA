@@ -1,4 +1,4 @@
-library(xml2)
+### first run coauthors-network.R!
 
 normalize_author_name <- function(name) {
   isequal<- function(ref_name, name, dist = 0.3) {
@@ -82,72 +82,74 @@ normalize_author_name <- function(name) {
   name
 }
 
-# papers for ECSQARU
+
+# Author flows
+## Number of authors contributing in conference i that have contributed in conference i-1 or i-2:
+contributors_flow2 <- sapply(3:nconferences,
+                             function(i) {
+                               i <- i + 1 # as first column is "author"
+                               as.logical(conferences_contributors[, i]) &
+                                 (as.logical(conferences_contributors[, i-1]) |
+                                    as.logical(conferences_contributors[, i-2]))
+                             })
+colnames(contributors_flow2) <- paste(colnames(conferences_contributors[, -c(1:3)]), "2", sep = "-")
+
+## Number of authors contributing in conference i that have contributed in conference i-1, i-2 or i-3:
+contributors_flow3 <- sapply(4:nconferences,
+                             function(i) {
+                               i <- i + 1 # as first column is "author"
+                               as.logical(conferences_contributors[, i]) &
+                                 (as.logical(conferences_contributors[, i-1]) |
+                                    as.logical(conferences_contributors[, i-2]) |
+                                    as.logical(conferences_contributors[, i-3]))
+                             })
+names(contributors_flow3) <- paste(colnames(conferences_contributors[, -c(1:4)]), "3", sep = "-")
+
+# Recurring and new authors 
+newauthor <- apply(authors_years, 1, function(x) sum(x[-1] == 0) + 1 )
+newauthor <- data.frame(author = authors_years$author, confnumber = newauthor)
+newyear <- newauthor$confnumber * 2 + 1997
+newauthor <- data.frame(newauthor, year = newyear)
+
+
+
+authorflow <- data.frame(year = t1$year,
+                         unique = t1$unique_authors,
+                         newauthor = as.numeric(table(newauthor$year)),
+                         flow1 = c(NA, colSums(contributors_flow)),
+                         flow2 = c(NA, NA, colSums(contributors_flow2)),
+                         flow3 = c(NA, NA, NA, colSums(contributors_flow3)))
+rownames(authorflow) <- NULL
+authorflow[1,2] <- NA
+names(authorflow) <- c("year", "unique", "New", "1-step", "2-step", "3-step")
+
+
+# papers/authors of ECSQARU 2017
 divs <- xml_find_all(read_html("http://www2.idsia.ch/cms/isipta-ecsqaru/accepted-papers-ecsqaru/"), ".//div[@class='omsc-toggle-title']")
 authorslist <- sapply(strsplit(gsub(" and ", ", ", gsub("(.*)\\..+","\\1",xml_text(divs)), fixed = TRUE), ", "), function(x) {sapply(x, normalize_author_name)})
 authorslist_df <- lapply(seq_along(authorslist), function(x) {
-  data.frame(id=as.integer(x), author=authorslist[[x]], type="ECSQARU", stringsAsFactors = FALSE)
+  data.frame(id = as.integer(x),
+             author = authorslist[[x]],
+             type = "ECSQARU",
+             stringsAsFactors = FALSE)
 })
 authors_ecsqaru <- do.call("rbind", authorslist_df)
 
-#papesrs for ISIPTA
-papers_authors2017 <- subset(papers_authors, year == 2017, select=c("id", "author"))
-papers_authors2017$type <- "ISIPTA"
+# different stati of authors 
+founding <- as.character(subset(papers_authors, year == 1999, select = "author")[,1])
+current <- as.character(subset(papers_authors, year == 2017, select = "author")[,1])
+ecsqaru <- as.character(authors_ecsqaru$author)
 
-combinedpapers <- rbind(authors_ecsqaru, papers_authors2017)
-combinedpapers$author <- factor(combinedpapers$author)
-  
-combined_pairs_2017 <- ddply(combinedpapers, .(id), function(x) {
-  if ( nrow(x) > 1 ) {
-    authors <- sort(as.character(x$author))
-    pairs <- combn(authors, 2)
-      
-    data.frame(author1 = factor(pairs[1, ], levels = levels(combinedpapers$author)),
-               author2 = factor(pairs[2, ], levels = levels(combinedpapers$author)),
-               type = unique(x$type),
-               id = x$id[1])
-    }
-})
+# running variable for year
+years <- sapply(levels(coauthors_pairs$year), grep, colnames(coauthors_years), value = TRUE)
 
-combined_npairs_2017 <- ddply(combined_pairs_2017, .(author1, author2),
-                          function(x) {
-                            data.frame(npairs = nrow(x),
-                                       type = paste(unique(x$type),collapse = ",")
-                            )
-                          })
-edgelist2017 <- within(combined_npairs_2017, {
-  width <- npairs
-  npairs <- NULL
-})
-#type=1:ISIPTA; type=2:ECSQARU; type=3:both
-vertices2017 <- data.frame(name = levels(combinedpapers$author), type = levels(combinedpapers$author) %in% (as.character(subset(combinedpapers, type=="ISIPTA")$author)) +
-                             2*(levels(combinedpapers$author) %in% (as.character(subset(combinedpapers, type=="ECSQARU")$author))))
-graph2017 <- graph.data.frame(edgelist2017,
-                              directed = FALSE,
-                              vertices = vertices2017)
-coords2017 <- layout_with_fr(graph2017, niter = 2000)
+# color from palettes used throughout graphics generation
+palette7wc <- brewer.pal(9, "YlOrRd")[-(1:2)]
+palette11 <- brewer.pal(11, "RdYlBu")
+palette6 <- brewer.pal(6, "RdYlBu")
 
-pdf("2017-network.pdf", width=7, height=7)
-op1 <- par(mar = c(1, 0, 0, 0))
-plot(graph2017,
-     vertex.size = 5,
-     vertex.color = c("gray90", brewer.pal(11, "RdYlBu")[8])[(vertices2017$type!=2)+1],
-     vertex.label = rownames(vertices2017),
-     vertex.label.cex = 0.5,
-     vertex.frame.color = c("gray90", brewer.pal(11, "RdYlBu")[11])[(vertices2017$type!=1)+1],
-     vertex.label.color = c("black",brewer.pal(6, "RdYlBu")[1])[(names(V(graph2017)) %in% founding) + 1],
-     edge.color = brewer.pal(11, "RdYlBu")[3],
-     layout = coords2017)
+# legends
+bottomlegend <- theme(legend.position = 'bottom', legend.direction = 'horizontal', legend.title = element_blank())
+rightlegend <- theme(legend.title = element_blank())
 
-text(-1,1, "8", col=brewer.pal(6, "RdYlBu")[1], cex = 0.5)
-text(-0.95,1, "ISIPTA founding member", adj = c(0,0.5), cex = 0.5)
 
-points(-1,0.95, pch = 21, bg = brewer.pal(11, "RdYlBu")[8], 
-       col = brewer.pal(11, "RdYlBu")[8], cex = 1.1)
-text(-0.95,0.95,"ISIPTA", adj = c(0,0.5), cex = 0.5)
-
-points(-1,0.90, col = brewer.pal(11, "RdYlBu")[11], cex=1.1)
-text(-0.95,0.90,"ECSQARU", adj = c(0,0.5), cex = 0.5)
-
-dev.off()
-par(op1)

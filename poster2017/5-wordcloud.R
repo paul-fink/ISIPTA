@@ -1,0 +1,37 @@
+### 5. wordclouds of Keywords
+
+## to manually clean the keywords and normalize
+#write.table(cbind(unique(sort(papers_keywords$keyword)),unique(sort(papers_keywords$keyword))), "keywords.txt", row.names = FALSE)
+papers_keywords$keyword <- as.character(papers_keywords$keyword)
+papers_keywords$sid <- seq_len(NROW(papers_keywords))
+
+cleankeywords <- read.table("keywords.txt", col.names = c("keyword","normkeyword"), stringsAsFactors = FALSE)
+
+mergekeywords <- merge(papers_keywords, cleankeywords, by = "keyword", sort = FALSE, all.x =TRUE)
+mergekeywords <- mergekeywords[order(mergekeywords$sid),-4]
+
+# distirubtion of keywords in last 3 and first 3 ISIPTAs
+tabkeywords_early <- table(mergekeywords$normkeyword[mergekeywords$year < 2005])
+tabkeywords_late <- table(mergekeywords$normkeyword[mergekeywords$year> 2011])
+
+
+set.seed(12)
+pdf("5-keywords-last3.pdf", width = 10, height = 10)
+opar <- par(bg = "grey10")
+wordcloud(names(tabkeywords_late), tabkeywords_late,
+          scale = c(1.9,0.6), min.freq = 1, 
+          random.order = FALSE, colors = palette7wc)
+par(opar)
+dev.off()
+
+
+set.seed(12)
+pdf("5-keywords-first3.pdf", width = 10, height = 10)
+opar <- par(bg = "grey10")
+wordcloud(names(tabkeywords_early), tabkeywords_early,
+          scale = c(1.9,0.6), min.freq = 1,
+          random.order = FALSE, colors = palette7wc)
+par(opar)
+dev.off()
+
+

@@ -18,6 +18,8 @@ save(papers_authors, file = "../../data/papers_authors.RData")
 load(file = "../../data/authors_locations.RData")
 # for the time being; should be read from XML
 authors_locations$email <- NA
+# Itzhak gilboa was wrongly written in HTML page
+authors_locations <- authors_locations[-grep("^Itzack Gilboa$", authors_locations$author),]
 authors_locations$city <- as.character(authors_locations$city)
 authors_locations[grepl("Broomell", authors_locations$author) & authors_locations$year == 2011,"city"] <- "University Park"
 authors_locations[grepl("Coolen-Schrijner", authors_locations$author) & authors_locations$year == 2011,"city"] <- "Durham"
@@ -25,13 +27,13 @@ authors_locations[grepl("^Gavle$", authors_locations$city),"city"] <- "Gaevle"
 authors_locations[grepl("^Gent$", authors_locations$city),"city"] <- "Ghent"
 authors_locations$city <- factor(authors_locations$city)
 authors_locations$author <- as.character(authors_locations$author)
-authors_locations[grepl("^Itz..k Gilboa$", authors_locations$author), "author"] <- "Itzhak Gilboa"
 authors_locations[grepl("^Tu Duong LE DUY$", authors_locations$author), "author"] <- "Tu Duong Le Duy"
 authors_locations$author <- factor(authors_locations$author)
 authors_locations$country_code <- factor(as.character(authors_locations$country_code))
 authors_locations$country_name <- factor(as.character(authors_locations$country_name))
 authors_locations$year <- as.integer(as.character(authors_locations$year))
-save(authors_locations, file = "../../data/authors_locations2.RData")
+rownames(authors_locations) <- seq_len(NROW(authors_locations)
+save(authors_locations, file = "../../data/authors_locations.RData")
 
 # conferences
 load("../../data/conferences.RData")

@@ -11,6 +11,8 @@ library(ggplot2)
 library(plyr)
 library(stringr)
 library(wordcloud)
+library(RColorBrewer)
+library(xml2)
 
 load("../package/data/authors_locations.RData")
 load("../package/data/conferences.RData")
@@ -27,7 +29,7 @@ source("../package/demo/regular-contributors.R")  # simple-summary.R
 source("../package/demo/papers-per-author.R")     #
 source("../package/demo/coauthors-per-author.R")  # authors-per-paper.R
 source("../package/demo/coauthors-network.R")     # regular-contributors.R (this takes a while)
-source("../package/demo/coauthors-worldmap.R")    # coauthors-network.R
+#source("../package/demo/coauthors-worldmap.R")    # coauthors-network.R
 
 #setwd("./..")
 #source("../package/R/graph.R")
