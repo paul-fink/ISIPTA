@@ -4,7 +4,7 @@ papersperauthor <- table(papers_authors$author)
 # frequency table
 table(papersperauthor)
 
-pdf("3-papers-per-author.pdf", width = 6, height = 6, family = "CM Roman", useDingbats = FALSE)
+pdf("3-papers-per-author.pdf", width = 8, height = 6.5, family = "CM Roman", useDingbats = FALSE)
 print(ggplot(melt(table(papersperauthor), varnames = c("npapers")),
              aes(ordered(npapers), value)) + geom_bar(stat="identity") +
         xlab("Papers in ISIPTA") + ylab("Number of authors"))
