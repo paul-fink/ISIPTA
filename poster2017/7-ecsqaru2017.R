@@ -41,13 +41,14 @@ graph2017 <- graph.data.frame(edgelist2017,
                               vertices = vertices2017)
 coords2017 <- layout_with_fr(graph2017, niter = 2000)
 
-pdf("7-networkECSQARU2017.pdf", width = 12, height = 12)
+pdf("7-networkECSQARU2017.pdf", width = 12, height = 12, family = "CM Roman", useDingbats = FALSE)
 op1 <- par(mar = c(1, 0, 0, 0))
 plot(graph2017,
      vertex.size = 3.5,
      vertex.color = c(NA, palette11[8])[(vertices2017$type!=2)+1],
      vertex.label = V(graph2017)$label,
      vertex.label.cex = 0.5,
+     vertex.label.family = "CM Roman",
      vertex.frame.color = c(palette11[8], palette11[11])[(vertices2017$type!=1)+1],
      vertex.label.color = c("black", palette6[1])[(names(V(graph2017)) %in% founding) + 1],
      edge.color = palette11[3],
@@ -55,4 +56,4 @@ plot(graph2017,
 
 dev.off()
 par(op1)
-
+embed_fonts("7-networkECSQARU2017.pdf")

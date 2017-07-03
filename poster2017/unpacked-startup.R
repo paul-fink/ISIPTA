@@ -10,9 +10,14 @@ library(rworldmap)
 library(ggplot2)
 library(plyr)
 library(stringr)
-library(wordcloud)
 library(RColorBrewer)
+library(wordcloud)
 library(xml2)
+# to get the CM Roman fonts
+library(extrafont)
+if(!any(fonttable()$package == "fontcm")) font_install("fontcm")
+loadfonts()
+
 
 load("../package/data/authors_locations.RData")
 load("../package/data/conferences.RData")

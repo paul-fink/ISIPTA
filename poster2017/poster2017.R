@@ -5,7 +5,7 @@ source("init.R")
 source("1-summary.R")
 
 # flows of contributors
-source("2-authorflow.pdf")
+source("2-authorflows.R")
 
 # papers per author
 source("3-papersPerAuthor.R")

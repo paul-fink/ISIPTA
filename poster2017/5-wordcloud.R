@@ -16,22 +16,22 @@ tabkeywords_late <- table(mergekeywords$normkeyword[mergekeywords$year> 2011])
 
 
 set.seed(12)
-pdf("5-keywords-last3.pdf", width = 10, height = 10)
+pdf("5-keywords-last3.pdf", width = 10, height = 10, family = "CM Roman", useDingbats = FALSE)
 opar <- par(bg = "grey10")
 wordcloud(names(tabkeywords_late), tabkeywords_late,
           scale = c(1.9,0.6), min.freq = 1, 
-          random.order = FALSE, colors = palette7wc)
+          random.order = FALSE, colors = palette7wc, font = 2)
 par(opar)
 dev.off()
-
+embed_fonts("5-keywords-last3.pdf")
 
 set.seed(12)
-pdf("5-keywords-first3.pdf", width = 10, height = 10)
+pdf("5-keywords-first3.pdf", width = 10, height = 10, family = "CM Roman", useDingbats = FALSE)
 opar <- par(bg = "grey10")
 wordcloud(names(tabkeywords_early), tabkeywords_early,
           scale = c(1.9,0.6), min.freq = 1,
-          random.order = FALSE, colors = palette7wc)
+          random.order = FALSE, colors = palette7wc, font = 2)
 par(opar)
 dev.off()
-
+embed_fonts("5-keywords-first3.pdf")
 
