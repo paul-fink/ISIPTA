@@ -21,17 +21,17 @@ plot(graph,
 ## legend 
 points(-1, -0.96, pch = 21, bg = palette11[8], 
        col = palette11[8], cex = 1.8)
-text(-0.96, -0.96,"current ISIPTA paper contributer", adj = c(0,0.5), cex = 1)
+text(-0.96, -0.96,"current ISIPTA paper contributor", adj = c(0,0.5), cex = 1)
 
 points(-1, -0.99, col = palette11[11], cex = 1.8, lwd = 2)
-text(-0.96, -0.99, "current ECSQARU paper contributer (only for 2017)", adj = c(0,0.5), cex = 1)
+text(-0.96, -0.99, "current ECSQARU paper contributor (only for 2017)", adj = c(0,0.5), cex = 1)
 
 points(-1, -1.02, pch = 21, bg = "gray90", col = "gray90", cex = 1.8)
-text(-0.96, -1.02, "previous ISIPTA paper contributer", adj = c(0,0.5), cex = 1)
+text(-0.96, -1.02, "previous ISIPTA paper contributor", adj = c(0,0.5), cex = 1)
 
 points(-1, -1.05, col = palette6[1], cex = 2.5, lwd = 1.5)
 text(-1, -1.05, "1", col = palette6[1], adj = c(0.5,0.5), cex = 1)
-text(-0.96, -1.05, "Paper contributer of first ISIPTA", adj = c(0,0.5), cex = 1)
+text(-0.96, -1.05, "Paper contributor of first ISIPTA", adj = c(0,0.5), cex = 1)
 
 text(-0.85, 0.85, "2017", adj = c(0.5,0.5), cex = 3, font = 2)
 
