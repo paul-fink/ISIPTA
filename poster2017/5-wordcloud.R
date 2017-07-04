@@ -19,7 +19,7 @@ set.seed(12)
 pdf("5-keywords-last3.pdf", width = 10, height = 10, family = "CM Roman", useDingbats = FALSE)
 opar <- par(bg = "grey10")
 wordcloud(names(tabkeywords_late), tabkeywords_late,
-          scale = c(1.9,0.6), min.freq = 1, 
+          scale = c(4.8,1), min.freq = 2, 
           random.order = FALSE, colors = palette7wc, font = 2)
 par(opar)
 dev.off()
@@ -29,9 +29,16 @@ set.seed(12)
 pdf("5-keywords-first3.pdf", width = 10, height = 10, family = "CM Roman", useDingbats = FALSE)
 opar <- par(bg = "grey10")
 wordcloud(names(tabkeywords_early), tabkeywords_early,
-          scale = c(1.9,0.6), min.freq = 1,
+          scale = c(4.8,1), min.freq = 2,
           random.order = FALSE, colors = palette7wc, font = 2)
 par(opar)
 dev.off()
 embed_fonts("5-keywords-first3.pdf")
 
+length(tabkeywords_early)
+length(tabkeywords_early)/sum(t1$papers[1:3])
+rev(sort(tabkeywords_early))[1:5]
+
+length(tabkeywords_late)
+length(tabkeywords_late)/sum(rev(t1$papers)[1:3])
+rev(sort(tabkeywords_late))[1:5]
