@@ -3,7 +3,7 @@ library("XML")
 
 options(stringsAsFactors = FALSE)
 
-XML_DIR <- "../inst/xml-cleaned/"
+XML_DIR <- "xml-cleaned/"
 
 
 create_Rd <- function(object, title, description, seealso = NULL) {

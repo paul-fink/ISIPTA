@@ -587,7 +587,7 @@
     <title>A study on updating belief functions for parameter uncertainty representation in Nuclear Probabilistic Risk Assessment</title>
     <authors>
       <author>
-        <name>Tu Duong LE DUY</name>
+        <name>Tu Duong Le Duy</name>
         <email>tu_duong.le_duy@utt.fr</email>
       </author>
       <author>
@@ -824,11 +824,11 @@
       <keyword>discrete probability</keyword>
       <keyword>second-order probability</keyword>
       <keyword>imprecise probability</keyword>
-      <keyword>multivariate  p&#x3CEC;ya distribution</keyword>
+      <keyword>multivariate polya distribution</keyword>
       <keyword>conjugate prior</keyword>
       <keyword>compound hypergeometric likelihood</keyword>
     </keywords>
-    <abstract>In realistic decision problems there is more often than not uncertainty in the background information. As for representation of uncertain or imprecise probability values, second-order probability, i.e. probability distributions over probabilities, offers an option. With a subjective view of probability second-order probability would seem to be impractical since it is hard for a person to construct a second-order distributions that reflects his or her beliefs. From the perspective of probability as relative frequency the task of constructing or updating a second-order probability distribution from data is somewhat easier. Here a very simple model for updating lower bounds of probabilities is employed. But the difficulties in choosing second-order distributions may be further alleviated if structural properties are considered. Either some of the probability values are dependent in some way, e.g. that they are known to be almost equal, or they are not dependent in any other way than what follows from that the values sum to one. In this work we present the unique family of discrete second-order probability distributions that correspond to the case where dependence is limited. These distributions are shown to have the property that the joint distributions are equal to normalised products of marginal distributions. The distribution family introduced here is a generalisation of a special case of the multivariate P&#xF3;lya distribution and is shown to be conjugate prior to a compound hypergeometric distribution.</abstract>
+    <abstract>In realistic decision problems there is more often than not uncertainty in the background information. As for representation of uncertain or imprecise probability values, second-order probability, i.e. probability distributions over probabilities, offers an option. With a subjective view of probability second-order probability would seem to be impractical since it is hard for a person to construct a second-order distributions that reflects his or her beliefs. From the perspective of probability as relative frequency the task of constructing or updating a second-order probability distribution from data is somewhat easier. Here a very simple model for updating lower bounds of probabilities is employed. But the difficulties in choosing second-order distributions may be further alleviated if structural properties are considered. Either some of the probability values are dependent in some way, e.g. that they are known to be almost equal, or they are not dependent in any other way than what follows from that the values sum to one. In this work we present the unique family of discrete second-order probability distributions that correspond to the case where dependence is limited. These distributions are shown to have the property that the joint distributions are equal to normalised products of marginal distributions. The distribution family introduced here is a generalisation of a special case of the multivariate Polya distribution and is shown to be conjugate prior to a compound hypergeometric distribution.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s038.pdf</pdf>
   </paper>
   <paper>

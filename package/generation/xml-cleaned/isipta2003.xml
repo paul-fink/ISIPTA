@@ -274,7 +274,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>assessment; imprecise probabilities; imprecise prevision</keyword>
+      <keyword>assessment</keyword>
+      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise prevision</keyword>
       <keyword>coherence</keyword>
       <keyword>natural extension</keyword>
       <keyword>interactive computing</keyword>
@@ -409,11 +411,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise dirichlet model; exact</keyword>
-      <keyword>conservative</keyword>
-      <keyword>approximate</keyword>
-      <keyword>robust</keyword>
-      <keyword>confidence interval estimates; entropy; mutual information</keyword>
+      <keyword>imprecise dirichlet model</keyword>
+      <keyword>exact, conservative, approximate, robust confidence interval estimates</keyword>
+      <keyword>entropy</keyword>
+      <keyword>mutual information</keyword>
     </keywords>
     <abstract>Walley's Imprecise Dirichlet Model (IDM) for categorical data overcomes several fundamental problems which other approaches to uncertainty suffer from. Yet, to be useful in practice, one needs efficient ways for computing the imprecise=robust sets or intervals. The main objective of this work is to derive exact, conservative, and approximate, robust and credible interval estimates under the IDM for a large class of statistical estimators, including the entropy and mutual information.</abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/021.pdf</pdf>

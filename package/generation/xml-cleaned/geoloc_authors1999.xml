@@ -439,25 +439,6 @@
     </location>
   </author>
   <author>
-    <name>Itzack Gilboa</name>
-    <email>gilboa@econ.tau.ac.il</email>
-    <location>
-      <country>
-        <code>IL</code>
-        <name>Israel</name>
-      </country>
-      <city>
-        <name>Tel Aviv</name>
-        <latitude>32.066700</latitude>
-        <longitude>34.766701</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </author>
-  <author>
     <name>Jean-Yves Jaffray</name>
     <email>Jean-Yves.Jaffray@lip6.fr</email>
     <location>
