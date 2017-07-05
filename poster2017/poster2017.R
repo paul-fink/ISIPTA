@@ -1,3 +1,6 @@
+# Startup script
+source("unpacked-startup.R")
+
 # Preparation of all needed variables across scripts
 source("init.R")
 
