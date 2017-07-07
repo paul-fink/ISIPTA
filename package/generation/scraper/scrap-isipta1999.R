@@ -72,8 +72,8 @@ i99 <- scrap_proceedings("http://decsai.ugr.es/~smc/isipta99/proc/",
                          c(country_name = "Belgium",
                            country_code = "BE",
                            city = "Ghent",
-                           city_lat = "51.05665",
-                           city_lon = "3.72000",
+                           city_lat = "51.05434",
+                           city_lon = "3.71742",
                            university = "Ghent University",
                            department = ""))
 

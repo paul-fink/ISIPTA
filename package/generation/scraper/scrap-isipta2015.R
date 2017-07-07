@@ -1,5 +1,8 @@
 ### ISIPTA 2015
 library(bibtex)
+source("base-scraper.R")
+source("xml.R")
+source("../locator/locate-authors.R")
 
 #fileBib <- "parser/2015/isipta15bibtex.bib"
 #fileLocations <- "parser/2015/location2015_to_clean.csv"
@@ -45,13 +48,14 @@ i15 <- parse_proceedings15(fileBib = "../raw/2015/isipta15bibtex.bib",
                              country_name = "Italy",
                              country_code ="IT",
                              city = "Pescara",
-                             city_lat = "42.46024",
-                             city_lon = "14.21021",
+                             city_lat = "42.46179",
+                             city_lon = "14.21609",
                              university = NA_character_,
                              department = NA_character_
                              )
                            )
-                           
-      
 
 saveXML(i15$value(), file = "../xml/isipta2015.xml")
+
+doit(2015)
+  

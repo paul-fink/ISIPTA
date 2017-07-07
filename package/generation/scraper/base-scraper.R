@@ -79,8 +79,8 @@ normalize_author_name <- function(name) {
     return("Frederic Pichon")
   if ( isequal("Christofer Waldenstrom", name) )
     return("Christofer Waldenstrom")
-  if ( isequal("Andres Cano", name) )
-    return("Andres Cano")
+  if ( isequal("Andrea Capotorti", name) )
+    return("Andrea Capotorti")
   if ( isequal("Manuel Gomez", name) )
     return("Manuel Gomez")
   if ( isequal("Volker Kraetschmer", name) )
@@ -91,6 +91,8 @@ normalize_author_name <- function(name) {
     return("Raphael Giraud")
   if ( isequal("Vladislav Bina", name) )
     return("Vladislav Bina")
+  if ( isequal("Sebastien Destercke", name) )
+    return("Sebastien Destercke")
   if ( isequal("Sebastian Maass", name) )
     return("Sebastian Maass")
   if ( isequal("Michele Cohen", name) )
@@ -119,8 +121,6 @@ normalize_author_name <- function(name) {
     return("Christophe Berenguer")
   if ( isequal("Denis Maua", name) )
     return("Denis Maua")
-  if ( isequal("Sebastien Destercke", name) )
-    return("Sebastien Destercke")
   if ( isequal("Luciano Sanchez", name) )
     return("Luciano Sanchez")
   if ( isequal("Fabio Gagliardi Cozman", name) )
@@ -131,6 +131,8 @@ normalize_author_name <- function(name) {
     return("Lev Utkin")
   if ( isequal("Arthur Van Camp", name) )
     return("Arthur van Camp")
+  if ( isequal("Andres Cano", name, dist= 0.01) )
+    return("Andres Cano")
   
   name
 }

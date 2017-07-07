@@ -1,6 +1,6 @@
 "year","author","email","country_code","country_name","city","city_lat","city_lon","university","department"
 2015,"Alessandro Antonucci","alessandro@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
-2015,"Andrea Capotorti","andrea.capotorti@unipg.itgiorgio@idsia.ch","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Andrea Capotorti","andrea.capotorti@unipg.it","IT","Italy","Perugia",43.1122,12.38878,NA,NA
 2015,"Andrea Wiencierz","andrea.wiencierz@york.ac.uk","GB","United Kingdom","York",53.9593817,-1.0814175,NA,NA
 2015,"Andrew Bronevich","brone@mail.ru","RU","Russian Federation","Moscow",55.75,37.5,NA,NA
 2015,"Arthur van Camp","arthur.vancamp@ugent.be","BE","Belgium","Ghent",51.05,3.71667,NA,NA
@@ -24,7 +24,7 @@
 2015,"Jirina Vejnarova","vejnar@utia.cas.cz","CZ","Czech Republic","Prague",50.08804,14.42076,NA,NA
 2015,"Lev Utkin","lev.utkin@gmail.com","RU","Russian Federation","Saint Petersburg",59.89444,30.26417,NA,NA
 2015,"Lewis Paton","l.w.paton@durham.ac.uk","GB","United Kingdom","Durham",54.7763893,-1.5758691,NA,NA
-2015,"Marco Baioletti","marco.baioletti@unipg.itgiorgio@idsia.ch","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Marco Baioletti","marco.baioletti@unipg.it","IT","Italy","Perugia",43.1122,12.38878,NA,NA
 2015,"Marco Cattaneo","m.cattaneo@hull.ac.uk","GB","United Kingdom","Hull",53.7446,-0.33525,NA,NA
 2015,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
 2015,"Matthias Troffaes","matthias.troffaes@gmail.com","GB","United Kingdom","Durham",54.7763893,-1.5758691,NA,NA

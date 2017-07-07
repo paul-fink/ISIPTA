@@ -46,7 +46,7 @@ xmlPaperKeywords <- function(keywords) {
 xmlPaperAuthors <- function(authors) {
   n <- newXMLNode("authors")
 
-  for ( i in seq(length = nrow(authors)) ) {
+  for ( i in seq(length = NROW(authors)) ) {
     n0 <- newXMLNode("author")
     n0 <- addChildren(n0,
                       kids = list(newXMLNode("name", authors[i, "name"]),

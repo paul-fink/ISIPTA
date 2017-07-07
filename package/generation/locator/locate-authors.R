@@ -1,7 +1,7 @@
 ### Estimate the geolocation of the authors.
 
 source("../scraper/xml.R")
-source("domains.R")
+source("../locator/domains.R")
 
 
 GEOLOC_DOMAINS <- local({
@@ -11,7 +11,16 @@ GEOLOC_DOMAINS <- local({
 
 
 geolocation_by_hand <- function(author, year) {
-  NULL
+  if(year == 2015) {
+    authorLocations2015  <- read.csv("../raw/2015/location2015_to_clean.csv", stringsAsFactors = FALSE)
+    loc <- xmlLocation(authorLocations2015[authorLocations2015$author ==  xmlValue(author[[1]]),])
+  } else if(year == 2017) {
+    authorLocations2017  <- read.csv2("../raw/2017/locations2017.csv", stringsAsFactors = FALSE)
+    loc <- xmlLocation(authorLocations2017[authorLocations2017$author ==  xmlValue(author[[1]]),])
+  } else {
+    loc <- NULL
+  }
+  loc
 }
 
 
@@ -43,7 +52,7 @@ author_geolocation <- function(author, year) {
 
 
 scrap_authors_geolocation <- function(year) {
-  file <- sprintf("../xml/isipta%s.xml", year)
+  file <- sprintf("../xml-cleaned/isipta%s.xml", year)
   raw <- readLines(file, encoding = "UTF-8")
   xml <- xmlTreeParse(raw, useInternalNodes = TRUE)
   authors <- getNodeSet(xml, "//author")
@@ -75,6 +84,6 @@ doit <- function(year) {
 #doit(2007)
 #doit(2009)
 #doit(2011)
-doit(2013)
-
+#doit(2013)
+#doit(2015)
 

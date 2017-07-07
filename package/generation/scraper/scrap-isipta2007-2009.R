@@ -66,8 +66,8 @@ i07 <- scrap_proceedings("http://www.sipta.org/isipta07/proceedings/",
                          c(country_name = "Czech Republic",
                            country_code = "CZ",
                            city = "Prague",
-                           city_lat = "50.08781",
-                           city_lon = "14.42046",
+                           city_lat = "50.07554",
+                           city_lon = "14.43780",
                            university = "Charles University",
                            department = "Faculty of Mathematicsand Physics"))
 
@@ -83,8 +83,8 @@ i09 <- scrap_proceedings("http://www.sipta.org/isipta09/proceedings/",
                          c(country_name = "United Kingdom",
                            country_code = "GB",
                            city = "Durham",
-                           city_lat = "35.99403",
-                           city_lon = "-78.89862",
+                           city_lat = "54.77525",
+                           city_lon = "-1.58485",
                            university = "Durham University",
                            department = "Department of Mathematical Sciences"))
 
