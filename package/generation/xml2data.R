@@ -218,10 +218,13 @@ xml2keywords <- function() {
                              keywords <- xpathSApply(paper[["keywords"]],
                                                      ".//keyword",
                                                      xmlValue)
-
-                             data.frame(year = year,
-                                        id = sprintf("%s%s", year, id),
-                                        keyword = keywords)
+                             if(length(keywords)) {
+                                data.frame(year = year,
+                                          id = sprintf("%s%s", year, id),
+                                          keyword = keywords)
+                             } else {
+                               NULL
+                             }
                            })
 
     free(tree)

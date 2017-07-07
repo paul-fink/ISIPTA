@@ -17,13 +17,13 @@
         <longitude>8.951052</longitude>
       </city>
       <university>
-        <name>NA</name>
-        <department>NA</department>
+        <name>University of Lugano</name>
+        <department></department>
       </university>
     </location>
   </conference>
   <paper>
-    <id>2017001</id>
+    <id>001</id>
     <title>Differences of Opinion</title>
     <authors>
       <author>
@@ -44,7 +44,7 @@
     <pdf>http://proceedings.mlr.press/v62/aliprantis17a/aliprantis17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017002</id>
+    <id>002</id>
     <title>Kurt Weichselberger's Contribution to Imprecise Probabilities</title>
     <authors>
       <author>
@@ -69,7 +69,7 @@
     <pdf>http://proceedings.mlr.press/v62/augustin17a/augustin17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017003</id>
+    <id>003</id>
     <title>SOS for Bounded Rationality</title>
     <authors>
       <author>
@@ -98,7 +98,7 @@
     <pdf>http://proceedings.mlr.press/v62/benavoli17a/benavoli17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017004</id>
+    <id>004</id>
     <title>A Polarity Theory for Sets of Desirable Gambles</title>
     <authors>
       <author>
@@ -129,7 +129,7 @@
     <pdf>http://proceedings.mlr.press/v62/benavoli17b/benavoli17b.pdf</pdf>
   </paper>
   <paper>
-    <id>2017005</id>
+    <id>005</id>
     <title>Modeling Markov Decision Processes with Imprecise Probabilities Using Probabilistic Logic Programming</title>
     <authors>
       <author>
@@ -163,7 +163,7 @@
     <pdf>http://proceedings.mlr.press/v62/bueno17a/bueno17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017006</id>
+    <id>006</id>
     <title>Empirical Interpretation of Imprecise Probabilities</title>
     <authors>
       <author>
@@ -184,7 +184,7 @@
     <pdf>http://proceedings.mlr.press/v62/cattaneo17a/cattaneo17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017007</id>
+    <id>007</id>
     <title>Bayesian Inference under Ambiguity: Conditional Prior Belief Functions</title>
     <authors>
       <author>
@@ -210,7 +210,7 @@
     <pdf>http://proceedings.mlr.press/v62/coletti17a/coletti17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017008</id>
+    <id>008</id>
     <title>Weak Dutch Books versus Strict Consistency with Lower Previsions</title>
     <authors>
       <author>
@@ -236,7 +236,7 @@
     <pdf>http://proceedings.mlr.press/v62/corsato17a/corsato17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017009</id>
+    <id>009</id>
     <title>Reconciling Bayesian and Frequentist Tests: the Imprecise Counterpart</title>
     <authors>
       <author>
@@ -265,7 +265,7 @@
     <pdf>http://proceedings.mlr.press/v62/couso17a/couso17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017010</id>
+    <id>010</id>
     <title>Evenly Convex Credal Sets</title>
     <authors>
       <author>
@@ -283,7 +283,7 @@
     <pdf>http://proceedings.mlr.press/v62/cozman17a/cozman17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017011</id>
+    <id>011</id>
     <title>Independent Natural Extension for Infinite Spaces: Williams-Coherence to the Rescue</title>
     <authors>
       <author>
@@ -305,7 +305,7 @@
     <pdf>http://proceedings.mlr.press/v62/de bock17a/de bock17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017012</id>
+    <id>012</id>
     <title>Computable Randomness is Inherently Imprecise</title>
     <authors>
       <author>
@@ -329,7 +329,7 @@
     <pdf>http://proceedings.mlr.press/v62/cooman17a/cooman17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017013</id>
+    <id>013</id>
     <title>Imprecise Continuous-Time Markov Chains: Efficient Computational Methods with Guaranteed Error Bounds</title>
     <authors>
       <author>
@@ -353,7 +353,7 @@
     <pdf>http://proceedings.mlr.press/v62/erreygers17a/erreygers17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017014</id>
+    <id>014</id>
     <title>(Generalized) Linear Regression on Microaggregated Data - From Nuisance Parameter Optimization to Partial Identification</title>
     <authors>
       <author>
@@ -376,7 +376,7 @@
     <pdf>http://proceedings.mlr.press/v62/fink17a/fink17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017015</id>
+    <id>015</id>
     <title>Maximum Likelihood with Coarse Data based on Robust Optimisation</title>
     <authors>
       <author>
@@ -402,7 +402,7 @@
     <pdf>http://proceedings.mlr.press/v62/guillaume17a/guillaume17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017016</id>
+    <id>016</id>
     <title>Concepts for Decision Making under Severe Uncertainty with Partial Ordinal and Partial Cardinal Preferences</title>
     <authors>
       <author>
@@ -433,7 +433,7 @@
     <pdf>http://proceedings.mlr.press/v62/jansen17a/jansen17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017017</id>
+    <id>017</id>
     <title>Efficient Computation of Updated Lower Expectations for Imprecise Continuous-Time Hidden Markov Chains</title>
     <authors>
       <author>
@@ -458,7 +458,7 @@
     <pdf>http://proceedings.mlr.press/v62/krak17a/krak17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017018</id>
+    <id>018</id>
     <title>Credal Sum-Product Networks</title>
     <authors>
       <author>
@@ -487,7 +487,7 @@
     <pdf>http://proceedings.mlr.press/v62/mau%C3%A11717a/mau%C3%A11717a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017019</id>
+    <id>019</id>
     <title>Game Solutions, Probability Transformations and the Core</title>
     <authors>
       <author>
@@ -513,7 +513,7 @@
     <pdf>http://proceedings.mlr.press/v62/miranda17a/miranda17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017020</id>
+    <id>020</id>
     <title>A Study of the Pari-Mutuel Model from the Point of View of Imprecise Probabilities</title>
     <authors>
       <author>
@@ -540,7 +540,7 @@
     <pdf>http://proceedings.mlr.press/v62/montes17a/montes17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017021</id>
+    <id>021</id>
     <title>Efficient Algorithms for Checking Avoiding Sure Loss</title>
     <authors>
       <author>
@@ -569,7 +569,7 @@
     <pdf>http://proceedings.mlr.press/v62/nakharutai17a/nakharutai17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017022</id>
+    <id>022</id>
     <title>Towards a Cautious Modelling of Missing Data in Small Area Estimation</title>
     <authors>
       <author>
@@ -600,7 +600,7 @@
     <pdf>http://proceedings.mlr.press/v62/plass17a/plass17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017023</id>
+    <id>023</id>
     <title>Efficient Computation of Belief Theoretic Conditionals</title>
     <authors>
       <author>
@@ -632,7 +632,7 @@
     <pdf>http://proceedings.mlr.press/v62/polpitiya17a/polpitiya17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017024</id>
+    <id>024</id>
     <title>The CWI World Cup Competition: Eliciting Sets of Acceptable Gambles</title>
     <authors>
       <author>
@@ -669,7 +669,7 @@
     <pdf>http://proceedings.mlr.press/v62/quaeghebeur17a/quaeghebeur17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017025</id>
+    <id>025</id>
     <title>Errors Bounds for Finite Approximations of Coherent Lower Previsions</title>
     <authors>
       <author>
@@ -688,7 +688,7 @@
     <pdf>http://proceedings.mlr.press/v62/%C5%A0kulj17a/%C5%A0kulj17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017026</id>
+    <id>026</id>
     <title>New Distributions for Modeling Subjective Lower and Upper Probabilities</title>
     <authors>
       <author>
@@ -706,7 +706,7 @@
     <pdf>http://proceedings.mlr.press/v62/smithson17a/smithson17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017027</id>
+    <id>027</id>
     <title>Linear Core-Based Criterion for Testing Extreme Exact Games</title>
     <authors>
       <author>
@@ -732,7 +732,7 @@
     <pdf>http://proceedings.mlr.press/v62/studen%C3%BD17a/studen%C3%BD17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017028</id>
+    <id>028</id>
     <title>A Note on Imprecise Monte Carlo over Credal Sets via Importance Sampling</title>
     <authors>
       <author>
@@ -750,7 +750,7 @@
     <pdf>http://proceedings.mlr.press/v62/troffaes17a/troffaes17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017029</id>
+    <id>029</id>
     <title>Imprecise Swing Weighting for Multi-Attribute Utility Elicitation Based on Partial Preferences</title>
     <authors>
       <author>
@@ -777,7 +777,7 @@
     <pdf>http://proceedings.mlr.press/v62/troffaes17b/troffaes17b.pdf</pdf>
   </paper>
   <paper>
-    <id>2017030</id>
+    <id>030</id>
     <title>Exchangeable Choice Functions</title>
     <authors>
       <author>
@@ -800,7 +800,7 @@
     <pdf>http://proceedings.mlr.press/v62/van%C2%A0camp17a/van%C2%A0camp17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017031</id>
+    <id>031</id>
     <title>Computing Minimax Decisions with Incomplete Observations</title>
     <authors>
       <author>
@@ -817,7 +817,7 @@
     <pdf>http://proceedings.mlr.press/v62/van%C2%A0ommen17a/van%C2%A0ommen17a.pdf</pdf>
   </paper>
   <paper>
-    <id>2017032</id>
+    <id>032</id>
     <title>Agreeing to Disagree and Dilation</title>
     <authors>
       <author>

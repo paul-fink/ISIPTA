@@ -17,13 +17,13 @@
         <longitude>14.21609</longitude>
       </city>
       <university>
-        <name>NA</name>
-        <department>NA</department>
+        <name></name>
+        <department></department>
       </university>
     </location>
   </conference>
   <paper>
-    <id>2015032</id>
+    <id>032</id>
     <title>The multilabel naive credal classifier</title>
     <authors>
       <author>
@@ -44,7 +44,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/32.pdf</pdf>
   </paper>
   <paper>
-    <id>2015014</id>
+    <id>014</id>
     <title>Efficient L1-based probability assessments correction: algorithms and applications to belief merging and revision</title>
     <authors>
       <author>
@@ -66,7 +66,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/14.pdf</pdf>
   </paper>
   <paper>
-    <id>2015031</id>
+    <id>031</id>
     <title>The geometry of imprecise inference</title>
     <authors>
       <author>
@@ -83,7 +83,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/31.pdf</pdf>
   </paper>
   <paper>
-    <id>2015009</id>
+    <id>009</id>
     <title>How to choose among choice functions</title>
     <authors>
       <author>
@@ -100,7 +100,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/9.pdf</pdf>
   </paper>
   <paper>
-    <id>2015008</id>
+    <id>008</id>
     <title>The generalization of the conjunctive rule for aggregating contradictory sources of information based on generalized credal sets</title>
     <authors>
       <author>
@@ -122,7 +122,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/8.pdf</pdf>
   </paper>
   <paper>
-    <id>2015039</id>
+    <id>039</id>
     <title>Decisions under risk and partial knowledge modelling uncertainty and risk aversion</title>
     <authors>
       <author>
@@ -148,7 +148,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/39.pdf</pdf>
   </paper>
   <paper>
-    <id>2015005</id>
+    <id>005</id>
     <title>Some remarks on sets of lexicographic probabilities and sets of desirable gambles</title>
     <authors>
       <author>
@@ -156,14 +156,12 @@
         <email>fgcozman@usp.br</email>
       </author>
     </authors>
-    <keywords>
-      <keyword>NA</keyword>
-    </keywords>
+    <keywords/>
     <abstract>Sets of lexicographic probabilities and sets of desirable gambles share several features, despite their apparent differences. In this paper we examine properties of marginalization, conditioning and independence for sets of lexicographic probabilities and sets of desirable gambles.</abstract>
     <pdf>http://www.sipta.org/isipta15/data/paper/5.pdf</pdf>
   </paper>
   <paper>
-    <id>2015001</id>
+    <id>001</id>
     <title>On the complexity of propositional and relational credal networks</title>
     <authors>
       <author>
@@ -186,7 +184,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/1.pdf</pdf>
   </paper>
   <paper>
-    <id>2015002</id>
+    <id>002</id>
     <title>A pointwise ergodic theorem for imprecise Markov chains</title>
     <authors>
       <author>
@@ -213,7 +211,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/2.pdf</pdf>
   </paper>
   <paper>
-    <id>2015006</id>
+    <id>006</id>
     <title>Fully conglomerable coherent upper conditional prevision defined by the Choquet integral with respect to its associated Hausdorff outer measure</title>
     <authors>
       <author>
@@ -232,7 +230,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/6.pdf</pdf>
   </paper>
   <paper>
-    <id>2015007</id>
+    <id>007</id>
     <title>Coherent conditional measures of risk defined by the Choquet integral with respect to Hausdorff outer measures and dependent risks</title>
     <authors>
       <author>
@@ -250,7 +248,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/7.pdf</pdf>
   </paper>
   <paper>
-    <id>2015012</id>
+    <id>012</id>
     <title>Imprecise random variables, random sets, and Monte Carlo simulation</title>
     <authors>
       <author>
@@ -273,7 +271,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/12.pdf</pdf>
   </paper>
   <paper>
-    <id>2015010</id>
+    <id>010</id>
     <title>Robust parameter estimation of density functions under fuzzy interval observations</title>
     <authors>
       <author>
@@ -296,7 +294,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/10.pdf</pdf>
   </paper>
   <paper>
-    <id>2015035</id>
+    <id>035</id>
     <title>On two composition operators in Dempster-Shafer theory</title>
     <authors>
       <author>
@@ -316,7 +314,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/35.pdf</pdf>
   </paper>
   <paper>
-    <id>2015036</id>
+    <id>036</id>
     <title>Common knowledge, ambiguity, and the value of information in games</title>
     <authors>
       <author>
@@ -336,7 +334,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/36.pdf</pdf>
   </paper>
   <paper>
-    <id>2015026</id>
+    <id>026</id>
     <title>Calculating bounds on expected return and first passage times in finite-state imprecise birth-death chains</title>
     <authors>
       <author>
@@ -364,7 +362,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/26.pdf</pdf>
   </paper>
   <paper>
-    <id>2015015</id>
+    <id>015</id>
     <title>A prior near-ignorance Gaussian process model for nonparametric regression</title>
     <authors>
       <author>
@@ -383,7 +381,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/15.pdf</pdf>
   </paper>
   <paper>
-    <id>2015016</id>
+    <id>016</id>
     <title>Conformity and independence with coherent lower previsions</title>
     <authors>
       <author>
@@ -407,7 +405,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/16.pdf</pdf>
   </paper>
   <paper>
-    <id>2015004</id>
+    <id>004</id>
     <title>Comonotone lower probabilities for bivariate and discrete structures</title>
     <authors>
       <author>
@@ -430,7 +428,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/4.pdf</pdf>
   </paper>
   <paper>
-    <id>2015017</id>
+    <id>017</id>
     <title>A robust Bayesian analysis of the impact of policy decisions on crop rotations</title>
     <authors>
       <author>
@@ -463,7 +461,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/17.pdf</pdf>
   </paper>
   <paper>
-    <id>2015023</id>
+    <id>023</id>
     <title>Dilation, disintegrations, and delayed decisions</title>
     <authors>
       <author>
@@ -475,14 +473,12 @@
         <email>gregory.wheeler@lrz.uni-muenchen.de</email>
       </author>
     </authors>
-    <keywords>
-      <keyword>NA</keyword>
-    </keywords>
+    <keywords/>
     <abstract>Both dilation and non-conglomerability have been alleged to conflict with a fundamental principle of Bayesian methodology that we call Good's Principle: one should always delay making a terminal decision between alternative courses of action if given the opportunity to first learn, at zero cost, the outcome of an experiment relevant to the decision. In particular, both dilation and non-conglomerability have been alleged to permit or even mandate choosing to make a terminal decision in deliberate ignorance of relevant, cost-free information. Although dilation and non-conglomerability share some similarities, some authors maintain that there are important differences between the two that warrant endorsing different normative positions regarding dilation and non-conglomerability. This article reassesses the grounds for treating dilation and non-conglomerability differently. Our analysis exploits a new and general characterization result for dilation to draw a closer connection between dilation and non-conglomerability.</abstract>
     <pdf>http://www.sipta.org/isipta15/data/paper/23.pdf</pdf>
   </paper>
   <paper>
-    <id>2015013</id>
+    <id>013</id>
     <title>Weak consistency for imprecise conditional previsions</title>
     <authors>
       <author>
@@ -504,7 +500,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/13.pdf</pdf>
   </paper>
   <paper>
-    <id>2015020</id>
+    <id>020</id>
     <title>Statistical modelling under epistemic data imprecision: some results on estimating multinomial distributions and logistic regression for coarse categorical data</title>
     <authors>
       <author>
@@ -539,7 +535,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/20.pdf</pdf>
   </paper>
   <paper>
-    <id>2015019</id>
+    <id>019</id>
     <title>Statistical modelling in surveys without neglecting the undecided: multinomial logistic regression models and imprecise classification trees under ontic data imprecision</title>
     <authors>
       <author>
@@ -575,7 +571,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/19.pdf</pdf>
   </paper>
   <paper>
-    <id>2015034</id>
+    <id>034</id>
     <title>A logic with upper and lower probability operators</title>
     <authors>
       <author>
@@ -601,7 +597,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/34.pdf</pdf>
   </paper>
   <paper>
-    <id>2015011</id>
+    <id>011</id>
     <title>On the number and characterization of the extreme points of the core of necessity measures on finite spaces</title>
     <authors>
       <author>
@@ -625,7 +621,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/11.pdf</pdf>
   </paper>
   <paper>
-    <id>2015018</id>
+    <id>018</id>
     <title>Using imprecise continuous time Markov chains for assessing the reliability of power networks with common cause failure and non-immediate repair</title>
     <authors>
       <author>
@@ -645,14 +641,12 @@
         <email>jacob.gledhill@durham.ac.uk</email>
       </author>
     </authors>
-    <keywords>
-      <keyword>NA</keyword>
-    </keywords>
+    <keywords/>
     <abstract>We explore how imprecise continuous time Markov chains can improve traditional reliability models based on precise continuous time Markov chains. Specifically, we analyse the reliability of power networks under very weak statistical assumptions, explicitly accounting for non-stationary failure and repair rates and the limited accuracy by which common cause failure rates can be estimated. Bounds on typical quantities of interest are derived, namely the expected time spent in system failure state, as well as the expected number of transitions to that state. A worked numerical example demonstrates the theoretical techniques described. Interestingly, the number of iterations required for convergence is observed to be much lower than current theoretical bounds.</abstract>
     <pdf>http://www.sipta.org/isipta15/data/paper/18.pdf</pdf>
   </paper>
   <paper>
-    <id>2015003</id>
+    <id>003</id>
     <title>Classification SVM algorithms with interval-valued training data using triangular and Epanechnikov kernels</title>
     <authors>
       <author>
@@ -682,7 +676,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/3.pdf</pdf>
   </paper>
   <paper>
-    <id>2015027</id>
+    <id>027</id>
     <title>Modelling indifference with choice functions</title>
     <authors>
       <author>
@@ -714,7 +708,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/27.pdf</pdf>
   </paper>
   <paper>
-    <id>2015024</id>
+    <id>024</id>
     <title>Credal compositional models and credal networks</title>
     <authors>
       <author>
@@ -733,7 +727,7 @@
     <pdf>http://www.sipta.org/isipta15/data/paper/24.pdf</pdf>
   </paper>
   <paper>
-    <id>2015033</id>
+    <id>033</id>
     <title>On the validity of minimin and minimax methods for support vector regression with interval data</title>
     <authors>
       <author>

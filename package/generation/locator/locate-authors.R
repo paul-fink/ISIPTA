@@ -11,12 +11,9 @@ GEOLOC_DOMAINS <- local({
 
 
 geolocation_by_hand <- function(author, year) {
-  if(year == 2015) {
-    authorLocations2015  <- read.csv("../raw/2015/location2015_to_clean.csv", stringsAsFactors = FALSE)
-    loc <- xmlLocation(authorLocations2015[authorLocations2015$author ==  xmlValue(author[[1]]),])
-  } else if(year == 2017) {
-    authorLocations2017  <- read.csv2("../raw/2017/locations2017.csv", stringsAsFactors = FALSE)
-    loc <- xmlLocation(authorLocations2017[authorLocations2017$author ==  xmlValue(author[[1]]),])
+  if(year == 2015 || year == 2017) {
+    authorLocations  <- read.csv(paste0("../raw/", year, "/locations", year, ".csv"), stringsAsFactors = FALSE)
+    loc <- xmlLocation(authorLocations[authorLocations$author ==  xmlValue(author[[1]]),])
   } else {
     loc <- NULL
   }

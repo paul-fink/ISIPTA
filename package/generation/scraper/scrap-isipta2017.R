@@ -4,15 +4,11 @@ source("base-scraper.R")
 source("xml.R")
 source("../locator/locate-authors.R")
 
-filePapers <- "../raw/2017/isipta17.csv"
-fileBib <- "../raw/2017/isipta17.bib"
-fileLocations = "../raw/2017/locations2017.csv"
-
 parse_proceedings17 <- function(fileBib, fileLocations, year, date, location) {
   
   bis <- read.bib(fileBib)
   
-  authorLocations  <- read.csv2(fileLocations, stringsAsFactors = FALSE)
+  authorLocations  <- read.csv(fileLocations, stringsAsFactors = FALSE)
   
   proc <- xmlProceedings(year, date, location)
   for ( i in seq_along(bis) )
@@ -31,16 +27,16 @@ parse_paper17 <- function(bibentry, i, authorLocations) {
   colnames(preAuthor) <- c("name","email")
   emails <- lapply(seq_len(NROW(preAuthor)), function(i) {preAuthor[i,]})
   
-  xmlPaper(sprintf("2017%#03d",as.integer(i)),
+  xmlPaper(sprintf("%#03d",as.integer(i)),
            clean_title(bibentry$title),
-           if(is.null(bibentry$keywords)) {NA_character_} else {clean_keywords(bibentry$keywords, pretext = "^")},
+           if(!is.null(bibentry$keywords)) {clean_keywords(bibentry$keywords, pretext = "^")},
            clean_abstract(bibentry$abstract),
            clean_pdf(bibentry$pdf),
            clean_authors(authors, emails)
   )
 }
 
-i17 <- parse_proceedings17(fileBib = "../raw/2017/isipta17.bib",
+i17 <- parse_proceedings17(fileBib = "../raw/2017/isipta2017.bib",
                            fileLocations = "../raw/2017/locations2017.csv",
                            year = "2017",
                            date = c("2017-07-10", "2017-07-14"),
@@ -50,8 +46,8 @@ i17 <- parse_proceedings17(fileBib = "../raw/2017/isipta17.bib",
                              city = "Lugano",
                              city_lat = "46.00368",
                              city_lon = "8.951052",
-                             university = NA_character_,
-                             department = NA_character_
+                             university = "University of Lugano",
+                             department = ""
                            )
 )
 saveXML(i17$value(), file = "../xml/isipta2017.xml")
