@@ -1,0 +1,56 @@
+"year","author","email","country_code","country_name","city","city_lat","city_lon","university","department"
+2015,"Alessandro Antonucci","alessandro@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
+2015,"Andrea Capotorti","andrea.capotorti@unipg.itgiorgio@idsia.ch","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Andrea Wiencierz","andrea.wiencierz@york.ac.uk","GB","United Kingdom","York",53.9593817,-1.0814175,NA,NA
+2015,"Andrew Bronevich","brone@mail.ru","RU","Russian Federation","Moscow",55.75,37.5,NA,NA
+2015,"Arthur van Camp","arthur.vancamp@ugent.be","BE","Belgium","Ghent",51.05,3.71667,NA,NA
+2015,"Barbara Vantaggi","barbara.vantaggi@sbai.uniroma1.it","IT","Italy","Rome",41.89474,12.4839,NA,NA
+2015,"Damjan Skulj","damjan.skulj@fdv.uni-lj.si","SI","Slovenia","Ljubljana",46.05108,14.50513,NA,NA
+2015,"Davide Petturiti","davide.petturiti@dmi.unipg.it","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Denis Maua","denis.maua@gmail.com","BR","Brazil","Sao Paulo",-23.5475,-46.63611,NA,NA
+2015,"Didier Dubois","dubois@irit.fr","FR","France","Toulouse",43.60426,1.44367,NA,NA
+2015,"Enrique Miranda","mirandaenrique@uniovi.es","ES","Spain","Oviedo",43.36029,-5.84476,NA,NA
+2015,"Erik Quaeghebeur","erik.quaeghebeur@cwi.nl","NL","Netherlands","Amsterdam",52.37403,4.88969,NA,NA
+2015,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo",-23.5475,-46.63611,NA,NA
+2015,"Francesca Mangili","francesca@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
+2015,"Georg Schollmeyer","georg.schollmeyer@stat.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Gert de Cooman","gert.decooman@ugent.be","BE","Belgium","Ghent",51.05,3.71667,NA,NA
+2015,"Giorgio Corani","giorgio@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
+2015,"Giulianella Coletti","coletti@dmi.unipg.it","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Hailin Liu","hailinl@andrew.cmu.edu","US","United States","Pittsburgh",40.44062,-79.99589,NA,NA
+2015,"Ignacio Montes","ignacio.montes@hds.utc.fr","FR","France","Compiegne",49.41794,2.82606,NA,NA
+2015,"Igor Rozenberg","i.rozenberg@gismps.ru","RU","Russian Federation","Moscow",55.75,37.5,NA,NA
+2015,"Jasper de Bock","jasper.debock@ugent.be","BE","Belgium","Ghent",51.05,3.71667,NA,NA
+2015,"Jirina Vejnarova","vejnar@utia.cas.cz","CZ","Czech Republic","Prague",50.08804,14.42076,NA,NA
+2015,"Lev Utkin","lev.utkin@gmail.com","RU","Russian Federation","Saint Petersburg",59.89444,30.26417,NA,NA
+2015,"Lewis Paton","l.w.paton@durham.ac.uk","GB","United Kingdom","Durham",54.7763893,-1.5758691,NA,NA
+2015,"Marco Baioletti","marco.baioletti@unipg.itgiorgio@idsia.ch","IT","Italy","Perugia",43.1122,12.38878,NA,NA
+2015,"Marco Cattaneo","m.cattaneo@hull.ac.uk","GB","United Kingdom","Hull",53.7446,-0.33525,NA,NA
+2015,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Manno",46.03072,8.91937,NA,NA
+2015,"Matthias Troffaes","matthias.troffaes@gmail.com","GB","United Kingdom","Durham",54.7763893,-1.5758691,NA,NA
+2015,"Michael Oberguggenberger","michael.oberguggenberger@uibk.ac.at","AT","Austria","Innsbruck",47.26266,11.39454,NA,NA
+2015,"Mikelis Bickis","bickis@snoopy.usask.ca","CA","Canada","Saskatoon",52.11679,-106.63452,NA,NA
+2015,"Paolo Vicig","paolo.vicig@econ.units.it","IT","Italy","Trieste",45.64861,13.78,NA,NA
+2015,"Paul Fink","paul.fink@stat.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Radim Jirousek","radim@utia.cas.cz","CZ","Czech Republic","Jindrichuv Hradec",49.14404,15.00301,NA,NA
+2015,"Renato Pelessoni","renato.pelessoni@econ.units.it","IT","Italy","Trieste",45.64861,13.78,NA,NA
+2015,"Sebastien Destercke","sebastien.destercke@hds.utc.fr","FR","France","Compiegne",49.41794,2.82606,NA,NA
+2015,"Serena Doria","s.doria@dst.unich.it","IT","Italy","Chieti",42.36094,14.13801,NA,NA
+2015,"Simon Blake","simon.blake@ncl.ac.uk","GB","United Kingdom","Newcastle Upon Tyne",54.97328,-1.61396,NA,NA
+2015,"Thomas Augustin","augustin@stat.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Thomas Fetz","thomas.fetz@uibk.ac.at","AT","Austria","Innsbruck",47.26266,11.39454,NA,NA
+2015,"Seamus Bradley","seamus.bradley@lmu.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Stavros Lopatatzidis","stavros.lopatatzidis@ugent.be","BE","Belgium","Ghent",51.05,3.71667,NA,NA
+2015,"Romain Guillaume","guillaum@irit.fr","FR","France","Toulouse",43.60426,1.44367,NA,NA
+2015,"Nigel Boatman","nigel.boatman@fera.gsi.gov.uk","GB","United Kingdom","Sand Hutton",54.01667,-0.93333,NA,NA
+2015,"Mohamud Hussein","mohamud.hussein@fera.gsi.gov.uk","GB","United Kingdom","Sand Hutton",54.01667,-0.93333,NA,NA
+2015,"Arthur Paul Pedersen","pedersen@mpib-berlin.mpg.de","DE","Germany","Berlin",52.5233,13.41377,NA,NA
+2015,"Gregory Wheeler","gregory.wheeler@lrz.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Julia Plass","julia.plass@stat.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Norbert Schoening","norbert.schoening@gsi.uni-muenchen.de","DE","Germany","Munich",48.13743,11.57549,NA,NA
+2015,"Nenad Savic","nsavic@uns.ac.rs","RS","Serbia","Novi Sad",45.25167,19.83694,NA,NA
+2015,"Dragan Doder","dragan.doder@uni.lu","LU","Luxembourg","Luxembourg",49.75,6.16667,NA,NA
+2015,"Zoran Ognjanovic","zorano@mi.sanu.ac.rs","RS","Serbia","Belgrade",44.80401,20.46513,NA,NA
+2015,"Jacob Gledhill","jacob.gledhill@durham.ac.uk","GB","United Kingdom","Durham",54.7763893,-1.5758691,NA,NA
+2015,"Anatoly Chekh","anatoly.chekh@gmail.com","RU","Russian Federation","Saint Petersburg",59.89444,30.26417,NA,NA
+2015,"Yulia Zhuk","zhuk_yua@mail.ru","RU","Russian Federation","Saint Petersburg",59.89444,30.26417,NA,NA

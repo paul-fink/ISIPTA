@@ -52,7 +52,7 @@ scrap_paper11 <- function(url2) {
   ## Clean XML structure:
   xmlPaper(paperid,
            clean_title(title),
-           clean_keywords11(keywords),
+           clean_keywords(keywords, pretext = "Keywords"),
            clean_abstract(abstract),
            clean_pdf(pdf),
            clean_authors(authors, emails)
@@ -109,7 +109,7 @@ scrap_paper13 <- function(url2) {
   ## Clean XML structure:
   xmlPaper(paperid,
            clean_title(title),
-           clean_keywords11(keywords),
+           clean_keywords(keywords, pretext = "Keywords"),
            clean_abstract(abstract),
            clean_pdf(pdf),
            clean_authors(authors, emails)
@@ -137,7 +137,7 @@ saveXML(i11$value(), file = "../xml/isipta2011new.xml")
 
 i13 <- scrap_proceedings13("http://www.sipta.org/isipta13/",
                            "2013",
-                           c("2013-07-02", "2012-07-05"),
+                           c("2013-07-02", "2013-07-05"),
                            c(country_name = "France",
                              country_code = "FR",
                              city = "Compiegne",

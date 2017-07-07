@@ -11,8 +11,8 @@ clean_title <- function(title) {
 }
 
 
-clean_keywords <- function(keywords) {
-  n <- str_locate(keywords, "Keywords.")[1, "end"] + 1
+clean_keywords <- function(keywords, pretext = "Keywords.") {
+  n <- str_locate(keywords, pretext)[1, "end"] + 1
   tmp <- str_sub(keywords, start = n)
   tmp <- str_trim(str_split(tmp, ",")[[1]])
   tmp <- str_replace_all(tmp, "\\.$", "")
@@ -23,23 +23,12 @@ clean_keywords <- function(keywords) {
   tmp
 }
 
-clean_keywords11 <- function(keywords) {
-  n <- str_locate(keywords, "Keywords")[1, "end"] + 1
-  tmp <- str_sub(keywords, start = n)
-  tmp <- str_trim(str_split(tmp, ",")[[1]])
-  tmp <- str_replace_all(tmp, "\\.$", "")
-  tmp <- tolower(tmp)
-  
-  tmp <- iconv(tmp, from = "UTF-8", to = "latin1")
-  
-  tmp
-}
 
 clean_abstract <- function(abstract) {
   abstract <- str_trim(abstract)
   abstract <- str_replace_all(abstract, "\\s+", " ")
 
-  iconv(abstract, from = "UTF-8", to = "latin1")
+  iconv(abstract, from = "UTF-8", to = "latin1", sub = "_")
 }
 
 
@@ -49,6 +38,7 @@ clean_pdf <- function(pdf) {
 
 
 clean_email <- function(email) {
+  email <- str_trim(email)
   if ( nrow(str_locate_all(email, "@")[[1]]) == 1 )
     str_replace_all(email, " ", "")
   else
@@ -57,12 +47,12 @@ clean_email <- function(email) {
 
 
 clean_author <- function(author) {
-  normalize_author_name(author)
+  normalize_author_name(str_trim(author))
 }
 
 
 clean_authors <- function(authors, emails) {
-  emails <- str_trim(do.call(rbind, emails))
+  emails <- do.call(rbind, emails)
   emails[, "name"] <- sapply(emails[, "name"], clean_author)
   emails[, "email"] <- sapply(emails[, "email"], clean_email)
   emails
