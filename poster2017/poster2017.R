@@ -24,3 +24,6 @@ source("6-network.R")
 
 # current network with ECSQARU
 source("7-ecsqaru2017.R")
+
+# helper functions
+source("8-helper.R")
