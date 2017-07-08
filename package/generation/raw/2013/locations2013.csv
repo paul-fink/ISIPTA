@@ -1,0 +1,72 @@
+"year","author","email","country_code","country_name","city","city_lat","city_lon","university","department"
+2013,"Felipe Aguirre","felipe.aguirre@hds.utc.fr","FR","France","Compiegne","49.41782","2.82614",NA,NA
+2013,"Christelle Jacob","jacob@isae.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
+2013,"Sebastien Destercke","sebastien.destercke@utc.fr","FR","France","Compiegne","49.41782","2.82614",NA,NA
+2013,"Didier Dubois","didier.dubois@irit.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
+2013,"Mohamed Sallak","mohamed.sallak@hds.utc.fr","FR","France","Compiegne","49.41782","2.82614",NA,NA
+2013,"Alessandro Antonucci","alessandro@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Rocco De Rosa","roccomilano@tiscali.it","IT","Italy","Milan","45.46542","9.18592",NA,NA
+2013,"Alessandro Giusti","alessandrog@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Fabio Cuzzolin","fabio.cuzzolin@brookes.ac.uk","GB","United Kingdom","Oxford","51.75202","-1.25773",NA,NA
+2013,"Andrew Bronevich","brone@mail.ru","RU","Russian Federation","Moscow","55.75583","37.61730",NA,NA
+2013,"Igor Rozenberg","I.Rozenberg@gismps.ru","RU","Russian Federation","Moscow","55.75583","37.61730",NA,NA
+2013,"Marco Cattaneo","cattaneo@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
+2013,"Alice Cicirello","ac685@cam.ac.uk","GB","United Kingdom","Cambridge","52.20534","0.12182",NA,NA
+2013,"Robin Langley","rsl21@cam.ac.uk","GB","United Kingdom","Cambridge","52.20534","0.12182",NA,NA
+2013,"Giulianella Coletti","coletti@dmi.unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
+2013,"Davide Petturiti","davide.petturiti@dmi.unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
+2013,"Barbara Vantaggi","vantaggi@dmmm.uniroma1.it","IT","Italy","Rome","41.90278","12.49637",NA,NA
+2013,"Ines Couso","couso@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
+2013,"Luciano Sanchez","luciano@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
+2013,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
+2013,"Jasper de Bock","jasper.debock@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
+2013,"Gert de Cooman","gert.decooman@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
+2013,"Malcolm Farrow","malcolm.farrow@ncl.ac.uk","GB","United Kingdom","Newcastle Upon Tyne","54.97825","-1.61778",NA,NA
+2013,"Scott Ferson","scott@ramas.com","US","United States","Setauket","40.92938","-73.10255",NA,NA
+2013,"Michael Balch","Michael.Balch.ctr@wpafb.af.mil","US","United States","Setauket","40.92938","-73.10255",NA,NA
+2013,"Kari Sentz","ksentz@lanl.gov","US","United States","Los Alamos","35.88004","-106.30311",NA,NA
+2013,"Jack Siegrist","jack@ramas.com","US","United States","Setauket","40.92938","-73.10255",NA,NA
+2013,"Paul Fink","Paul.Fink@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
+2013,"Richard Crossman","r.j.crossman@warwick.ac.uk","GB","United Kingdom","Warwick","52.28232","-1.58493",NA,NA
+2013,"Radim Jirousek","radim@utia.cas.cz","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
+2013,"Vaclav Kratochvil","v.kratochvil@gmail.com","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
+2013,"Matthieu Hourbracq","matthieu.hourbracq@lip6.fr","FR","France","Paris","48.85661","2.35222",NA,NA
+2013,"Cedric Baudrit","cbaudrit@grignon.inra.fr","FR","France","Thiverval-Grignon","48.84958","1.91770",NA,NA
+2013,"Pierre-Henri Wuillemin","pierre-henri.wuillemin@lip6.fr","FR","France","Paris","48.85661","2.35222",NA,NA
+2013,"Alexander Karlsson","alexander.karlsson@his.se","SE","Sweden","Skovde","58.39028","13.84612",NA,NA
+2013,"David Sundgren","dsn@dsv.su.se","SE","Sweden","Stockholm","59.32932","18.06858",NA,NA
+2013,"Joe Steinhauer","joe.steinhauer@his.se","SE","Sweden","Skovde","58.39028","13.84612",NA,NA
+2013,"Hailin Liu","hailinl@andrew.cmu.edu","US","United States","Pittsburgh","40.44062","-79.99589",NA,NA
+2013,"Kevin Loquin","kevin.loquin@gmail.com","FR","France","Montpellier","43.61077","3.87672",NA,NA
+2013,"Francesca Mangili","francesca@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Alessio Benavoli","alessio@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Serafin Moral","smc@decsai.ugr.es","ES","Spain","Granada","37.17734","-3.59856",NA,NA
+2013,"Andrea Mignatti","mignatti@elet.polimi.it","IT","Italy","Milan","45.46542","9.18592",NA,NA
+2013,"Giorgio Corani","giorgio@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Enrique Miranda","mirandaenrique@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
+2013,"Ignacio Montes","imontes@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
+2013,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2013,"Rafael Nunez","nunez@umiami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
+2013,"Matthias Scheutz","mscheutz@cs.tufts.edu","US","United States","Somerville","42.38760","-71.09950",NA,NA
+2013,"Kamal Premaratne","kamal@miami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
+2013,"Manohar N. Murthi","mmurthi@miami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
+2013,"Erik Quaeghebeur","Erik.Quaeghebeur@UGent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
+2013,"Georg Schollmeyer","georg.schollmeyer@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
+2013,"Thomas Augustin","thomas.augustin@stat.uni-muenchen.de/a>","DE","Germany","Munich","48.13513","11.58198",NA,NA
+2013,"Teddy Seidenfeld","teddy@stat.cmu.edu","US","United States","Pittsburgh","40.44062","-79.99589",NA,NA
+2013,"Mark Schervish","mark@stat.cmu.edu","US","United States","Pittsburgh","40.44062","-79.99589",NA,NA
+2013,"Joseph Kadane","kadane@stat.cmu.edu","US","United States","Pittsburgh","40.44062","-79.99589",NA,NA
+2013,"Michael Smithson","Michael.Smithson@anu.edu.au","AU","Australia","Canberra","-35.28094","149.13001",NA,NA
+2013,"Matthias Troffaes","matthias.troffaes@gmail.com","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
+2013,"Simon Blake","s.r.blake@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
+2013,"Michael Goldstein","Michael.Goldstein@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
+2013,"Lewis Paton","l.w.paton@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
+2013,"Damjan Skulj","damjan.skulj@fdv.uni-lj.si","SI","Slovenia","Ljubljana","46.05695","14.50575",NA,NA
+2013,"Lev Utkin","lev.utkin@mail.ru","RU","Russian Federation","Saint Petersburg","59.93428","30.33510",NA,NA
+2013,"Andrea Wiencierz","andrea.wiencierz@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
+2013,"Jirina Vejnarova","vejnar@utia.cas.cz","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
+2013,"Arthur van Camp","arthur.vancamp@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
+2013,"Xun Wang","xunwang00@gmail.com","CN","China","Beijing","39.90420","116.40740",NA,NA
+2013,"Shoumei Li","lisma@bjut.edu.cn","CN","China","Beijing","39.90420","116.40740",NA,NA
+2013,"Andres Masegosa","andrew@decsai.ugr.es","ES","Spain","Granada","37.17734","-3.59856",NA,NA
+2013,"Thierry Denoeux","thierry.denoeux@hds.utc.fr","FR","France","Compiegne","49.41782","2.82614",NA,NA

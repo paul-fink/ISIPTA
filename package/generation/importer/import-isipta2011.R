@@ -53,7 +53,7 @@ import_proceedings <- function(file, year, date, location) {
 
 ### ISIPTA 2011:
 
-i11 <- import_proceedings("../raw/dataisipta11",
+i11 <- import_proceedings("../raw/2011/dataisipta11",
                           "2011",
                           c("2011-07-25", "2011-07-28"),
                           c(country_name = "Austria",

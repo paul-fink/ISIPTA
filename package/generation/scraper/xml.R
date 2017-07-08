@@ -43,20 +43,27 @@ xmlPaperKeywords <- function(keywords) {
 }
 
 
+xmlAuthor <- function(author) {
+  n0 <- newXMLNode("author")
+  n0 <- addChildren(n0,
+                    kids = list(newXMLNode("name", author[1, "name"]),
+                                newXMLNode("email", author[1, "email"])))
+  n0
+}
+
 xmlPaperAuthors <- function(authors) {
   n <- newXMLNode("authors")
 
   for ( i in seq(length = NROW(authors)) ) {
-    n0 <- newXMLNode("author")
-    n0 <- addChildren(n0,
-                      kids = list(newXMLNode("name", authors[i, "name"]),
-                      newXMLNode("email", authors[i, "email"])))
-
+    
+    n0 <- xmlAuthor(authors[i,])
     n <- addChildren(n, kids = list(n0))
   }
 
   n
 }
+
+
 
 
 xmlLocationCountry <- function(location) {
@@ -88,6 +95,12 @@ xmlLocation <- function(location) {
 
 }
 
+xmlLocationShort <- function(location) {
+  n <- newXMLNode("location")
+  addChildren(n, kids = list(xmlLocationCountry(location),
+                             xmlLocationCity(location)))
+}
+
 
 xmlDomain <- function(name, location) {
   n <- newXMLNode("domain")
@@ -95,6 +108,10 @@ xmlDomain <- function(name, location) {
                  xmlLocation(location)))
 }
 
+
+xmlLocations <- function() {
+  xmlTree("locations")
+}
 
 xmlDomains <- function() {
   xmlTree("domains")

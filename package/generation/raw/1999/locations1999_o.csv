@@ -1,0 +1,83 @@
+,year,author,email,country_code,country_name,city,city_lat,city_lon,university,department
+1,1999,Joaquin Abellan,jabellan@jet.es,ES,Spain,Malaga,36.716667,-4.416667,NA,NA
+2,1999,Serafin Moral,smc@decsai.ugr.es,ES,Spain,Granada,37.1833,-3.6,NA,NA
+3,1999,Stefan Arnborg,stefan@nada.kth.se,SE,Sweden,Stockholm,59.333302,18.049999,NA,NA
+4,1999,Thomas Augustin,thomas@stat.uni-muenchen.de,DE,Germany,Munich,48.150002,11.5833,NA,NA
+5,1999,Jean-Marc Bernard,berj@univ-paris8.fr,FR,France,Saint-Denis,48.9333,2.3667,NA,NA
+6,1999,Veronica Biazzo,biazzo@liotro.dipmat.unict.it,IT,Italy,Catania,37.5,15.1,NA,NA
+7,1999,Angelo Gilio,gilio@dipmat.unict.it,IT,Italy,Catania,37.5,15.1,NA,NA
+8,1999,Antoine Billot,billot@u-paris2.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+9,1999,Alain Chateauneuf,chateaun@univ-paris1.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+10,1999,Itzhak Gilboa,gilboa@econ.tau.ac.il,IL,Israel,Tel Aviv,32.0667,34.766701,NA,NA
+11,1999,Jean-Marc Tallon,jmtallon@univ-paris1.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+12,1999,Veselka Boeva,boevi@mbox.digsys.bg,BG,Bulgaria,Plovdiv,42.15,24.75,NA,NA
+13,1999,Elena Tsiporkova,etsipork@baard.lhs.be,BE,Belgium,Wemmel,50.899073,4.320132,NA,NA
+14,1999,Bernard De Baets,bernard.debaets@rug.ac.be,BE,Belgium,Ghent,51.049999,3.7167,NA,NA
+15,1999,Andres Cano,acu@decsai.ugr.es,ES,Spain,Granada,37.1833,-3.6,NA,NA
+16,1999,Andrea Capotorti,capot@dipmat.unipg.it,IT,Italy,Perugia,43.133301,12.3667,NA,NA
+17,1999,Barbara Vantaggi,vant@stat.unipg.it,IT,Italy,Perugia,43.133301,12.3667,NA,NA
+18,1999,Paola Castellan,sgarro@univ.trieste.it,IT,Italy,Trieste,45.6486,13.78,NA,NA
+19,1999,Andrea Sgarro,sgarro@univ.trieste.it,IT,Italy,Trieste,45.6486,13.78,NA,NA
+20,1999,Jean-Christophe Vergnaud,vergnaud@univ-paris1.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+21,1999,Morgane Cheve,mcheve@ecp.fr,FR,France,Chatenay-Malabry,48.766701,2.2667,NA,NA
+22,1999,Ronan Congar,rcongar@ecp.fr,FR,France,Chatenay-Malabry,48.766701,2.2667,NA,NA
+23,1999,Michele Cohen,cohenmd@univ-paris1.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+24,1999,Jean-Yves Jaffray,Jean-Yves.Jaffray@lip6.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+25,1999,David Schmeidler,schmeid@post.tau.ac.il,IL,Israel,Tel Aviv,32.0667,34.766701,NA,NA
+26,1999,Giulianella Coletti,coletti@dipmat.unipg.it,IT,Italy,Perugia,43.133301,12.3667,NA,NA
+27,1999,Romano Scozzafava,romscozz@dmmm.uniroma1.it,IT,Italy,Rome,41.900002,12.4833,NA,NA
+28,1999,Gert de Cooman,gert.decooman@rug.ac.be,BE,Belgium,Ghent,51.049999,3.7167,NA,NA
+29,1999,Ines Couso,couso@pinon.ccu.uniovi.es,ES,Spain,Oviedo,43.366699,-5.8333,NA,NA
+30,1999,Peter Walley,NA,NZ,New Zealand,Lower Hutt,-23.5333,-46.616699,NA,NA
+31,1999,Fabio Cozman,fgcozman@usp.br,BR,Brazil,Sao Paulo,-23.5333,-46.616699,NA,NA
+32,1999,Dieter Denneberg,denneberg@math.uni-bremen.de,DE,Germany,Bremen,53.083302,8.8,NA,NA
+33,1999,Thomas Fetz,fetz@mat1.uibk.ac.at,AT,Austria,Innsbruck,47.266701,11.4,NA,NA
+34,1999,Michael Oberguggenberger,michael@mat1.uibk.ac.at,AT,Austria,Innsbruck,47.266701,11.4,NA,NA
+35,1999,Simon Pittschmann,simon@mat1.uibk.ac.at,AT,Austria,Innsbruck,47.266701,11.4,NA,NA
+36,1999,Paolo Ghirardato,paolo@hss.caltech.edu,US,United States,Pasadena,33.786598,-118.298698,NA,NA
+37,1999,Massimo Marinacci,marinacc@economia.unibo.it,IT,Italy,Bologna,44.483299,11.3333,NA,NA
+38,1999,Michel Grabisch,michel.grabisch@lcr.thomson-csf.com,FR,France,Orsay,48.833302,2.1167,NA,NA
+39,1999,Pierre Hansen,pierreh@crt.umontreal.ca,CA,Canada,Montreal,45.5,-73.583298,NA,NA
+40,1999,Brigitte Jaumard,brigitt@crt.umontreal.ca,CA,Canada,Montreal,45.5,-73.583298,NA,NA
+41,1999,Marcus Poggi de Aragao,poggi@inf.puc-rio.br,BR,Brazil,Rio De Janeiro,-22.9,-43.233299,NA,NA
+42,1999,Fabien Chauny,fabien@crt.umontreal.ca,CA,Canada,Montreal,45.5,-73.583298,NA,NA
+43,1999,Sylvain Perron,sylvain@crt.umontreal.ca,CA,Canada,Montreal,45.5,-73.583298,NA,NA
+44,1999,David Harmanec,davidh@comp.nus.edu.sg,SG,Singapore,Singapore,1.295556,103.776667,,
+45,1999,Hugo Janssen,hugo.janssen@rug.ac.be,BE,Belgium,Ghent,51.049999,3.7167,NA,NA
+46,1999,Etienne E. Kerre,etienne.kerre@rug.ac.be,BE,Belgium,Ghent,51.049999,3.7167,NA,NA
+47,1999,Meglena Jeleva,jeleva@ensae.fr,FR,France,Paris,48.866699,2.3333,NA,NA
+48,1999,Cliff Joslyn,joslyn@lanl.gov,US,United States,Los Alamos,35.863899,-106.295303,NA,NA
+49,1999,Joseph Kadane,kadane@stat.cmu.edu,US,United States,Pittsburgh,40.4439,-79.9561,NA,NA
+50,1999,Elias Moreno,emoreno@ugr.es,ES,Spain,Granada,37.1833,-3.6,NA,NA
+51,1999,Maria Eglee Perez,eglee@cesma.usb.ve,VE,Venezuela,Caracas,10.5,-66.916702,NA,NA
+52,1999,Luis Raul Pericchi,pericchi@cesma.usb.ve,VE,Venezuela,Caracas,10.5,-66.916702,NA,NA
+53,1999,John Kenney,keney@ee.byu.edu,US,United States,Provo,40.3563,-111.7325,NA,NA
+54,1999,Wynn Stirling,wynn@ee.byu.edu,US,United States,Provo,40.3563,-111.7325,NA,NA
+55,1999,George Klir,gklir@binghamton.edu,US,United States,Binghamton,42.139301,-75.879799,NA,NA
+56,1999,Igor Kozine,ikozine@binghamton.edu,US,United States,Binghamton,42.139301,-75.879799,NA,NA
+57,1999,Karen Kramer,kkramer@uiuc.edu,US,United States,Urbana-Champaign,40.109501,-88.212303,NA,NA
+58,1999,David Budescu,dbudescu@uiuc.edu,US,United States,Urbana-Champaign,40.109501,-88.212303,NA,NA
+59,1999,Isaac Levi,levi@columbia.edu,US,United States,New York,40.800598,-73.965302,NA,NA
+60,1999,Charles Manski,cfmanski@nwu.edu,US,United States,Evanston,42.0586,-87.6845,NA,NA
+61,1999,Sujoy Mukerji,sm5@soton.ac.uk,GB,United Kingdom,Southampton,50.900002,-1.4,NA,NA
+62,1999,Robert Nau,robert.nau@duke.edu,US,United States,Durham (US),35.995399,-78.901901,NA,NA
+63,1999,Klaus Nehring,kdnehring@ucdavis.edu,US,United States,Davis,38.482899,-121.639801,NA,NA
+64,1999,Jeff Paris,jeff@ma.man.ac.uk,GB,United Kingdom,Manchester,53.5,-2.2167,NA,NA
+65,1999,Paul Watton,NA,GB,United Kingdom,Manchester,53.5,-2.2167,NA,NA
+66,1999,George Wilmers,george@ma.man.ac.uk,GB,United Kingdom,Manchester,53.5,-2.2167,NA,NA
+67,1999,Fernando Reche,freche@stat.ualm.es,ES,Spain,Almeria,51.900002,8.2833,NA,NA
+68,1999,Antonio Salmeron,asc@stat.ualm.es,ES,Spain,Almeria,51.900002,8.2833,NA,NA
+69,1999,Mark Schervish,mark@stat.cmu.edu,US,United States,Pittsburgh,40.443901,-79.9561,NA,NA
+70,1999,Teddy Seidenfeld,teddy@stat.cmu.edu,US,United States,Pittsburgh,40.443901,-79.9561,NA,NA
+71,1999,Michael Smithson,Michael.Smithson@anu.edu.au,AU,Australia,Canberra,-35.2778,149.1205,NA,NA
+72,1999,Thomas Bartos,Thomas.Bartos@anu.edu.au,AU,Australia,Canberra,-35.2778,149.1205,NA,NA
+73,1999,Kazuhisa Takemura,takemura@shako.sk.tsukuba.ac.jp,JP,Japan,Tsukuba,36.083302,140.116699,NA,NA
+74,1999,Lev Utkin,lvu@utkin.usr.etu.spb.ru,RU,Russian Federation,Saint Petersburg,59.995064,30.344091,NA,NA
+75,1999,Sergey Gurov,kir@inf.fta.spb.ru,RU,Russian Federation,Saint Petersburg,59.995064,30.344091,NA,NA
+76,1999,Jirina Vejnarova,vejnar@vse.cz,CZ,Czech Republic,Prague,50.083302,14.4667,NA,NA
+77,1999,Paolo Vicig,paolov@econ.univ.trieste.it,IT,Italy,Trieste,45.648602,13.78,NA,NA
+78,1999,Frans Voorbraak,fransv@wins.uva.nl,NL,Netherlands,Amsterdam,52.349998,4.9167,NA,NA
+79,1999,Peter Wakker,Wakker@MDM.MedFac.LeidenUniv.nl,NL,Netherlands,Leiden,52.150002,4.5,NA,NA
+80,1999,Kurt Weichselberger,weichsel@stat.uni-muenchen.de,DE,Germany,Munich,48.150002,11.5833,NA,NA
+81,1999,Nic Wilson,pnwilson@brookes.ac.uk,GB,United Kingdom,Oxford,51.75,-1.25,NA,NA
+82,1999,Marco Zaffalon,zaffalon@idsia.ch,CH,Switzerland,Manno,46.0234,8.917,NA,NA

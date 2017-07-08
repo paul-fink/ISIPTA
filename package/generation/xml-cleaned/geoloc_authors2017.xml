@@ -12,7 +12,7 @@
       <city>
         <name>Cleveland</name>
         <latitude>41.49932</latitude>
-        <longitude>-81.6943605</longitude>
+        <longitude>-81.69436</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -30,8 +30,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -49,8 +49,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -68,8 +68,8 @@
       </country>
       <city>
         <name>Lugano</name>
-        <latitude>46.0036778</latitude>
-        <longitude>8.951052</longitude>
+        <latitude>46.00368</latitude>
+        <longitude>8.95105</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -87,8 +87,8 @@
       </country>
       <city>
         <name>Lugano</name>
-        <latitude>46.0036778</latitude>
-        <longitude>8.951052</longitude>
+        <latitude>46.00368</latitude>
+        <longitude>8.95105</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -106,8 +106,8 @@
       </country>
       <city>
         <name>Lugano</name>
-        <latitude>46.0036778</latitude>
-        <longitude>8.951052</longitude>
+        <latitude>46.00368</latitude>
+        <longitude>8.95105</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -125,8 +125,8 @@
       </country>
       <city>
         <name>Lugano</name>
-        <latitude>46.0036778</latitude>
-        <longitude>8.951052</longitude>
+        <latitude>46.00368</latitude>
+        <longitude>8.95105</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -144,8 +144,8 @@
       </country>
       <city>
         <name>Alicante</name>
-        <latitude>38.3459963</latitude>
-        <longitude>-0.4906855</longitude>
+        <latitude>38.34600</latitude>
+        <longitude>-0.49069</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -163,8 +163,8 @@
       </country>
       <city>
         <name>Sao Paulo</name>
-        <latitude>-23.5505199</latitude>
-        <longitude>-46.6333094</longitude>
+        <latitude>-23.55052</latitude>
+        <longitude>-46.63331</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -182,8 +182,8 @@
       </country>
       <city>
         <name>Sao Paulo</name>
-        <latitude>-23.5505199</latitude>
-        <longitude>-46.6333094</longitude>
+        <latitude>-23.55052</latitude>
+        <longitude>-46.63331</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -201,8 +201,8 @@
       </country>
       <city>
         <name>Sao Paulo</name>
-        <latitude>-23.5505199</latitude>
-        <longitude>-46.6333094</longitude>
+        <latitude>-23.55052</latitude>
+        <longitude>-46.63331</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -220,8 +220,8 @@
       </country>
       <city>
         <name>Sao Paulo</name>
-        <latitude>-23.5505199</latitude>
-        <longitude>-46.6333094</longitude>
+        <latitude>-23.55052</latitude>
+        <longitude>-46.63331</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -239,8 +239,8 @@
       </country>
       <city>
         <name>Kingston upon Hull</name>
-        <latitude>53.7456709</latitude>
-        <longitude>-0.3367413</longitude>
+        <latitude>53.74567</latitude>
+        <longitude>-0.33674</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -258,8 +258,8 @@
       </country>
       <city>
         <name>Perugia</name>
-        <latitude>43.1107168</latitude>
-        <longitude>12.3908279</longitude>
+        <latitude>43.11072</latitude>
+        <longitude>12.39083</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -277,8 +277,8 @@
       </country>
       <city>
         <name>Perugia</name>
-        <latitude>43.1107168</latitude>
-        <longitude>12.3908279</longitude>
+        <latitude>43.11072</latitude>
+        <longitude>12.39083</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -296,8 +296,8 @@
       </country>
       <city>
         <name>Roma</name>
-        <latitude>41.9027835</latitude>
-        <longitude>12.4963655</longitude>
+        <latitude>41.90278</latitude>
+        <longitude>12.49637</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -315,8 +315,8 @@
       </country>
       <city>
         <name>Trieste</name>
-        <latitude>45.6495264</latitude>
-        <longitude>13.7768182</longitude>
+        <latitude>45.64953</latitude>
+        <longitude>13.77682</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -334,8 +334,8 @@
       </country>
       <city>
         <name>Trieste</name>
-        <latitude>45.6495264</latitude>
-        <longitude>13.7768182</longitude>
+        <latitude>45.64953</latitude>
+        <longitude>13.77682</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -353,8 +353,8 @@
       </country>
       <city>
         <name>Trieste</name>
-        <latitude>45.6495264</latitude>
-        <longitude>13.7768182</longitude>
+        <latitude>45.64953</latitude>
+        <longitude>13.77682</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -372,8 +372,8 @@
       </country>
       <city>
         <name>Oviedo</name>
-        <latitude>43.3619145</latitude>
-        <longitude>-5.8493887</longitude>
+        <latitude>43.36191</latitude>
+        <longitude>-5.84939</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -391,8 +391,8 @@
       </country>
       <city>
         <name>Oviedo</name>
-        <latitude>43.3619145</latitude>
-        <longitude>-5.8493887</longitude>
+        <latitude>43.36191</latitude>
+        <longitude>-5.84939</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -410,8 +410,8 @@
       </country>
       <city>
         <name>Oviedo</name>
-        <latitude>43.3619145</latitude>
-        <longitude>-5.8493887</longitude>
+        <latitude>43.36191</latitude>
+        <longitude>-5.84939</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -429,8 +429,8 @@
       </country>
       <city>
         <name>Ghent</name>
-        <latitude>51.0543422</latitude>
-        <longitude>3.7174243</longitude>
+        <latitude>51.05434</latitude>
+        <longitude>3.71742</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -448,8 +448,8 @@
       </country>
       <city>
         <name>Ghent</name>
-        <latitude>51.0543422</latitude>
-        <longitude>3.7174243</longitude>
+        <latitude>51.05434</latitude>
+        <longitude>3.71742</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -467,8 +467,8 @@
       </country>
       <city>
         <name>Ghent</name>
-        <latitude>51.0543422</latitude>
-        <longitude>3.7174243</longitude>
+        <latitude>51.05434</latitude>
+        <longitude>3.71742</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -486,8 +486,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -505,8 +505,8 @@
       </country>
       <city>
         <name>Toulouse</name>
-        <latitude>43.604652</latitude>
-        <longitude>1.444209</longitude>
+        <latitude>43.60465</latitude>
+        <longitude>1.44421</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -524,8 +524,8 @@
       </country>
       <city>
         <name>Toulouse</name>
-        <latitude>43.604652</latitude>
-        <longitude>1.444209</longitude>
+        <latitude>43.60465</latitude>
+        <longitude>1.44421</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -543,8 +543,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -562,8 +562,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -581,8 +581,8 @@
       </country>
       <city>
         <name>Utrecht</name>
-        <latitude>52.0907374</latitude>
-        <longitude>5.1214201</longitude>
+        <latitude>52.09074</latitude>
+        <longitude>5.12142</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -600,8 +600,8 @@
       </country>
       <city>
         <name>Utrecht</name>
-        <latitude>52.0907374</latitude>
-        <longitude>5.1214201</longitude>
+        <latitude>52.09074</latitude>
+        <longitude>5.12142</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -619,7 +619,7 @@
       </country>
       <city>
         <name>Belfast</name>
-        <latitude>54.597285</latitude>
+        <latitude>54.59729</latitude>
         <longitude>-5.93012</longitude>
       </city>
       <university>
@@ -638,7 +638,7 @@
       </country>
       <city>
         <name>Belfast</name>
-        <latitude>54.597285</latitude>
+        <latitude>54.59729</latitude>
         <longitude>-5.93012</longitude>
       </city>
       <university>
@@ -657,8 +657,8 @@
       </country>
       <city>
         <name>Oviedo</name>
-        <latitude>43.3619145</latitude>
-        <longitude>-5.8493887</longitude>
+        <latitude>43.36191</latitude>
+        <longitude>-5.84939</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -676,8 +676,8 @@
       </country>
       <city>
         <name>Oviedo</name>
-        <latitude>43.3619145</latitude>
-        <longitude>-5.8493887</longitude>
+        <latitude>43.36191</latitude>
+        <longitude>-5.84939</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -695,8 +695,8 @@
       </country>
       <city>
         <name>Compiegne</name>
-        <latitude>49.417816</latitude>
-        <longitude>2.826145</longitude>
+        <latitude>49.41782</latitude>
+        <longitude>2.82614</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -713,9 +713,9 @@
         <name>United Kingdom</name>
       </country>
       <city>
-        <name>Durham</name>
+        <name>Durham (UK)</name>
         <latitude>54.77525</latitude>
-        <longitude>-1.584852</longitude>
+        <longitude>-1.58485</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -732,9 +732,9 @@
         <name>United Kingdom</name>
       </country>
       <city>
-        <name>Durham</name>
+        <name>Durham (UK)</name>
         <latitude>54.77525</latitude>
-        <longitude>-1.584852</longitude>
+        <longitude>-1.58485</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -751,9 +751,9 @@
         <name>United Kingdom</name>
       </country>
       <city>
-        <name>Durham</name>
+        <name>Durham (UK)</name>
         <latitude>54.77525</latitude>
-        <longitude>-1.584852</longitude>
+        <longitude>-1.58485</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -771,8 +771,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -790,8 +790,8 @@
       </country>
       <city>
         <name>Munich</name>
-        <latitude>48.1351253</latitude>
-        <longitude>11.5819806</longitude>
+        <latitude>48.13513</latitude>
+        <longitude>11.58198</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -810,7 +810,7 @@
       <city>
         <name>Coral Gables</name>
         <latitude>25.72149</latitude>
-        <longitude>-80.2683838</longitude>
+        <longitude>-80.26838</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -829,7 +829,7 @@
       <city>
         <name>Coral Gables</name>
         <latitude>25.72149</latitude>
-        <longitude>-80.2683838</longitude>
+        <longitude>-80.26838</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -848,7 +848,7 @@
       <city>
         <name>Coral Gables</name>
         <latitude>25.72149</latitude>
-        <longitude>-80.2683838</longitude>
+        <longitude>-80.26838</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -867,7 +867,7 @@
       <city>
         <name>Coral Gables</name>
         <latitude>25.72149</latitude>
-        <longitude>-80.2683838</longitude>
+        <longitude>-80.26838</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -885,8 +885,8 @@
       </country>
       <city>
         <name>Delft</name>
-        <latitude>52.0115769</latitude>
-        <longitude>4.3570677</longitude>
+        <latitude>52.01158</latitude>
+        <longitude>4.35707</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -904,8 +904,8 @@
       </country>
       <city>
         <name>Amsterdam</name>
-        <latitude>52.3702157</latitude>
-        <longitude>4.8951679</longitude>
+        <latitude>52.37022</latitude>
+        <longitude>4.89517</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -923,8 +923,8 @@
       </country>
       <city>
         <name>Amsterdam</name>
-        <latitude>52.3702157</latitude>
-        <longitude>4.8951679</longitude>
+        <latitude>52.37022</latitude>
+        <longitude>4.89517</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -942,8 +942,8 @@
       </country>
       <city>
         <name>Amsterdam</name>
-        <latitude>52.3702157</latitude>
-        <longitude>4.8951679</longitude>
+        <latitude>52.37022</latitude>
+        <longitude>4.89517</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -961,8 +961,8 @@
       </country>
       <city>
         <name>Amsterdam</name>
-        <latitude>52.3702157</latitude>
-        <longitude>4.8951679</longitude>
+        <latitude>52.37022</latitude>
+        <longitude>4.89517</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -980,8 +980,8 @@
       </country>
       <city>
         <name>Ljubljana</name>
-        <latitude>46.0569465</latitude>
-        <longitude>14.5057515</longitude>
+        <latitude>46.05695</latitude>
+        <longitude>14.50575</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -999,8 +999,8 @@
       </country>
       <city>
         <name>Canberra</name>
-        <latitude>-35.2809368</latitude>
-        <longitude>149.1300092</longitude>
+        <latitude>-35.28094</latitude>
+        <longitude>149.13001</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1018,8 +1018,8 @@
       </country>
       <city>
         <name>Prague</name>
-        <latitude>50.0755381</latitude>
-        <longitude>14.4378005</longitude>
+        <latitude>50.07554</latitude>
+        <longitude>14.43780</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1037,8 +1037,8 @@
       </country>
       <city>
         <name>Prague</name>
-        <latitude>50.0755381</latitude>
-        <longitude>14.4378005</longitude>
+        <latitude>50.07554</latitude>
+        <longitude>14.43780</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1056,8 +1056,8 @@
       </country>
       <city>
         <name>Lund</name>
-        <latitude>55.7046601</latitude>
-        <longitude>13.1910073</longitude>
+        <latitude>55.70466</latitude>
+        <longitude>13.19101</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1075,8 +1075,8 @@
       </country>
       <city>
         <name>Ghent</name>
-        <latitude>51.0543422</latitude>
-        <longitude>3.7174243</longitude>
+        <latitude>51.05434</latitude>
+        <longitude>3.71742</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1094,8 +1094,8 @@
       </country>
       <city>
         <name>Amsterdam</name>
-        <latitude>52.3702157</latitude>
-        <longitude>4.8951679</longitude>
+        <latitude>52.37022</latitude>
+        <longitude>4.89517</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1113,8 +1113,8 @@
       </country>
       <city>
         <name>Hong Kong</name>
-        <latitude>22.396428</latitude>
-        <longitude>114.109497</longitude>
+        <latitude>22.39643</latitude>
+        <longitude>114.10950</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1133,7 +1133,7 @@
       <city>
         <name>Guangzhou</name>
         <latitude>23.12911</latitude>
-        <longitude>113.264385</longitude>
+        <longitude>113.26439</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -1151,8 +1151,8 @@
       </country>
       <city>
         <name>Pittsburgh</name>
-        <latitude>40.4406248</latitude>
-        <longitude>-79.9958864</longitude>
+        <latitude>40.44062</latitude>
+        <longitude>-79.99589</longitude>
       </city>
       <university>
         <name>NA</name>
