@@ -44,8 +44,8 @@ i17 <- parse_proceedings17(fileBib = "../raw/2017/isipta2017.bib",
                              country_name = "Switzerland",
                              country_code ="CH",
                              city = "Lugano",
-                             city_lat = "46.00368",
-                             city_lon = "8.951052",
+                             city_lat = "46.01008",
+                             city_lon = "8.96004",
                              university = "University of Lugano",
                              department = ""
                            )

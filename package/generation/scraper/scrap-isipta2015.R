@@ -45,8 +45,8 @@ i15 <- parse_proceedings15(fileBib = "../raw/2015/isipta2015.bib",
                              country_name = "Italy",
                              country_code ="IT",
                              city = "Pescara",
-                             city_lat = "42.46179",
-                             city_lon = "14.21609",
+                             city_lat = "42.46024",
+                             city_lon = "14.21021",
                              university = "",
                              department = ""
                              )

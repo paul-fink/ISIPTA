@@ -33,7 +33,7 @@ xmlConference <- function(date, location) {
 xmlProceedingsDate <- function(date) {
   n <- newXMLNode("date")
   addChildren(n, kids = list(newXMLNode("start", date[1]),
-                 newXMLNode("end", date[1])))
+                 newXMLNode("end", date[2])))
 }
 
 
@@ -64,26 +64,27 @@ xmlPaperAuthors <- function(authors) {
 }
 
 
-
-
 xmlLocationCountry <- function(location) {
   n <- newXMLNode("country")
-  addChildren(n, kids = list(newXMLNode("code", location["country_code"]),
-                 newXMLNode("name", location["country_name"])))
+  newXMLNode("code", location[1,"country_code"], parent = n)
+  newXMLNode("name", location[1,"country_name"], parent = n)
+  n
 }
 
 
 xmlLocationCity <- function(location) {
   n <- newXMLNode("city")
-  addChildren(n, kids = list(newXMLNode("name", location["city"]),
-                 newXMLNode("latitude", location["city_lat"]),
-                 newXMLNode("longitude", location["city_lon"])))
+  newXMLNode("name", location[1, "city"], parent = n)
+  newXMLNode("latitude", location[1, "city_lat"], parent = n)
+  newXMLNode("longitude", location[1, "city_lon"], parent = n)
+  n
 }
 
 xmlLocationUniversity <- function(location) {
   n <- newXMLNode("university")
-  addChildren(n, kids = list(newXMLNode("name", location["university"]),
-                 newXMLNode("department", location["department"])))
+  newXMLNode("name", location[1 ,"university"], parent = n)
+  newXMLNode("department", location[1, "department"], parent = n)
+  n
 }
 
 
@@ -110,7 +111,7 @@ xmlDomain <- function(name, location) {
 
 
 xmlLocations <- function() {
-  xmlTree("locations")
+  newXMLNode("locations")
 }
 
 xmlDomains <- function() {
@@ -119,7 +120,7 @@ xmlDomains <- function() {
 
 
 xmlAuthors <- function(year) {
-  doc <- xmlTree("authors")
-  doc$addNode("year", year)
+  doc <- newXMLNode("authors")
+  newXMLNode("year", year, parent = doc)
   doc
 }

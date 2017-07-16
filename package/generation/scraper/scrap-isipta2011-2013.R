@@ -125,8 +125,8 @@ i11 <- scrap_proceedings11("http://www.sipta.org/isipta11/",
                          c(country_name = "Austria",
                            country_code = "AT",
                            city = "Innsbruck",
-                           city_lat = "47.26921",
-                           city_lon = "11.40410",
+                           city_lat = "47.26266",
+                           city_lon = "11.39454",
                            university = "University of Innsbruck",
                            department = "Unit for Engineering Mathematics"))
 
@@ -141,8 +141,8 @@ i13 <- scrap_proceedings13("http://www.sipta.org/isipta13/",
                            c(country_name = "France",
                              country_code = "FR",
                              city = "Compiegne",
-                             city_lat = "49.41782",
-                             city_lon = "2.82614",
+                             city_lat = "49.41794",
+                             city_lon = "2.82606",
                              university = "University of Technology Compiegne",
                              department = "Heuristic and Diagnostic Methods for Complex Systems"))
 

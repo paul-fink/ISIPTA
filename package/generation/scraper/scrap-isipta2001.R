@@ -66,8 +66,8 @@ i01 <- scrap_proceedings("http://www.sipta.org/isipta01/proceedings/",
                          c(country_code = "US",
                            country_name = "United States",
                            city = "Ithaca",
-                           city_lat = "42.44396",
-                           city_lon = "-76.50188",
+                           city_lat = "42.40279",
+                           city_lon = "-76.48400",
                            university = "Cornell University",
                            department = ""))
 

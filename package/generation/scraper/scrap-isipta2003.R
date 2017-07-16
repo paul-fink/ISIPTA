@@ -96,8 +96,8 @@ i03 <- scrap_proceedings("http://www.sipta.org/isipta03/proceedings/",
                          c(country_code = "CH",
                            country_name = "Switzerland",
                            city = "Lugano",
-                           city_lat = "46.00368",
-                           city_lon = "8.95105",
+                           city_lat = "46.01008",
+                           city_lon = "8.96004",
                            university = "University of Lugano",
                            department = ""))
 

@@ -66,8 +66,8 @@ i05 <- scrap_proceedings("http://www.sipta.org/isipta05/proceedings/",
                          c(country_code = "US",
                            country_name = "United States",
                            city = "Pittsburgh",
-                           city_lat = "40.44062",
-                           city_lon = "-79.99589",
+                           city_lat = "40.47441",
+                           city_lon = "-79.95097",
                            university = "Carnegie Mellon University",
                            department = ""))
 

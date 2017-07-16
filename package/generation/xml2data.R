@@ -1,30 +1,86 @@
+#  lapply(list.files("../data/",pattern = "*.RData", full.names = TRUE), load, envir = .GlobalEnv)
 
 library("XML")
 
 options(stringsAsFactors = FALSE)
 
 XML_DIR <- "xml-cleaned/"
+DATA_DIR <- "../data"
+MAN_DIR <- "../man"
 
+customRdFormat <- function(x) {
+  fmt <- c("\\format{", 
+           paste("  A data frame with", NROW(x),
+                 "observations on the following",
+                 ifelse(NCOL(x) == 1, "variable.",paste(NCOL(x), "variables."))),
+           "  \\describe{")
+  for (i in names(x)) {
+    xi <- x[[i]]
+    fmt <- c(fmt, 
+             paste0("    \\item{\\code{", i, "}}{",
+                    if (inherits(xi, "ordered")) {
+                      lo <- levels(xi)
+                      ltu <- c(lo[c(1,length(lo))], names(sort(table(xi), decreasing = TRUE))[1:10])[1:10] 
+                      lo[!(lo %in% ltu)] <- " "
+                      nl <- strsplit(gsub("(, )+" ,"," , paste(lo, collapse = ",")),",")[[1]]
+                      paste0("an ", data.class(xi), " factor with levels", 
+                             (if(length(lo) > 10) {" (only extreme and 10 most frequent): "} else {": "}),
+                             paste0(ifelse(nchar(nl)>0, paste0("\\code{",nl,"}"), gsub(".*","\\ldots", nl)), collapse = " < ")) 
+                    } else if (inherits(xi, "factor")) {
+                      lo <- levels(xi)
+                      ltu <- names(sort(table(xi), decreasing = TRUE))[1:10]
+                      paste0("a factor with levels", (if(length(lo)>10) {" (only 10 most frequent): "} else {": "}),
+                             paste0("\\code{", lo[(lo %in% ltu)], "}" , collapse = ", "),
+                             (if(length(lo)>10) {", \\ldots"} else {""}))
+                    } else if (is.vector(xi)) {
+                      paste("a", data.class(xi), "vector")
+                    } else {
+                      paste("a", data.class(xi))
+                    }, "}"))
+  }
+  fmt <- c(fmt, "  }", "}")
+  fmt
+}
 
-create_Rd <- function(object, title, description, seealso = NULL) {
+create_Rd <- function(object, title, description, seealso = NULL, references = NULL, examples = NULL) {
   name <- as.character(substitute(object))
   rd <- promptData(object, filename = NA, name = name)
 
   rd$title <- sprintf("\\title{%s}", title)
   rd$description <- c("\\description{", description, "}")
+  rd$format <- customRdFormat(object)
 
   if ( !is.null(seealso) )
     rd$seealso <- c("\\seealso{",
                     paste("\\code{\\link{", seealso, "}}", sep = "", collapse = ", "),
                     "}")
 
-  rd$source <- c("\\source{", "Screen scraped from the ISIPTA website \\url{http://www.sipta.org/}; see directories \\code{scraper} and \\code{xml} for the screen scrapers and the raw data.", "}")
+  rd$source <- c("\\source{",
+                 "Information scraped from the ISIPTA websites \\url{http://www.sipta.org/};",
+                 "",
+                 "For details of generation see \\url{https://github.com/paul-fink/ISIPTA/tree/master/package/generation} and its subdirectories",
+                 "}")
 
   rd$details <- NULL
-  rd$references <- NULL
+  if(!is.null(references)) {
+    rd$references <- c("\\references{",
+                       references,
+                       "}")
+  }
+  
+  rd$examples <- if(is.null(examples)) {
+    rd$examples[-3]
+  } else {
+    c("\\examples{",
+      sprintf("data(%s)", name),
+      "",
+      examples,
+      "}")
+  }
 
   ## Rd file:
-  cat(unlist(rd), file = sprintf("../man/%s.Rd", name), sep = "\n")
+  cat(unlist(rd), file = sprintf("%s/%s.Rd", MAN_DIR, name), sep = "\n")
+  invisible(rd)
 }
 
 
@@ -44,7 +100,6 @@ xmlLocation2data <- function(x) {
 
 xml2conferences <- function() {
   extract <- function(xmlfile) {
-    print(xmlfile)
     tree <- xmlTreeParse(xmlfile, useInternalNodes = TRUE)
     proc <- xmlRoot(tree)
 
@@ -83,12 +138,13 @@ xml2conferences <- function() {
 
 
 conferences <- xml2conferences()
-save(conferences, file = "../data/conferences.RData")
+save(conferences, file = sprintf("%s/conferences.RData", DATA_DIR))
 
-create_Rd(conferences,
-          "ISIPTA conference facts",
-          "Dates, locations, etc. about the ISIPTA conferences.",
-          "papers")
+create_Rd(object = conferences,
+          title = "ISIPTA conference facts",
+          description = "Dates, locations, etc. about the ISIPTA conferences.",
+          seealso = "papers",
+          examples = c("# Years", "table(conferences$year)"))
 
 
 
@@ -139,12 +195,14 @@ xml2papers <- function() {
 
 
 papers <- xml2papers()
-save(papers, file = "../data/papers.RData")
+save(papers, file = sprintf("%s/papers.RData", DATA_DIR))
 
-create_Rd(papers,
-          "Titles of the ISIPTA papers",
-          "Titles of the ISIPTA papers; abstracts are available in the XML file (see directory \\code{xml}.",
-          c("papers_authors", "authors_locations", "papers_keywords"))
+create_Rd(object = papers,
+          title = "ISIPTA papers",
+          description = "Information about the ISIPTA papers.",
+          seealso = c("papers_authors", "authors_locations", "papers_keywords"),
+          examples = c("# The title of the author's first paper",
+                       "papers[papers$id == 2013014,]$title"))
 
 
 
@@ -194,12 +252,17 @@ xml2papers_authors <- function() {
 
 
 papers_authors <- xml2papers_authors()
-save(papers_authors, file = "../data/papers_authors.RData")
+save(papers_authors, file = sprintf("%s/papers_authors.RData", DATA_DIR))
 
-create_Rd(papers_authors,
-          "Authors of the ISIPTA papers",
-          "Authors of the ISIPTA papers; the names are normalized to ASCII characters.",
-          c("papers", "authors_locations", "papers_keywords"))
+create_Rd(object = papers_authors,
+          title = "Authors of the ISIPTA papers",
+          description = "Authors of the ISIPTA papers; the names are normalized to ASCII characters.",
+          seealso = c("papers", "authors_locations", "papers_keywords"),
+          examples = c("# Co-authors for paper with id 2013014",
+                       "papers_authors[papers_authors$id == 2013014,]",
+                       "",
+                       "# Table of all authors",
+                       "table(papers_authors$author)"))
 
 
 
@@ -242,7 +305,6 @@ xml2keywords <- function() {
   keywords <- within(keywords, {
     year <- as.integer(year)
     id <- as.integer(id)
-    #keyword <- factor(keyword)
     keyword <- iconv(keyword, from = "UTF-8", to = "latin1")
   })
 
@@ -250,12 +312,12 @@ xml2keywords <- function() {
 }
 
 papers_keywords <- xml2keywords()
-save(papers_keywords, file = "../data/papers_keywords.RData")
+save(papers_keywords, file = sprintf("%s/papers_keywords.RData", DATA_DIR))
 
-create_Rd(papers_keywords,
-          "Keywords of the ISIPTA papers",
-          "Keywords of the ISIPTA papers.",
-          c("papers", "authors_locations", "papers_authors"))
+create_Rd(object = papers_keywords,
+          title = "Keywords of the ISIPTA papers",
+          description = "Keywords of the ISIPTA papers. The keywords are not normalized.",
+          seealso = c("papers", "authors_locations", "papers_authors"))
 
 
 
@@ -305,13 +367,53 @@ xml2authors_locations <- function() {
 }
 
 authors_locations <- xml2authors_locations()
-save(authors_locations, file = "../data/authors_locations.RData")
+save(authors_locations, file = sprintf("%s/authors_locations.RData", DATA_DIR))
 
-create_Rd(authors_locations,
-          "Estimated location of the authors",
-          "Estimated (by the authors' email domains and their geotargeting using GeoIP with databases by MaxMind \\url{http://www.maxmind.com/app/ip-location}) location of the ISIPTA authors.",
-          c("papers_authors"))
+create_Rd(object = authors_locations,
+          title = "(Estimated) location of authors",
+          description = c("Location information about the ISIPTA authors.","\\cr",
+                          paste("The geocodes are obtained from the Data Science Toolkit collection",
+                                "by the help of the \\code{geocode} function of the \\code{ggmap} package")),
+          seealso = c("papers_authors"),
+          references = paste("Kahle, D. and Wickham, H. (2013)  ggmap: Spatial Visualization with ggplot2.",
+                             "\\emph{The R Journal}, \\bold{5}(1), 144--161.",
+                             "\\url{http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}"))
 
 
+### General XML: #######################################################
 
+xml2onefile <- function(filename) {
+  mergeXmlByYear <- function(node, year) {
+    
+    file_isipta <- sprintf(paste0(XML_DIR, "isipta%s.xml"), year)
+    file_location <- sprintf(paste0(XML_DIR, "geoloc_authors%s.xml"), year)
+    
+    xml_isipta <- xmlTreeParse(file_isipta, useInternalNodes = TRUE, encoding = "UTF-8")
+    xml_location <- xmlTreeParse(file_location, useInternalNodes = TRUE, encoding = "UTF-8")
+    authors_isipta <- getNodeSet(xml_isipta, "//author")
+    
+    authors_loc <-getNodeSet(xml_location, "//author")
+    authors_loc_names <- sapply(authors_loc, function(x) {xmlValue(x[[1]])})
+    
+    for(i in seq_along(authors_isipta)){
+      anode <- authors_isipta[[i]]
+      bnode <- xmlClone(authors_loc[[which(authors_loc_names == xmlValue(anode[[1]]))]])
+      replaceNodes(anode, bnode)
+    }
+    
+    addChildren(node, xmlRoot(xml_isipta))
 
+    free(xml_location)
+    free(xml_isipta)
+    NULL
+  }
+  
+  procList <- newXMLNode("proceedingslist")
+  years <- as.numeric(names(table(gsub("[^0-9]","",list.files(XML_DIR, pattern = ".*(\\d){4}\\.xml")))))
+  for(year in years) {
+    mergeXmlByYear(procList, year)
+  }
+  saveXML(procList, file = filename)
+}
+
+xml2onefile(filename = "../inst/xml/collected_proceedings.xml")

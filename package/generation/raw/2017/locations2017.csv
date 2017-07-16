@@ -1,62 +1,62 @@
 "year","author","email","country_code","country_name","city","city_lat","city_lon","university","department"
-2017,"Dionissi Aliprantis","dionissi.aliprantis@clev.frb.org","US","United States","Cleveland","41.49932","-81.69436",NA,NA
-2017,"Thomas Augustin","augustin@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Rudolf Seising","r.seising@lrz.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Alessio Benavoli","alessio@idsia.ch","CH","Switzerland","Lugano","46.00368","8.95105",NA,NA
-2017,"Alessandro Facchini","alessandro.facchini@idsia.ch","CH","Switzerland","Lugano","46.00368","8.95105",NA,NA
-2017,"Dario Piga","dario@idsia.ch","CH","Switzerland","Lugano","46.00368","8.95105",NA,NA
-2017,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Lugano","46.00368","8.95105",NA,NA
-2017,"Jose Vicente-Perez","jose.vicente@ua.es","ES","Spain","Alicante","38.34600","-0.49069",NA,NA
-2017,"Thiago Bueno","tbueno@ime.usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
-2017,"Denis Maua","ddm@ime.usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
-2017,"Leliane de Barros","leliane@ime.usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
-2017,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
-2017,"Marco Cattaneo","m.cattaneo@hull.ac.uk","GB","United Kingdom","Kingston upon Hull","53.74567","-0.33674",NA,NA
-2017,"Giulianella Coletti","giulianella.coletti@unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
-2017,"Davide Petturiti","davide.petturiti@unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
-2017,"Barbara Vantaggi","barbara.vantaggi@sbai.uniroma1.it","IT","Italy","Roma","41.90278","12.49637",NA,NA
-2017,"Chiara Corsato","ccorsato@units.it","IT","Italy","Trieste","45.64953","13.77682",NA,NA
-2017,"Renato Pelessoni","renato.pelessoni@econ.units.it","IT","Italy","Trieste","45.64953","13.77682",NA,NA
-2017,"Paolo Vicig","paolo.vicig@econ.units.it","IT","Italy","Trieste","45.64953","13.77682",NA,NA
-2017,"Ines Couso","couso@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2017,"Antonio Alvarez-Caballero","analca3@gmail.com","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2017,"Luciano Sanchez","luciano@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2017,"Jasper de Bock","jasper.debock@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
-2017,"Gert de Cooman","gert.decooman@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
-2017,"Alexander Erreygers","alexander.erreygers@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
-2017,"Paul Fink","paul.fink@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Romain Guillaume","Romain.Guillaume@irit.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
-2017,"Didier Dubois","dubois@irit.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
-2017,"Christoph Jansen","christoph.jansen@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Georg Schollmeyer","georg.schollmeyer@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Thomas Krak","t.e.krak@uu.nl","NL","Netherlands","Utrecht","52.09074","5.12142",NA,NA
-2017,"Arno Siebes","a.p.j.m.siebes@uu.nl","NL","Netherlands","Utrecht","52.09074","5.12142",NA,NA
-2017,"Diarmaid Conaty","dconaty01@qub.ac.uk","GB","United Kingdom","Belfast","54.59729","-5.93012",NA,NA
-2017,"Cassio Campos","c.decampos@qub.ac.uk","GB","United Kingdom","Belfast","54.59729","-5.93012",NA,NA
-2017,"Enrique Miranda","mirandaenrique@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2017,"Ignacio Montes","imontes@uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2017,"Sebastien Destercke","sebastien.destercke@hds.utc.fr","FR","France","Compiegne","49.41782","2.82614",NA,NA
-2017,"Nawapon Nakharutai","nawapon.nakharutai@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
-2017,"Matthias Troffaes","matthias.troffaes@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
-2017,"Camila Caiado","c.c.d.s.caiado@durham.ac.uk","GB","United Kingdom","Durham (UK)","54.77525","-1.58485",NA,NA
-2017,"Julia Plass","julia.plass@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Aziz Omar","aziz.omar@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2017,"Lalintha Polpitiya","lalintha@umiami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
-2017,"Kamal Premaratne","kamal@miami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
-2017,"Manohar Murthi","mmurthi@miami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
-2017,"Dilip Sarkar","sarkar@miami.edu","US","United States","Coral Gables","25.72149","-80.26838",NA,NA
-2017,"Erik Quaeghebeur","E.R.G.Quaeghebeur@tudelft.nl","NL","Netherlands","Delft","52.01158","4.35707",NA,NA
-2017,"Chris Wesseling","Chris.Wesseling@cwi.nl","NL","Netherlands","Amsterdam","52.37022","4.89517",NA,NA
-2017,"Emma Beauxis-Aussalet","Emmanuelle.Beauxis-Aussalet@cwi.nl","NL","Netherlands","Amsterdam","52.37022","4.89517",NA,NA
-2017,"Teresa Piovesan","T.Piovesan@cwi.nl","NL","Netherlands","Amsterdam","52.37022","4.89517",NA,NA
-2017,"Tom Sterkenburg","Tom@cwi.nl","NL","Netherlands","Amsterdam","52.37022","4.89517",NA,NA
-2017,"Damjan Skulj","damjan.skulj@fdv.uni-lj.si","SI","Slovenia","Ljubljana","46.05695","14.50575",NA,NA
-2017,"Michael Smithson","Michael.Smithson@anu.edu.au","AU","Australia","Canberra","-35.28094","149.13001",NA,NA
-2017,"Milan Studeny","studeny@utia.cas.cz","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
-2017,"Vaclav Kratochvil","velorex@utia.cas.cz","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
-2017,"Ullrika Sahlin","ullrika.sahlin@cec.lu.se","SE","Sweden","Lund","55.70466","13.19101",NA,NA
-2017,"Arthur van Camp","arthur.vancamp@ugent.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
-2017,"Thijs van Ommen","T.vanOmmen@uva.nl","NL","Netherlands","Amsterdam","52.37022","4.89517",NA,NA
-2017,"Jiji Zhang","jijizhang@ln.edu.hk","CN","China","Hong Kong","22.39643","114.10950",NA,NA
-2017,"Hailin Liu","liuhlin3@mail.sysu.edu.cn","CN","China","Guangzhou","23.12911","113.26439",NA,NA
-2017,"Teddy Seidenfeld","teddy@stat.cmu.edu","US","United States","Pittsburgh","40.44062","-79.99589",NA,NA
+2017,"Dionissi Aliprantis","dionissi.aliprantis@clev.frb.org","US","United States","Cleveland",,,NA,NA
+2017,"Thomas Augustin","augustin@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Rudolf Seising","r.seising@lrz.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Alessio Benavoli","alessio@idsia.ch","CH","Switzerland","Lugano",,,NA,NA
+2017,"Alessandro Facchini","alessandro.facchini@idsia.ch","CH","Switzerland","Lugano",,,NA,NA
+2017,"Dario Piga","dario@idsia.ch","CH","Switzerland","Lugano",,,NA,NA
+2017,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Lugano",,,NA,NA
+2017,"Jose Vicente-Perez","jose.vicente@ua.es","ES","Spain","Alicante",,,NA,NA
+2017,"Thiago Bueno","tbueno@ime.usp.br","BR","Brazil","Sao Paulo",,,NA,NA
+2017,"Denis Maua","ddm@ime.usp.br","BR","Brazil","Sao Paulo",,,NA,NA
+2017,"Leliane de Barros","leliane@ime.usp.br","BR","Brazil","Sao Paulo",,,NA,NA
+2017,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo",,,NA,NA
+2017,"Marco Cattaneo","m.cattaneo@hull.ac.uk","GB","United Kingdom","Kingston upon Hull",,,NA,NA
+2017,"Giulianella Coletti","giulianella.coletti@unipg.it","IT","Italy","Perugia",,,NA,NA
+2017,"Davide Petturiti","davide.petturiti@unipg.it","IT","Italy","Perugia",,,NA,NA
+2017,"Barbara Vantaggi","barbara.vantaggi@sbai.uniroma1.it","IT","Italy","Roma",,,NA,NA
+2017,"Chiara Corsato","ccorsato@units.it","IT","Italy","Trieste",,,NA,NA
+2017,"Renato Pelessoni","renato.pelessoni@econ.units.it","IT","Italy","Trieste",,,NA,NA
+2017,"Paolo Vicig","paolo.vicig@econ.units.it","IT","Italy","Trieste",,,NA,NA
+2017,"Ines Couso","couso@uniovi.es","ES","Spain","Oviedo",,,NA,NA
+2017,"Antonio Alvarez-Caballero","analca3@gmail.com","ES","Spain","Oviedo",,,NA,NA
+2017,"Luciano Sanchez","luciano@uniovi.es","ES","Spain","Oviedo",,,NA,NA
+2017,"Jasper de Bock","jasper.debock@ugent.be","BE","Belgium","Ghent",,,NA,NA
+2017,"Gert de Cooman","gert.decooman@ugent.be","BE","Belgium","Ghent",,,NA,NA
+2017,"Alexander Erreygers","alexander.erreygers@ugent.be","BE","Belgium","Ghent",,,NA,NA
+2017,"Paul Fink","paul.fink@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Romain Guillaume","Romain.Guillaume@irit.fr","FR","France","Toulouse",,,NA,NA
+2017,"Didier Dubois","dubois@irit.fr","FR","France","Toulouse",,,NA,NA
+2017,"Christoph Jansen","christoph.jansen@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Georg Schollmeyer","georg.schollmeyer@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Thomas Krak","t.e.krak@uu.nl","NL","Netherlands","Utrecht",,,NA,NA
+2017,"Arno Siebes","a.p.j.m.siebes@uu.nl","NL","Netherlands","Utrecht",,,NA,NA
+2017,"Diarmaid Conaty","dconaty01@qub.ac.uk","GB","United Kingdom","Belfast",,,NA,NA
+2017,"Cassio Campos","c.decampos@qub.ac.uk","GB","United Kingdom","Belfast",,,NA,NA
+2017,"Enrique Miranda","mirandaenrique@uniovi.es","ES","Spain","Oviedo",,,NA,NA
+2017,"Ignacio Montes","imontes@uniovi.es","ES","Spain","Oviedo",,,NA,NA
+2017,"Sebastien Destercke","sebastien.destercke@hds.utc.fr","FR","France","Compiegne",,,NA,NA
+2017,"Nawapon Nakharutai","nawapon.nakharutai@durham.ac.uk","GB","United Kingdom","Durham (UK)",,,NA,NA
+2017,"Matthias Troffaes","matthias.troffaes@durham.ac.uk","GB","United Kingdom","Durham (UK)",,,NA,NA
+2017,"Camila Caiado","c.c.d.s.caiado@durham.ac.uk","GB","United Kingdom","Durham (UK)",,,NA,NA
+2017,"Julia Plass","julia.plass@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Aziz Omar","aziz.omar@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2017,"Lalintha Polpitiya","lalintha@umiami.edu","US","United States","Coral Gables",,,NA,NA
+2017,"Kamal Premaratne","kamal@miami.edu","US","United States","Coral Gables",,,NA,NA
+2017,"Manohar Murthi","mmurthi@miami.edu","US","United States","Coral Gables",,,NA,NA
+2017,"Dilip Sarkar","sarkar@miami.edu","US","United States","Coral Gables",,,NA,NA
+2017,"Erik Quaeghebeur","E.R.G.Quaeghebeur@tudelft.nl","NL","Netherlands","Delft",,,NA,NA
+2017,"Chris Wesseling","Chris.Wesseling@cwi.nl","NL","Netherlands","Amsterdam",,,NA,NA
+2017,"Emma Beauxis-Aussalet","Emmanuelle.Beauxis-Aussalet@cwi.nl","NL","Netherlands","Amsterdam",,,NA,NA
+2017,"Teresa Piovesan","T.Piovesan@cwi.nl","NL","Netherlands","Amsterdam",,,NA,NA
+2017,"Tom Sterkenburg","Tom@cwi.nl","NL","Netherlands","Amsterdam",,,NA,NA
+2017,"Damjan Skulj","damjan.skulj@fdv.uni-lj.si","SI","Slovenia","Ljubljana",,,NA,NA
+2017,"Michael Smithson","Michael.Smithson@anu.edu.au","AU","Australia","Canberra",,,NA,NA
+2017,"Milan Studeny","studeny@utia.cas.cz","CZ","Czech Republic","Prague",,,NA,NA
+2017,"Vaclav Kratochvil","velorex@utia.cas.cz","CZ","Czech Republic","Prague",,,NA,NA
+2017,"Ullrika Sahlin","ullrika.sahlin@cec.lu.se","SE","Sweden","Lund",,,NA,NA
+2017,"Arthur van Camp","arthur.vancamp@ugent.be","BE","Belgium","Ghent",,,NA,NA
+2017,"Thijs van Ommen","T.vanOmmen@uva.nl","NL","Netherlands","Amsterdam",,,NA,NA
+2017,"Jiji Zhang","jijizhang@ln.edu.hk","CN","China","Hong Kong",,,NA,NA
+2017,"Hailin Liu","liuhlin3@mail.sysu.edu.cn","CN","China","Guangzhou",,,NA,NA
+2017,"Teddy Seidenfeld","teddy@stat.cmu.edu","US","United States","Pittsburgh",,,NA,NA

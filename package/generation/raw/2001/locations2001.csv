@@ -1,62 +1,62 @@
 "year","author","email","country_code","country_name","city","city_lat","city_lon","university","department"
-2001,"Joaquin Abellan","jabemu@teleline.es","ES","Spain","Granada","37.17734","-3.59856",NA,NA
-2001,"Serafin Moral","smc@decsai.ugr.es","ES","Spain","Granada","37.17734","-3.59856",NA,NA
-2001,"Thomas Augustin","thomas@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2001,"Donald Bamber","bamber@spawar.navy.mil","US","United States","San Diego","32.71574","-117.16108",NA,NA
-2001,"Irwin Goodman","goodman@spawar.navy.mil","US","United States","San Diego","32.71574","-117.16108",NA,NA
-2001,"Marcello Basili","basili@unisi.it","IT","Italy","Siena","43.31881","11.33076",NA,NA
-2001,"Fulvio Fontini","fontini@unisi.it","IT","Italy","Siena","43.31881","11.33076",NA,NA
-2001,"Yakov Ben-Haim","yakov@aluf.technion.ac.il","IL","Israel","Haifa","32.79405","34.98957",NA,NA
-2001,"Jean-Marc Bernard","berj@univ-paris8.fr","FR","France","Saint-Denis","48.93618","2.35744",NA,NA
-2001,"Veronica Biazzo","vbiazzo@dmi.unict.it","IT","Italy","Catania","37.50788","15.08303",NA,NA
-2001,"Angelo Gilio","gilio@dmmm.uniroma1.it","IT","Italy","Rome","41.90278","12.49637",NA,NA
-2001,"Thomas Lukasiewicz","Thomas.Lukasiewicz@kr.tuwien.ac.at","AT","Austria","Vienna","48.20817","16.37382",NA,NA
-2001,"Giuseppe Sanfilippo","gsanfilippo@dmi.unict.it","IT","Italy","Catania","37.50788","15.08303",NA,NA
-2001,"Veselka Boeva","boevi@mbox.digsys.bg","BG","Bulgaria","Plovdiv","42.13541","24.74529",NA,NA
-2001,"Andrea Capotorti","capot@dipmat.unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
-2001,"Barbara Vantaggi","vantaggi@dmmm.uniroma1.it","IT","Italy","Rome","41.90278","12.49637",NA,NA
-2001,"Giulianella Coletti","coletti@dipmat.unipg.it","IT","Italy","Perugia","43.11072","12.39083",NA,NA
-2001,"Romano Scozzafava","romscozz@dmmm.uniroma1.it","IT","Italy","Rome","41.90278","12.49637",NA,NA
-2001,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo","-23.55052","-46.63331",NA,NA
+2001,"Joaquin Abellan","jabemu@teleline.es","ES","Spain","Granada",,,NA,NA
+2001,"Serafin Moral","smc@decsai.ugr.es","ES","Spain","Granada",,,NA,NA
+2001,"Thomas Augustin","thomas@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2001,"Donald Bamber","bamber@spawar.navy.mil","US","United States","San Diego",,,NA,NA
+2001,"Irwin Goodman","goodman@spawar.navy.mil","US","United States","San Diego",,,NA,NA
+2001,"Marcello Basili","basili@unisi.it","IT","Italy","Siena",,,NA,NA
+2001,"Fulvio Fontini","fontini@unisi.it","IT","Italy","Siena",,,NA,NA
+2001,"Yakov Ben-Haim","yakov@aluf.technion.ac.il","IL","Israel","Haifa",,,NA,NA
+2001,"Jean-Marc Bernard","berj@univ-paris8.fr","FR","France","Saint-Denis",,,NA,NA
+2001,"Veronica Biazzo","vbiazzo@dmi.unict.it","IT","Italy","Catania",,,NA,NA
+2001,"Angelo Gilio","gilio@dmmm.uniroma1.it","IT","Italy","Rome",,,NA,NA
+2001,"Thomas Lukasiewicz","Thomas.Lukasiewicz@kr.tuwien.ac.at","AT","Austria","Vienna",,,NA,NA
+2001,"Giuseppe Sanfilippo","gsanfilippo@dmi.unict.it","IT","Italy","Catania",,,NA,NA
+2001,"Veselka Boeva","boevi@mbox.digsys.bg","BG","Bulgaria","Plovdiv",,,NA,NA
+2001,"Andrea Capotorti","capot@dipmat.unipg.it","IT","Italy","Perugia",,,NA,NA
+2001,"Barbara Vantaggi","vantaggi@dmmm.uniroma1.it","IT","Italy","Rome",,,NA,NA
+2001,"Giulianella Coletti","coletti@dipmat.unipg.it","IT","Italy","Perugia",,,NA,NA
+2001,"Romano Scozzafava","romscozz@dmmm.uniroma1.it","IT","Italy","Rome",,,NA,NA
+2001,"Fabio Cozman","fgcozman@usp.br","BR","Brazil","Sao Paulo",,,NA,NA
 2001,"Peter Walley","pwalley@eudoramail.com",NA,NA,NA,NA,NA,NA,NA
-2001,"Fabio Cuzzolin","cuzzolin@dei.unipd.it","IT","Italy","Padova","45.40643","11.87676",NA,NA
-2001,"Ruggero Frezza","frezza@dei.unipd.it","IT","Italy","Padova","45.40643","11.87676",NA,NA
-2001,"Gert de Cooman","gert.decooman@rug.ac.be","BE","Belgium","Ghent","51.05434","3.71742",NA,NA
-2001,"Enrique Miranda","alu426@pinon.ccu.uniovi.es","ES","Spain","Oviedo","43.36191","-5.84939",NA,NA
-2001,"Dieter Denneberg","denneberg@math.uni-bremen.de","DE","Germany","Bremen","53.07930","8.80169",NA,NA
-2001,"Serena Doria","s.doria@dst.unich.it","IT","Italy","Chieti","42.34789","14.16358",NA,NA
-2001,"Didier Dubois","dubois@irit.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
-2001,"Henri Prade","Henri.Prade@irit.fr","FR","France","Toulouse","43.60465","1.44421",NA,NA
-2001,"Philippe Smets","psmets@ulb.ac.be","BE","Belgium","Brussels","50.85035","4.35172",NA,NA
-2001,"Mark Ducey","mjducey@cisunix.unh.edu","US","United States","Durham (US)","35.99403","-78.89862",NA,NA
-2001,"Thomas Fetz","fetz@mat1.uibk.ac.at","AT","Austria","Innsbruck","47.26921","11.40410",NA,NA
-2001,"Pablo Fierens","pifierens@ee.cornell.edu","US","United States","Ithaca","42.44396","-76.50188",NA,NA
-2001,"Terrence Fine","tlfine@ee.cornell.edu","US","United States","Ithaca","42.44396","-76.50188",NA,NA
-2001,"Vincent Fortin","vinfort@ireq.ca","CA","Canada","Varennes","45.68103","-73.43750",NA,NA
-2001,"Jim Hall","jim.hall@bristol.ac.uk","GB","United Kingdom","Bristol","51.45451","-2.58791",NA,NA
-2001,"Jonathan Lawry","j.lawry@bris.ac.uk","GB","United Kingdom","Bristol","51.45451","-2.58791",NA,NA
-2001,"Frank Hampel","hampel@stat.math.ethz.ch","CH","Switzerland","Zurich","47.37689","8.54169",NA,NA
-2001,"Hugo Janssen","hugo.janssen@pi.be","BE","Belgium","Leuven","50.87984","4.70052",NA,NA
-2001,"Igor Kozine","igor.kozine@risoe.dk","DK","Denmark","Roskilde","55.64191","12.08784",NA,NA
-2001,"Lev Utkin","lvu@utkin.usr.etu.spb.ru","RU","Russian Federation","Saint Petersburg","59.93428","30.33510",NA,NA
-2001,"Sebastian Maass","Sebastian.Maass@email.de","DE","Germany","Bremen","53.07930","8.80169",NA,NA
-2001,"Charles Manski","cfmanski@northwestern.edu","US","United States","Evanston","42.04507","-87.68770",NA,NA
-2001,"Massimo Marinacci","massimo@econ.unito.it","IT","Italy","Torino","45.07034","7.68686",NA,NA
-2001,"Silvia Muzzioli","s.muzzioli@unimo.it","IT","Italy","Modena","44.64713","10.92523",NA,NA
-2001,"Costanza Torricelli","torricelli@unimo.it","IT","Italy","Modena","44.64713","10.92523",NA,NA
-2001,"Gertrudes Nadler Lins","gertie@uol.com.br","BR","Brazil","Recife","-8.04756","-34.87696",NA,NA
-2001,"Fernando Campello de Souza","fmcs@elogica.com.br","BR","Brazil","Recife","-8.04756","-34.87696",NA,NA
-2001,"Robert Nau","robert.nau@duke.edu","US","United States","Durham (US)","35.99403","-78.89862",NA,NA
-2001,"Philippe Nivlet","philippe.nivlet@ifp.fr","FR","France","Rueil-Malmaison","48.88277","2.17693",NA,NA
-2001,"Frederique Fournier","frederique.fournier@ifp.fr","FR","France","Rueil-Malmaison","48.88277","2.17693",NA,NA
-2001,"Jean-Jacques Royer","Jean-Jacques.Royer@ensg.inpl-nancy.fr","FR","France","Vandoeuvre","48.66112","6.17376",NA,NA
-2001,"Michael Oberguggenberger","michael@mat1.uibk.ac.at","AT","Austria","Innsbruck","47.26921","11.40410",NA,NA
-2001,"Jeff Paris","jeff@maths.man.ac.uk","GB","United Kingdom","Manchester","53.48076","-2.24263",NA,NA
-2001,"Renato Pelessoni","renatop@econ.univ.trieste.it","IT","Italy","Trieste","45.64953","13.77682",NA,NA
-2001,"Paolo Vicig","paolov@econ.univ.trieste.it","IT","Italy","Trieste","45.64953","13.77682",NA,NA
-2001,"Jirina Vejnarova","vejnar@vse.cz","CZ","Czech Republic","Prague","50.07554","14.43780",NA,NA
-2001,"Pei Wang","peiwang@mindspring.com","US","United States","Bloomington","39.16533","-86.52639",NA,NA
-2001,"Kurt Weichselberger","weichsel@stat.uni-muenchen.de","DE","Germany","Munich","48.13513","11.58198",NA,NA
-2001,"Nic Wilson","nic.wilson@brookes.ac.uk","GB","United Kingdom","Oxford","51.75202","-1.25773",NA,NA
-2001,"Ronald Yager","yager@panix.com","US","United States","New Rochelle","40.91149","-73.78235",NA,NA
-2001,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Manno","46.03430","8.91941",NA,NA
+2001,"Fabio Cuzzolin","cuzzolin@dei.unipd.it","IT","Italy","Padova",,,NA,NA
+2001,"Ruggero Frezza","frezza@dei.unipd.it","IT","Italy","Padova",,,NA,NA
+2001,"Gert de Cooman","gert.decooman@rug.ac.be","BE","Belgium","Ghent",,,NA,NA
+2001,"Enrique Miranda","alu426@pinon.ccu.uniovi.es","ES","Spain","Oviedo",,,NA,NA
+2001,"Dieter Denneberg","denneberg@math.uni-bremen.de","DE","Germany","Bremen",,,NA,NA
+2001,"Serena Doria","s.doria@dst.unich.it","IT","Italy","Chieti",,,NA,NA
+2001,"Didier Dubois","dubois@irit.fr","FR","France","Toulouse",,,NA,NA
+2001,"Henri Prade","Henri.Prade@irit.fr","FR","France","Toulouse",,,NA,NA
+2001,"Philippe Smets","psmets@ulb.ac.be","BE","Belgium","Brussels",,,NA,NA
+2001,"Mark Ducey","mjducey@cisunix.unh.edu","US","United States","Durham (US)",,,NA,NA
+2001,"Thomas Fetz","fetz@mat1.uibk.ac.at","AT","Austria","Innsbruck",,,NA,NA
+2001,"Pablo Fierens","pifierens@ee.cornell.edu","US","United States","Ithaca",,,NA,NA
+2001,"Terrence Fine","tlfine@ee.cornell.edu","US","United States","Ithaca",,,NA,NA
+2001,"Vincent Fortin","vinfort@ireq.ca","CA","Canada","Varennes",,,NA,NA
+2001,"Jim Hall","jim.hall@bristol.ac.uk","GB","United Kingdom","Bristol",,,NA,NA
+2001,"Jonathan Lawry","j.lawry@bris.ac.uk","GB","United Kingdom","Bristol",,,NA,NA
+2001,"Frank Hampel","hampel@stat.math.ethz.ch","CH","Switzerland","Zurich",,,NA,NA
+2001,"Hugo Janssen","hugo.janssen@pi.be","BE","Belgium","Leuven",,,NA,NA
+2001,"Igor Kozine","igor.kozine@risoe.dk","DK","Denmark","Roskilde",,,NA,NA
+2001,"Lev Utkin","lvu@utkin.usr.etu.spb.ru","RU","Russian Federation","Saint Petersburg",,,NA,NA
+2001,"Sebastian Maass","Sebastian.Maass@email.de","DE","Germany","Bremen",,,NA,NA
+2001,"Charles Manski","cfmanski@northwestern.edu","US","United States","Evanston",,,NA,NA
+2001,"Massimo Marinacci","massimo@econ.unito.it","IT","Italy","Torino",,,NA,NA
+2001,"Silvia Muzzioli","s.muzzioli@unimo.it","IT","Italy","Modena",,,NA,NA
+2001,"Costanza Torricelli","torricelli@unimo.it","IT","Italy","Modena",,,NA,NA
+2001,"Gertrudes Nadler Lins","gertie@uol.com.br","BR","Brazil","Recife",,,NA,NA
+2001,"Fernando Campello de Souza","fmcs@elogica.com.br","BR","Brazil","Recife",,,NA,NA
+2001,"Robert Nau","robert.nau@duke.edu","US","United States","Durham (US)",,,NA,NA
+2001,"Philippe Nivlet","philippe.nivlet@ifp.fr","FR","France","Rueil-Malmaison",,,NA,NA
+2001,"Frederique Fournier","frederique.fournier@ifp.fr","FR","France","Rueil-Malmaison",,,NA,NA
+2001,"Jean-Jacques Royer","Jean-Jacques.Royer@ensg.inpl-nancy.fr","FR","France","Vandoeuvre",,,NA,NA
+2001,"Michael Oberguggenberger","michael@mat1.uibk.ac.at","AT","Austria","Innsbruck",,,NA,NA
+2001,"Jeff Paris","jeff@maths.man.ac.uk","GB","United Kingdom","Manchester",,,NA,NA
+2001,"Renato Pelessoni","renatop@econ.univ.trieste.it","IT","Italy","Trieste",,,NA,NA
+2001,"Paolo Vicig","paolov@econ.univ.trieste.it","IT","Italy","Trieste",,,NA,NA
+2001,"Jirina Vejnarova","vejnar@vse.cz","CZ","Czech Republic","Prague",,,NA,NA
+2001,"Pei Wang","peiwang@mindspring.com","US","United States","Bloomington",,,NA,NA
+2001,"Kurt Weichselberger","weichsel@stat.uni-muenchen.de","DE","Germany","Munich",,,NA,NA
+2001,"Nic Wilson","nic.wilson@brookes.ac.uk","GB","United Kingdom","Oxford",,,NA,NA
+2001,"Ronald Yager","yager@panix.com","US","United States","New Rochelle",,,NA,NA
+2001,"Marco Zaffalon","zaffalon@idsia.ch","CH","Switzerland","Manno",,,NA,NA

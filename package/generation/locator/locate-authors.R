@@ -11,19 +11,18 @@ geolocation_by_hand <- function(city, contry_name, country_code) {
 
 author_geolocation <- function(authorLocationRow) {
   
-  if(is.na(authorLocationRow$city_lat) || is.na(authorLocationRow$city_lon)) {
-    geolocData <- geolocation_by_hand(authorLocationRow$city,
-                                 authorLocationRow$country_name,
-                                 authorLocationRow$country_code)
+  geolocData <- geolocation_by_hand(authorLocationRow$city,
+                                    authorLocationRow$country_name,
+                                    authorLocationRow$country_code)
   
-    if(is.null(locData)) {
-      geolocData <- lookup_location(authorLocationRow$city,
-                               authorLocationRow$country_name,
-                               authorLocationRow$country_code)
-    }
-    authorLocationRow$city_lat <- geolocData$city_lat
-    authorLocationRow$city_lon <- geolocData$city_lon
+  if(is.null(geolocData)) {
+    geolocData <- lookup_location(authorLocationRow$city,
+                                  authorLocationRow$country_name,
+                                  authorLocationRow$country_code)
   }
+  authorLocationRow$city_lat <- geolocData$city_lat
+  authorLocationRow$city_lon <- geolocData$city_lon
+  
   names(authorLocationRow)[names(authorLocationRow) == "author"] <- "name"
   author <- xmlAuthor(authorLocationRow)
   loc <- xmlLocation(authorLocationRow)
@@ -66,7 +65,7 @@ scrap_authors_geolocation <- function(year) {
   
   res <- xmlAuthors(year)
   for(i in seq_len(NROW(authorLocations))) {
-    res$addNode(author_geolocation(authorLocations[i,]))
+    addChildren(res, author_geolocation(authorLocations[i,]))
   }
   res
 }
@@ -76,7 +75,7 @@ scrap_authors_geolocation <- function(year) {
 
 doit <- function(year) {
   i <- scrap_authors_geolocation(year)
-  saveXML(i$value(), file = sprintf("../xml/geoloc_authors%s.xml", year))
+  saveXML(i, file = sprintf("../xml/geoloc_authors%s.xml", year))
 }
 
 #doit(1999)
