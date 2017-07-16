@@ -39,8 +39,8 @@ vertices2017 <- data.frame(name = usedlvls, label = sort(unique(as.numeric(combi
 graph2017 <- graph.data.frame(edgelist2017,
                               directed = FALSE,
                               vertices = vertices2017)
+set.seed(201710)
 coords2017 <- layout_with_fr(graph2017, niter = 2000)
-
 pdf("7-networkECSQARU2017.pdf", width = 12, height = 12, family = "CM Roman", useDingbats = FALSE)
 op1 <- par(mar = c(1, 0, 0, 0))
 plot(graph2017,

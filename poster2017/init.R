@@ -1,8 +1,8 @@
 ### first run coauthors-network.R!
 
 normalize_author_name <- function(name) {
-  isequal<- function(ref_name, name, dist = 0.3) {
-    length(agrep(ref_name, name, max.distance = dist)) == 1
+  isequal<- function(ref_name, name, dist = 4) {
+    length(agrep(name, ref_name, max.distance = dist)) == 1
   }
   
   if ( isequal("Serafin Moral", name) )
@@ -18,7 +18,7 @@ normalize_author_name <- function(name) {
   if ( isequal("Christofer Waldenstrom", name) )
     return("Christofer Waldenstrom")
   if ( isequal("Andrey Bronevich", name)) 
-    return("Andrew Bronewich")
+    return("Andrew Bronevich")
   if ( isequal("Andres Cano", name, 0.01) )
     return("Andres Cano")
   if ( isequal("Manuel Gomez", name) )
