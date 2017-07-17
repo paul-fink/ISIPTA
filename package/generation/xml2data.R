@@ -1,4 +1,8 @@
-#  lapply(list.files("../data/",pattern = "*.RData", full.names = TRUE), load, envir = .GlobalEnv)
+######################################################################
+### Generate of the released files:                                ###
+###   1. RData files with data.frames generated from the XML       ###
+###   2. Global XML file containing all information                ###
+######################################################################
 
 library("XML")
 
@@ -6,83 +10,6 @@ options(stringsAsFactors = FALSE)
 
 XML_DIR <- "xml-cleaned/"
 DATA_DIR <- "../data"
-MAN_DIR <- "../man"
-
-customRdFormat <- function(x) {
-  fmt <- c("\\format{", 
-           paste("  A data frame with", NROW(x),
-                 "observations on the following",
-                 ifelse(NCOL(x) == 1, "variable.",paste(NCOL(x), "variables."))),
-           "  \\describe{")
-  for (i in names(x)) {
-    xi <- x[[i]]
-    fmt <- c(fmt, 
-             paste0("    \\item{\\code{", i, "}}{",
-                    if (inherits(xi, "ordered")) {
-                      lo <- levels(xi)
-                      ltu <- c(lo[c(1,length(lo))], names(sort(table(xi), decreasing = TRUE))[1:10])[1:10] 
-                      lo[!(lo %in% ltu)] <- " "
-                      nl <- strsplit(gsub("(, )+" ,"," , paste(lo, collapse = ",")),",")[[1]]
-                      paste0("an ", data.class(xi), " factor with levels", 
-                             (if(length(lo) > 10) {" (only extreme and 10 most frequent): "} else {": "}),
-                             paste0(ifelse(nchar(nl)>0, paste0("\\code{",nl,"}"), gsub(".*","\\ldots", nl)), collapse = " < ")) 
-                    } else if (inherits(xi, "factor")) {
-                      lo <- levels(xi)
-                      ltu <- names(sort(table(xi), decreasing = TRUE))[1:10]
-                      paste0("a factor with levels", (if(length(lo)>10) {" (only 10 most frequent): "} else {": "}),
-                             paste0("\\code{", lo[(lo %in% ltu)], "}" , collapse = ", "),
-                             (if(length(lo)>10) {", \\ldots"} else {""}))
-                    } else if (is.vector(xi)) {
-                      paste("a", data.class(xi), "vector")
-                    } else {
-                      paste("a", data.class(xi))
-                    }, "}"))
-  }
-  fmt <- c(fmt, "  }", "}")
-  fmt
-}
-
-create_Rd <- function(object, title, description, seealso = NULL, references = NULL, examples = NULL) {
-  name <- as.character(substitute(object))
-  rd <- promptData(object, filename = NA, name = name)
-
-  rd$title <- sprintf("\\title{%s}", title)
-  rd$description <- c("\\description{", description, "}")
-  rd$format <- customRdFormat(object)
-
-  if ( !is.null(seealso) )
-    rd$seealso <- c("\\seealso{",
-                    paste("\\code{\\link{", seealso, "}}", sep = "", collapse = ", "),
-                    "}")
-
-  rd$source <- c("\\source{",
-                 "Information scraped from the ISIPTA websites \\url{http://www.sipta.org/};",
-                 "",
-                 "For details of generation see \\url{https://github.com/paul-fink/ISIPTA/tree/master/package/generation} and its subdirectories",
-                 "}")
-
-  rd$details <- NULL
-  if(!is.null(references)) {
-    rd$references <- c("\\references{",
-                       references,
-                       "}")
-  }
-  
-  rd$examples <- if(is.null(examples)) {
-    rd$examples[-3]
-  } else {
-    c("\\examples{",
-      sprintf("data(%s)", name),
-      "",
-      examples,
-      "}")
-  }
-
-  ## Rd file:
-  cat(unlist(rd), file = sprintf("%s/%s.Rd", MAN_DIR, name), sep = "\n")
-  invisible(rd)
-}
-
 
 
 ### Conferencs: ######################################################
@@ -140,13 +67,6 @@ xml2conferences <- function() {
 conferences <- xml2conferences()
 save(conferences, file = sprintf("%s/conferences.RData", DATA_DIR))
 
-create_Rd(object = conferences,
-          title = "ISIPTA conference facts",
-          description = "Dates, locations, etc. about the ISIPTA conferences.",
-          seealso = "papers",
-          examples = c("# Years", "table(conferences$year)"))
-
-
 
 ### Papers: ##########################################################
 
@@ -197,15 +117,6 @@ xml2papers <- function() {
 papers <- xml2papers()
 save(papers, file = sprintf("%s/papers.RData", DATA_DIR))
 
-create_Rd(object = papers,
-          title = "ISIPTA papers",
-          description = "Information about the ISIPTA papers.",
-          seealso = c("papers_authors", "authors_locations", "papers_keywords"),
-          examples = c("# The title of the author's first paper",
-                       "papers[papers$id == 2013014,]$title"))
-
-
-
 
 ### Authors: #########################################################
 
@@ -253,17 +164,6 @@ xml2papers_authors <- function() {
 
 papers_authors <- xml2papers_authors()
 save(papers_authors, file = sprintf("%s/papers_authors.RData", DATA_DIR))
-
-create_Rd(object = papers_authors,
-          title = "Authors of the ISIPTA papers",
-          description = "Authors of the ISIPTA papers; the names are normalized to ASCII characters.",
-          seealso = c("papers", "authors_locations", "papers_keywords"),
-          examples = c("# Co-authors for paper with id 2013014",
-                       "papers_authors[papers_authors$id == 2013014,]",
-                       "",
-                       "# Table of all authors",
-                       "table(papers_authors$author)"))
-
 
 
 ### Keywords: ########################################################
@@ -314,12 +214,6 @@ xml2keywords <- function() {
 papers_keywords <- xml2keywords()
 save(papers_keywords, file = sprintf("%s/papers_keywords.RData", DATA_DIR))
 
-create_Rd(object = papers_keywords,
-          title = "Keywords of the ISIPTA papers",
-          description = "Keywords of the ISIPTA papers. The keywords are not normalized.",
-          seealso = c("papers", "authors_locations", "papers_authors"))
-
-
 
 ### Locations: #######################################################
 
@@ -369,18 +263,8 @@ xml2authors_locations <- function() {
 authors_locations <- xml2authors_locations()
 save(authors_locations, file = sprintf("%s/authors_locations.RData", DATA_DIR))
 
-create_Rd(object = authors_locations,
-          title = "(Estimated) location of authors",
-          description = c("Location information about the ISIPTA authors.","\\cr",
-                          paste("The geocodes are obtained from the Data Science Toolkit collection",
-                                "by the help of the \\code{geocode} function of the \\code{ggmap} package")),
-          seealso = c("papers_authors"),
-          references = paste("Kahle, D. and Wickham, H. (2013)  ggmap: Spatial Visualization with ggplot2.",
-                             "\\emph{The R Journal}, \\bold{5}(1), 144--161.",
-                             "\\url{http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}"))
 
-
-### General XML: #######################################################
+### General XML: #####################################################
 
 xml2onefile <- function(filename) {
   mergeXmlByYear <- function(node, year) {
@@ -417,3 +301,130 @@ xml2onefile <- function(filename) {
 }
 
 xml2onefile(filename = "../inst/xml/collected_proceedings.xml")
+
+
+# ####################################################################
+# ##### Documenting the generated data by autogenerated Rd-Files #####
+# ##### Functionality is deprecated                              ##### 
+# ####################################################################
+# ### Helper Function ################################################
+# MAN_DIR <- "../man"
+# 
+# customRdFormat <- function(x) {
+#   fmt <- c("\\format{", 
+#            paste("  A data frame with", NROW(x),
+#                  "observations on the following",
+#                  ifelse(NCOL(x) == 1, "variable.",paste(NCOL(x), "variables."))),
+#            "  \\describe{")
+#   for (i in names(x)) {
+#     xi <- x[[i]]
+#     fmt <- c(fmt, 
+#              paste0("    \\item{\\code{", i, "}}{",
+#                     if (inherits(xi, "ordered")) {
+#                       lo <- levels(xi)
+#                       ltu <- c(lo[c(1,length(lo))], names(sort(table(xi), decreasing = TRUE))[1:10])[1:10] 
+#                       lo[!(lo %in% ltu)] <- " "
+#                       nl <- strsplit(gsub("(, )+" ,"," , paste(lo, collapse = ",")),",")[[1]]
+#                       paste0("an ", data.class(xi), " factor with levels", 
+#                              (if(length(lo) > 10) {" (only extreme and 10 most frequent): "} else {": "}),
+#                              paste0(ifelse(nchar(nl)>0, paste0("\\code{",nl,"}"), gsub(".*","\\ldots", nl)), collapse = " < ")) 
+#                     } else if (inherits(xi, "factor")) {
+#                       lo <- levels(xi)
+#                       ltu <- names(sort(table(xi), decreasing = TRUE))[1:10]
+#                       paste0("a factor with levels", (if(length(lo)>10) {" (only 10 most frequent): "} else {": "}),
+#                              paste0("\\code{", lo[(lo %in% ltu)], "}" , collapse = ", "),
+#                              (if(length(lo)>10) {", \\ldots"} else {""}))
+#                     } else if (is.vector(xi)) {
+#                       paste("a", data.class(xi), "vector")
+#                     } else {
+#                       paste("a", data.class(xi))
+#                     }, "}"))
+#   }
+#   fmt <- c(fmt, "  }", "}")
+#   fmt
+# }
+# 
+# create_Rd <- function(object, title, description, seealso = NULL, references = NULL, examples = NULL) {
+#   name <- as.character(substitute(object))
+#   rd <- promptData(object, filename = NA, name = name)
+# 
+#   rd$title <- sprintf("\\title{%s}", title)
+#   rd$description <- c("\\description{", description, "}")
+#   rd$format <- customRdFormat(object)
+# 
+#   if ( !is.null(seealso) )
+#     rd$seealso <- c("\\seealso{",
+#                     paste("\\code{\\link{", seealso, "}}", sep = "", collapse = ", "),
+#                     "}")
+# 
+#   rd$source <- c("\\source{",
+#                  "Information scraped from the ISIPTA websites \\url{http://www.sipta.org/};",
+#                  "",
+#                  "For details of generation see \\url{https://github.com/paul-fink/ISIPTA/tree/master/package/generation} and its subdirectories",
+#                  "}")
+# 
+#   rd$details <- NULL
+#   if(!is.null(references)) {
+#     rd$references <- c("\\references{",
+#                        references,
+#                        "}")
+#   }
+#   
+#   rd$examples <- if(is.null(examples)) {
+#     rd$examples[-3]
+#   } else {
+#     c("\\examples{",
+#       sprintf("data(%s)", name),
+#       "",
+#       examples,
+#       "}")
+#   }
+# 
+#   ## Rd file:
+#   cat(unlist(rd), file = sprintf("%s/%s.Rd", MAN_DIR, name), sep = "\n")
+#   invisible(rd)
+# }
+#
+# ### Conferencs: ####################################################
+# create_Rd(object = conferences,
+#           title = "ISIPTA conference facts",
+#           description = "Dates, locations, etc. about the ISIPTA conferences.",
+#           seealso = "papers",
+#           examples = c("# Years", "table(conferences$year)"))
+#
+# ### Papers: ########################################################
+# create_Rd(object = papers,
+#           title = "ISIPTA papers",
+#           description = "Information about the ISIPTA papers.",
+#           seealso = c("papers_authors", "authors_locations", "papers_keywords"),
+#           examples = c("# The title of the author's first paper",
+#                        "papers[papers$id == 2013014,]$title"))
+# 
+# ### Authors: #######################################################
+# create_Rd(object = papers_authors,
+#           title = "Authors of the ISIPTA papers",
+#           description = "Authors of the ISIPTA papers; the names are normalized to ASCII characters.",
+#           seealso = c("papers", "authors_locations", "papers_keywords"),
+#           examples = c("# Co-authors for paper with id 2013014",
+#                        "papers_authors[papers_authors$id == 2013014,]",
+#                        "",
+#                        "# Table of all authors",
+#                        "table(papers_authors$author)"))
+# 
+# ### Keywords: ######################################################
+# create_Rd(object = papers_keywords,
+#           title = "Keywords of the ISIPTA papers",
+#           description = "Keywords of the ISIPTA papers. The keywords are not normalized.",
+#           seealso = c("papers", "authors_locations", "papers_authors"))
+# 
+# ### Locations: #####################################################
+# create_Rd(object = authors_locations,
+#           title = "(Estimated) location of authors",
+#           description = c("Location information about the ISIPTA authors.","\\cr",
+#                           paste("The geocodes are obtained from the Data Science Toolkit collection",
+#                                 "by the help of the \\code{geocode} function of the \\code{ggmap} package")),
+#           seealso = c("papers_authors"),
+#           references = paste("Kahle, D. and Wickham, H. (2013)  ggmap: Spatial Visualization with ggplot2.",
+#                              "\\emph{The R Journal}, \\bold{5}(1), 144--161.",
+#                              "\\url{http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}"))
+
