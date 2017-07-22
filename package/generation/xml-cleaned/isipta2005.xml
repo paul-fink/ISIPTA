@@ -764,7 +764,7 @@
       <keyword>possibility theory</keyword>
       <keyword>valuation-based systems</keyword>
     </keywords>
-    <abstract>The main goal of this paper is to describe a new semantic for conditional independence in terms of no double counting of uncertain evidence. For ease of exposition, we use probability calculus to state all results. But the results generalize easily to any calculus that fits in the framework of valuation-based systems. Thus, the results described in this paper apply also, for example, to Dempster-Shafer&#x2019;s (D-S) belief function theory, to Spohn&#x2019;s epistemic beliefs theory, and to Zadeh&#x2019;s possibility theory. The concept of independent (or distinct) evidence in D-S belief function theory is analogous to the concept of conditional independence for variables in probability theory.</abstract>
+    <abstract>The main goal of this paper is to describe a new semantic for conditional independence in terms of no double counting of uncertain evidence. For ease of exposition, we use probability calculus to state all results. But the results generalize easily to any calculus that fits in the framework of valuation-based systems. Thus, the results described in this paper apply also, for example, to Dempster-Shafer's (D-S) belief function theory, to Spohn's epistemic beliefs theory, and to Zadeh's possibility theory. The concept of independent (or distinct) evidence in D-S belief function theory is analogous to the concept of conditional independence for variables in probability theory.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s003.pdf</pdf>
   </paper>
   <paper>
