@@ -4,8 +4,8 @@
 \name{papers_authors}
 \alias{papers_authors}
 \title{Authors of the ISIPTA papers}
-\format{A data frame with \Sexpr[stage=build]{NROW(papers_authors)} observations 
-on the following 3 variables, where each row contains one author of a paper.
+\format{A data frame with 855 observations on the following 3 variables,
+where each row contains one author of a paper.
 \describe{
  \item{\code{year}}{The year in which the paper featured as numeric vector.}
  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -21,7 +21,7 @@ For details of generation see
 and its subdirectories.
 }
 \usage{
-data("papers_auhtors")
+data(papers_authors)
 }
 \description{
 Matching authors to the ISIPTA papers

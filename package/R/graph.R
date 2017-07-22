@@ -1,139 +1,224 @@
+#####################################################################
+### Functions looking for nodes in ISIPTA collaboration network   ###
+#####################################################################
 
-CACHE <- local({
-  demos <- NULL
-
-  list(get = function() demos,
-       set = function(x) demos <<- x)
-})
-
-
-setup_demo_cache <- function() {
-  envir <- new.env()
-  #file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
-  #file <- "./../inst/extdata/demo-cache.RData" # if called in ISIPTA/R
-  file <- "./inst/extdata/demo-cache.RData"     # if called in ISIPTA
-  load(file, envir = envir)
-
-  CACHE$set(envir$demos)
-}
-
-
-
-#' Find and summarize an ISIPTA author
+#' Find authors within the ISIPTA collaboration network
+#' 
+#' \code{nodesById} looks for matching nodes by ID, 
+#' \code{nodesByPattern} by name pattern and 
+#' \code{findSingleNode} for a single one by means of the previous
+#' functions.
+#' 
+#' @param id integer, node ID as shown in the graph (see
+#'   \code{demo("coauthors-network")}).
 #'
-#' @param pattern Part of an author name
+#' @return \code{nodesById} returns a \code{data.frame} with the
+#'   corresponding author names. If no matching node is found,
+#'   the returned \code{data.frame} has 0 rows.
 #'
-#' @return \code{find_author} returns a \code{data.frame} with each
-#'   author matching the \code{pattern} and the corresponding graph
-#'   node id (see \code{demo("coauthors-network")}.
+#' @seealso \code{\link{ISIPTA_author}} for looking up
+#'   information about an author
 #'
 #' @examples
-#'   find_author("Gero")
+#' ## Find author by internal node id
+#' nodesById(81:83)
 #'
 #' @export
-find_author <- function(pattern) {
-  if ( is.null(CACHE$get()) )
-    setup_demo_cache()
 
-  which <- grep(pattern, V(CACHE$get()$graph)$name)
+nodesById <- function(id){
 
-  #node <- as.character(which - 1)
-  # why -1? if vertex.label = rownames(vertices) in plotting the network,
-  # then it should be node <- as.character(which) I think!
-  node <- as.character(which)
+  # sanity check
+  if(all(id %in% seq_along(igraph::V(getCached("graph"))$name))) {
+    # nodeid is valid index
+    return(data.frame(name = igraph::V(getCached("graph"))$name[id],
+                      nodeid = id, stringsAsFactors = FALSE))
+  }
+  # return empty data.frame
+  data.frame(name = character(0L), nodeid = integer(0L),
+             stringsAsFactors = FALSE)
   
-  name <- V(CACHE$get()$graph)$name[which]
+}
 
-  data.frame(name, nodeid = node)
+
+#' @param pattern character, containing patten of an author name. If
+#'   \code{length(pattern) > 1} only the first element is used.
+#'
+#' @return \code{nodesByPattern} returns a \code{data.frame} with each
+#'   author matching the \code{pattern} and the corresponding graph
+#'   node id (see \code{demo("coauthors-network")}. If no matching
+#'   node is found, the returned \code{data.frame} has 0 rows.
+#'
+#' @examples
+#' ## Find author by (partial) name
+#' nodesByPattern("Paul")
+#'
+#' @rdname nodesById
+#' 
+#' @export
+
+nodesByPattern <- function(pattern) {
+  
+  id <- grep(pattern, igraph::V(getCached("graph"))$name)
+  
+  if(length(id)) {
+    # Name pattern was found
+    return(data.frame(
+      name = igraph::V(getCached("graph"))$name[id],
+      nodeid = as.integer(id),
+      stringsAsFactors = FALSE
+    ))
+  }
+  
+  # return empty data.frame
+  data.frame(name = character(0L), nodeid = integer(0L),
+             stringsAsFactors = FALSE)
+
+}
+
+
+#' @param node character of the pattern of an author name or
+#'   integer of internal node id.
+#'
+#' @return \code{findSingleNode} returns a \code{data.frame} 
+#'   with variable names \code{name} and \code{nodeid} holding
+#'   the author name and the corresponding graph node id.
+#'   If the call to \code{nodesByPattern} or 
+#'   \code{nodesById} does not return a single node
+#'   an error is raised.
+#'   
+#' @details 
+#'   In contrast to \code{nodesByPattern} and
+#'   \code{nodesById} an object is only returned if the
+#'   input \code{node} to \code{findSingleNode} uniquely matches
+#'   a node in the graph.
+#'   
+#' @examples
+#' ## Find only one author by (partial) name
+#' findSingleNode("Fink")
+#' 
+#' ## Find only one author by nodeid
+#' findSingleNode(251)
+#'
+#' @rdname nodesById
+#' 
+#' @export
+
+findSingleNode <- function(node) {
+  
+  authornodes <- if(is.character(node)){
+    nodesByPattern(node)
+  } else {
+    nodesById(node)
+  }
+  if(nrow(authornodes) == 0) {
+    stop("no author found for this pattern/node id")
+  }
+  if(nrow(authornodes) > 1) {
+    stop("more than one authors found; only one author allowed")
+  }
+  authornodes
 }
 
 
 
-#' @param nodeid Node ID as shown in the graph (see
-#'   \code{demo("coauthors-network")})
+#####################################################################
+### Summary functions for authors                                 ###
+#####################################################################
+
+#' Summarize authors within the ISIPTA proceedings
+#' 
+#' Summarizing the information about an ISIPTA author, containing
+#' coauthors and contributed papers and conferences contributed to.
+#' 
+#' @param node character of the pattern of an author name or
+#'   integer of internal node id. It will be passed on to
+#'   \code{findSingleNode}.
 #'
-#' @return \code{find_node} returns a \code{data.frame} with the
-#'   corresponding author names.
+#' @return \code{ISIPTA_author} returns a list with information on
+#'   the author of class \code{ISIPTA_author};
+#'   \code{print.ISIPTA_author} nicely prints the result.
 #'
 #' @examples
-#'   find_node(81:83)
+#' sumGero <- ISIPTA_author("Gero Walter")
+#' sumGero
 #'
-#' @rdname find_author
-#'
-#' @export
-find_node<- function(nodeid){
-  if ( is.null(CACHE$get()) )
-    setup_demo_cache()
-
-   #name<- V(CACHE$get()$graph)$name[nodeid + 1]
-   name<- V(CACHE$get()$graph)$name[nodeid] # see comment in find_author
-   data.frame(name = name, nodeid = nodeid)
-}
-
-
-
-#' @param name Exact author name as returned by \code{find_author}
-#' @param show.papers Display paper details
-#'
-#' @return \code{summarize_author} returns a list with information on
-#'   the author; \code{print.ISIPTA_author} nicely prints the result.
-#'
-#' @examples
-#'   summarize_author("Gero Walter")
-#'   summarize_author("Gero Walter", show.papers = TRUE)
-#'
-#' @rdname find_author
+#' @seealso
+#'   \code{\link{findSingleNode}},
+#'   \code{\link{ISIPTA_coauthors}},
+#'   \code{\link{ISIPTA_path}}
 #'
 #' @export
-summarize_author <- function(name, show.papers = FALSE) {
-  if ( is.null(CACHE$get()) )
-    setup_demo_cache()
 
-  stopifnot(name %in% CACHE$get()$authors_locations$author)
-
+ISIPTA_author <- function(node) {
+  
   ## Make R CMD check happy:
   author <- ncoauthors <- author1 <- author2 <- npapers <- NULL
 
-  ret <- list(show.papers = show.papers)
+  ## Load all required from cache
+  papers <- getCached("papers")
+  paper_authors <- getCached("papers_authors")
+  author_npapers <- getCached("authors_npapers_overall")
+  paper_ncoauthors <- getCached("papers_ncoauthors_overall")
+  coauthor_npairs <- getCached("coauthors_npairs")
+  conf_contribs <- getCached("conferences_contributors")
+  
+  ret <- list()
 
   ## Author:
-  ret$author <- find_author(name)
-
+  ret$author <- findSingleNode(node)
+  aname <- ret$author$name
+  
   ## Contributions:
-  contribs <- subset(CACHE$get()$papers_authors, author == name)$id
+  contribs <- paper_authors[
+    paper_authors$author == aname, "id"]
 
   ret$papers <-
     lapply(contribs, function(x) {
       y <- list()
-      y$paper <- subset(CACHE$get()$papers, id == x)
-      y$authors <- subset(CACHE$get()$papers_authors, id == x, select = author)
-      y$authors <- do.call(rbind, lapply(y$authors$author, find_author))
+      y$paper <- papers[
+        papers$id == x, ]
+      y$authors <- paper_authors[
+        paper_authors$id == x, "author", drop = FALSE]
+      y$authors <- do.call(rbind, lapply(y$authors$author,
+                                         nodesByPattern))
       y
     })
 
-  ret$conferences <-
-    unlist(subset(CACHE$get()$conferences_contributors,
-                  author == name, select = -author, drop = TRUE))
+  ret$conferences <- unlist(conf_contribs[
+    conf_contribs$author == aname, -1])
 
-  ret$ncoauthors <-
-    as.numeric(subset(CACHE$get()$papers_ncoauthors_overall,
-                      author == name, select = ncoauthors))
+  ret$ncoauthors <-  as.numeric(paper_ncoauthors[
+    paper_ncoauthors$author == aname, "ncoauthors"])
 
-  ret$ncoauthors_unique <-
-    nrow(subset(CACHE$get()$coauthors_npairs, author1 == name | author2 == name))
 
-  ret$npapers <-
-    as.numeric(subset(CACHE$get()$authors_npapers_overall,
-                      author == name, select = npapers))
+  ret$ncoauthors_unique <- nrow(coauthor_npairs[
+    coauthor_npairs$author1 == aname | 
+      coauthor_npairs$author2 == aname, ])
+  
+  ret$npapers <- as.numeric(author_npapers[
+    author_npapers$author == aname, "npapers"])
 
 
   structure(ret, class = "ISIPTA_author")
 }
 
 
+#' @param x object of class \code{ISIPTA_author}.
+#' @param show.papers logical, indicating whether or not paper
+#'   details should be displayed.
+#' @param ... further arguments, currently ignored.
+#' 
+#' @rdname ISIPTA_author
+#'   
+#' @examples
+#' ## Showing detailed information of papers too
+#' print(sumGero, show.papers = TRUE)
+#' 
+#' @method print ISIPTA_author
+#' 
+#' @export
 
-#' @S3method print ISIPTA_author
-print.ISIPTA_author <- function(x, show.papers = x$show.papers, ...) {
+print.ISIPTA_author <- function(x, show.papers = FALSE, ...) {
 
   pauthor <- function(x) {
     sprintf("%s (%s)", x["name"], x["nodeid"])
@@ -167,105 +252,204 @@ print.ISIPTA_author <- function(x, show.papers = x$show.papers, ...) {
     for ( paper in x$papers ) {
       txt <- sprintf("%s. %s. %s.",
                      paper$paper$title,
-                     paste(apply(paper$authors, 1, pauthor), collapse = ", "),
+                     paste(apply(paper$authors, 1, pauthor),
+                           collapse = ", "),
                      paper$paper$year)
       txt <- strwrap(txt, width = 0.7 * getOption("width"))
       txt <- paste(txt, collapse = "\n")
       cat(txt, "\n\n")
     }
   }
+  invisible(x)
 }
 
-find_coauthors <- function(name, order = 1){
-  if(is.character(name)){
-    name <- find_author(name)$name
-    if(length(name) == 0)
-      stop("No author found for this pattern.")
-    if(length(name) > 1)
-      stop("Several authors match the given pattern.")
-    nodeid <- as.numeric(levels(find_author(name)$nodeid))
-  } else {
-    nodeid <- name
-    #if(length(nodeid) > 1)
-    #  stop("Give a single id number or name pattern.")
-    name <- find_node(nodeid)$name
-    if(is.na(name))
-      stop("No author with this id")
-  }
-  coauthorsgraph <- ego(CACHE$get()$graph, order = order, nodes = nodeid)
-  coauthorsid <- as.numeric(coauthorsgraph[[1]])
-  coauthors <- find_node(coauthorsid)
-  structure(coauthors, class = "ISIPTA_coauthors")
+
+#####################################################################
+### Summary functions for coauthors                               ###
+#####################################################################
+
+#' Summarize the coauthors
+#' 
+#' List direct coauthors for an ISIPTA author and her/his 
+#' neighbourhood authors.
+#' 
+#' @param node character of the pattern of an author name or
+#'   integer of internal node id to be used as the center.
+#'   If the call to \code{\link{nodesByPattern}} or 
+#'   \code{\link{nodesById}} does not return a single node
+#'   an error is raised.
+#' @param order non-negative numeric for the order of the
+#'   neighbourhood. It is coerced to an integer. An order of '0'
+#'   is the author herself/himself and an order of '1' returns
+#'   additionally her/his direct coauthors.
+#'   
+#' @return An object of class "ISIPTA_coauthors" is a 
+#'   \code{data.frame} containing the following components:
+#'     \item{name}{author name}
+#'     \item{nodeid}{respective node id}
+#'     \item{order}{neighbourhood order}
+#'   The rows are ordered in ascending neighbourhood order.
+#'
+#' @examples
+#' ## Find all coauthors of Paul Fink
+#' ISIPTA_coauthors("Paul Fink")
+#'   
+#' ## Find all coauthors of coauthors of Paul Fink
+#' ISIPTA_coauthors(251, order = 2)
+#'   
+#' @seealso
+#'   \code{\link{findSingleNode}},
+#'   \code{\link{ISIPTA_author}},
+#'   \code{\link{ISIPTA_path}}
+#'   
+#' @export
+
+ISIPTA_coauthors <- function(node, order = 1) {
+  
+  authorid <- findSingleNode(node)$nodeid
+  
+  graph <- getCached("graph")
+  
+  coauthorsgraph <- nodesById(as.numeric(
+    igraph::ego(graph,
+                order = order,
+                nodes = authorid)[[1]]
+  ))
+  
+  # calulating the respective neighbourhood order
+  nsize <- unlist(lapply(seq(from = 0, to = order),
+                         function(no) {
+                           igraph::ego_size(graph,
+                                            order = no,
+                                            nodes = authorid)
+                           })
+                  )
+  coauthorsgraph$order <- c(0, rep(seq_len(order), 
+                                   times = diff(nsize)))
+
+  class(coauthorsgraph) = c("ISIPTA_coauthors", "data.frame")
+  coauthorsgraph
 }
+
+
+#' @param x object of class \code{ISIPTA_coauthors}.
+#' @param ... further arguments, currently ignored.
+#' 
+#' @rdname ISIPTA_coauthors
+#' 
+#' @method print ISIPTA_coauthors
+#' 
+#' @export
 
 print.ISIPTA_coauthors <- function(x, ...) {
-  x <- cbind(as.character(x$name), x$nodeid)
+
   pauthor <- function(x) {
     sprintf("%s (%s)", x[1], x[2])
   }
-  cat(sprintf("ISIPTA coauthors for %s:\n",
-              pauthor(x[1,]), sep = "\n"))
-  #print(x)
-  for (i in 2:dim(x)[1])
-    cat(sprintf("  %s\n", pauthor(x[i, ]), sep = "\n"))
-}
+
+  cat(sprintf("ISIPTA coauthor neighbourhood up to order %s for:\n%s\n",
+              max(x$order), pauthor(x[1,]), sep = "\n"))
   
-
-find_path <- function(from, to){
-  cat("Processing 'from' ...\n")
-  if(is.character(from)){
-    fromname <- find_author(from)$name
-    if(length(fromname) == 0)
-      stop("No author found for this pattern.")
-    if(length(fromname) > 1)
-      stop("Several authors match the given pattern.")
-    fromid <- as.numeric(levels(find_author(from)$nodeid))
-  } else {
-    fromid <- from
-    fromname <- find_node(fromid)[1]
-    if(is.na(fromname))
-      stop("No author with this id")
+  for (i in 2:nrow(x)) {
+    cat(sprintf("|- %s%s\n",
+                paste0(rep("-- ", times = x$order[i]-1),
+                       collapse = ""),
+                pauthor(x[i, ]), sep = "\n"))
   }
-  cat("Processing 'to' ...\n")
-  if(is.character(to)){
-    toname <- find_author(to)$name
-    if(length(toname) == 0)
-      stop("No author found for this pattern.")
-    if(length(toname) > 1)
-      stop("Several authors match the given pattern.")
-    toid <- as.numeric(levels(find_author(to)$nodeid))
-  } else {
-    toid <- to
-    toname <- find_node(toid)$name
-    if(is.na(toname))
-      stop("No author with this id.")
-  }
-  path <- shortest_paths(CACHE$get()$graph, from = fromid, to = toid)$vpath
-  pathids <- as.numeric(path[[1]])
-  path <- find_node(pathids)
-  structure(path, class = "ISIPTA_path")
 }
 
+
+#####################################################################
+### Summary functions for paths                                   ###
+#####################################################################
+
+#' Find path between authors
+#' 
+#' Display the path between two authors in the ISIPTA collaboration
+#' network.
+#' 
+#' @param from,to character of the pattern of an author name or
+#'   integer of internal node id to be used as the center.
+#'   If the call to \code{\link{nodesByPattern}} or 
+#'   \code{\link{nodesById}} does not return a single node
+#'   an error is raised.
+#'  
+#' @return An object of class "ISIPTA_path" is a 
+#'   \code{data.frame} containing the following components:
+#'     \item{name}{author name}
+#'     \item{nodeid}{respective node id}
+#'   The rows are ordered in the way that first row is
+#'   'from' author and last row is 'to' author.
+#'  
+#' @details 
+#'   In case there exists no path in the network between the 
+#'   authors in 'from' and 'to' then a warning is issued and the
+#'   returned \code{data.frame} contains zero rows.
+#'   
+#' @examples 
+#' ## Path from author 251 (Paul Fink) to Gero Walter (117)
+#' ISIPTA_path(from = 251, to = "Gero Walter")
+#'   
+#' @seealso
+#'   \code{\link{findSingleNode}},
+#'   \code{\link{ISIPTA_author}},
+#'   \code{\link{ISIPTA_coauthors}}
+#'   
+#' @export 
+
+ISIPTA_path <- function(from, to) {
+  
+  fromId <- findSingleNode(from)$nodeid
+  toId <- findSingleNode(to)$nodeid
+ 
+  nodePath <- suppressWarnings(
+    igraph::shortest_paths(getCached("graph"),
+                           from = fromId,
+                           to = toId)$vpath)
+  path <- nodesById(as.numeric(nodePath[[1]]))
+  if(nrow(path) == 0) {
+    warning("no path between 'to' and 'from'")
+  }
+  
+  class(path) <- c("ISIPTA_path", "data.frame")
+  path
+}
+
+
+#' @param x object of class \code{ISIPTA_path}.
+#' @param ... further arguments, currently ignored.
+#' 
+#' @rdname ISIPTA_path
+#' 
+#' @method print ISIPTA_path
+#' 
+#' @export
 
 print.ISIPTA_path <- function(x, ...) {
-  x <- cbind(as.character(x$name), x$nodeid)
-  #print(x)
-  xlength <- dim(x)[1]
-  if(xlength == 0)
-    stop("There is no connection between these two authors based on ISIPTA papers.")
+  
   pauthor <- function(x) {
     sprintf("%s (%s)", x[1], x[2])
   }
-  cat(sprintf("ISIPTA path from %s",
-              pauthor(x[1,]), sep = ""),
-      sprintf("to %s is via:",
-              pauthor(x[xlength,]), sep = ""),"\n")
-  if(xlength <= 2){
-    cat("... direct (they are coauthors).")
-  } else {
-    for (i in 2:(xlength-1))
-      cat(sprintf("  %s\n", pauthor(x[i, ]), sep = "\n"))
+  
+  xlength <- nrow(x)
+  
+  ## Only do printing for actual path
+  if(xlength > 0) {
+    cat(sprintf("ISIPTA path from %s to %s is %s",
+                pauthor(x[1,]), 
+                pauthor(x[xlength,]), 
+                if(xlength == 1) {
+                  "direct (same person)."
+                } else if(xlength == 2) {
+                  "direct (coauthors)."
+                } else {
+                  "via:"
+                }),"\n")
+    if(xlength > 2) {
+      for (i in 2:(xlength - 1)) {
+        cat(sprintf("  %s\n", pauthor(x[i, ])))
+      }
+    }
   }
+  invisible(x)
 }
-
-#

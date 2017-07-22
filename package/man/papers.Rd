@@ -4,9 +4,8 @@
 \name{papers}
 \alias{papers}
 \title{ISIPTA papers}
-\format{A data frame with \Sexpr[stage=build]{NROW(papers)} observations on 
-the following 5 variables, where each row contains 
-information about one paper.
+\format{A data frame with 424 observations on the following 5 variables,
+where each row contains information about one paper.
 \describe{
  \item{\code{year}}{The year in which the paper featured as numeric vector}
  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -25,7 +24,7 @@ For details of generation see
 and its subdirectories.
 }
 \usage{
-data("papers")
+data(papers)
 }
 \description{
 Information about the ISIPTA papers.

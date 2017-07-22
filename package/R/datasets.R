@@ -4,18 +4,17 @@
 #' 
 #' @title (Estimated) location of authors
 #' 
-#' @description 
+#' @description
 #' Location information about the ISIPTA authors.
 #' \cr
 #' The geocodes are obtained from the Data Science Toolkit collection 
 #' by the help of the \code{geocode} function of the \code{ggmap} package.
 #'
-#' @usage data("authors_locations")
+#' @usage data(authors_locations)
 #'
 #' @format
-#' A data frame with \Sexpr[stage=build]{NROW(authors_locations)}
-#' observations on the following 10 variables, where each row contains 
-#' information on one author in a certain year.
+#' A data frame with 716 observations on the following 10 variables,
+#' where each row contains information on one author in a certain year.
 #' \describe{
 #'  \item{\code{year}}{Integer vector of the year of the }
 #'  \item{\code{author}}{A factor of the authors' names.}
@@ -48,14 +47,14 @@
 #' @references
 #' Kahle, D. and Wickham, H. (2013)  ggmap: Spatial Visualization with ggplot2.
 #' \emph{The R Journal}, \bold{5}(1), 144--161. 
-#' \url{http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}
+#' \url{https://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}
 #'
 #' @seealso
 #' \code{\link{papers_authors}}
 #'
 #' @examples
 #' data(authors_locations)
-authors_locations
+"authors_locations"
 
 #' @docType data
 #' @keywords datasets
@@ -66,11 +65,10 @@ authors_locations
 #' @description 
 #' Dates, locations, etc. about the ISIPTA conferences.
 #'
-#' @usage data("conferences")
+#' @usage data(conferences)
 #'
 #' @format
-#' A data frame with \Sexpr[stage=build]{NROW(conferences)} observations
-#' on the following 10 variables.
+#' A data frame with 10 observations on the following 10 variables.
 #' \describe{
 #'  \item{\code{year}}{An integer vector with the year of the conference}
 #'  \item{\code{country_code}}{A factor of the country code according 
@@ -101,7 +99,7 @@ authors_locations
 #' data(conferences)
 #' # Years
 #' conferences$year
-conferences
+"conferences"
 
 #' @docType data
 #' @keywords datasets
@@ -112,12 +110,11 @@ conferences
 #' @description 
 #' Information about the ISIPTA papers.
 #'
-#' @usage data("papers")
+#' @usage data(papers)
 #'
 #' @format
-#' A data frame with \Sexpr[stage=build]{NROW(papers)} observations on 
-#' the following 5 variables, where each row contains 
-#' information about one paper.
+#' A data frame with 424 observations on the following 5 variables,
+#' where each row contains information about one paper.
 #' \describe{
 #'  \item{\code{year}}{The year in which the paper featured as numeric vector}
 #'  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -150,7 +147,7 @@ conferences
 #' data(papers)
 #' # The title of the author's first paper
 #' papers[papers$id == 2013014,]$title
-papers
+"papers"
 
 #' @docType data
 #' @keywords datasets
@@ -161,11 +158,11 @@ papers
 #' @description 
 #' Matching authors to the ISIPTA papers
 #'
-#' @usage data("papers_auhtors")
+#' @usage data(papers_authors)
 #'
 #' @format
-#' A data frame with \Sexpr[stage=build]{NROW(papers_authors)} observations 
-#' on the following 3 variables, where each row contains one author of a paper.
+#' A data frame with 855 observations on the following 3 variables,
+#' where each row contains one author of a paper.
 #' \describe{
 #'  \item{\code{year}}{The year in which the paper featured as numeric vector.}
 #'  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -194,7 +191,7 @@ papers
 #'
 #' # Table of all authors
 #' table(papers_authors$author)
-papers_authors
+"papers_authors"
 
 #' @docType data
 #' @keywords datasets
@@ -205,11 +202,11 @@ papers_authors
 #' @description 
 #' Keywords of the ISIPTA papers.
 #'
-#' @usage data("papers_keywords")
+#' @usage data(papers_keywords)
 #'
 #' @format
-#' A data frame with \Sexpr[stage=build]{NROW(papers_keywords)} observations
-#' on the following 3 variables, where each row contains one keyword of a paper.
+#' A data frame with 2180 observations on the following 3 variables,
+#' where each row contains one keyword of a paper.
 #' \describe{
 #'  \item{\code{year}}{The year in which the paper featured as numeric vector.}
 #'  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -232,4 +229,4 @@ papers_authors
 #'
 #' @examples
 #' data(papers_keywords)
-papers_keywords
+"papers_keywords"

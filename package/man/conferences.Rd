@@ -4,8 +4,7 @@
 \name{conferences}
 \alias{conferences}
 \title{ISIPTA conference facts}
-\format{A data frame with \Sexpr[stage=build]{NROW(conferences)} observations
-on the following 10 variables.
+\format{A data frame with 10 observations on the following 10 variables.
 \describe{
  \item{\code{year}}{An integer vector with the year of the conference}
  \item{\code{country_code}}{A factor of the country code according 
@@ -29,7 +28,7 @@ For details of generation see
 and its subdirectories.
 }
 \usage{
-data("conferences")
+data(conferences)
 }
 \description{
 Dates, locations, etc. about the ISIPTA conferences.

@@ -4,8 +4,8 @@
 \name{papers_keywords}
 \alias{papers_keywords}
 \title{Keywords of the ISIPTA papers}
-\format{A data frame with \Sexpr[stage=build]{NROW(papers_keywords)} observations
-on the following 3 variables, where each row contains one keyword of a paper.
+\format{A data frame with 2180 observations on the following 3 variables,
+where each row contains one keyword of a paper.
 \describe{
  \item{\code{year}}{The year in which the paper featured as numeric vector.}
  \item{\code{id}}{A numeric vector as the unique paper id.
@@ -21,7 +21,7 @@ For details of generation see
 and its subdirectories.
 }
 \usage{
-data("papers_keywords")
+data(papers_keywords)
 }
 \description{
 Keywords of the ISIPTA papers.

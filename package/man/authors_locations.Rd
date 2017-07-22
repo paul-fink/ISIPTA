@@ -4,9 +4,8 @@
 \name{authors_locations}
 \alias{authors_locations}
 \title{(Estimated) location of authors}
-\format{A data frame with \Sexpr[stage=build]{NROW(authors_locations)}
-observations on the following 10 variables, where each row contains 
-information on one author in a certain year.
+\format{A data frame with 716 observations on the following 10 variables,
+where each row contains information on one author in a certain year.
 \describe{
  \item{\code{year}}{Integer vector of the year of the }
  \item{\code{author}}{A factor of the authors' names.}
@@ -32,7 +31,7 @@ For details of generation see
 and its subdirectories.
 }
 \usage{
-data("authors_locations")
+data(authors_locations)
 }
 \description{
 Location information about the ISIPTA authors.
@@ -50,7 +49,7 @@ data(authors_locations)
 \references{
 Kahle, D. and Wickham, H. (2013)  ggmap: Spatial Visualization with ggplot2.
 \emph{The R Journal}, \bold{5}(1), 144--161. 
-\url{http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}
+\url{https://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}
 }
 \seealso{
 \code{\link{papers_authors}}

@@ -9,7 +9,6 @@ library(geosphere)
 library(rworldmap)
 library(ggplot2)
 library(plyr)
-library(stringr)
 
 load("./data/authors_locations.RData")
 load("./data/conferences.RData")
@@ -17,26 +16,18 @@ load("./data/papers.RData")
 load("./data/papers_authors.RData")
 load("./data/papers_keywords.RData")
  
-setwd("./demo")                   # depends on...
-source("simple-summary.R")        #
-source("authors-locations.R")     #                        (produces some warnings, please ignore them)
-source("country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
-source("authors-per-paper.R")     #
-source("regular-contributors.R")  # simple-summary.R
-source("papers-per-author.R")     #
-source("coauthors-per-author.R")  # authors-per-paper.R
-source("coauthors-network.R")     # regular-contributors.R (this takes a while)
-source("coauthors-worldmap.R")    # coauthors-network.R
-source("coauthors-network2013.R") # coauthors-network.R    (produces / overwrites pdfs!!!)
+                                         # depends on...
+source("./demo/simple-summary.R")        #
+source("./demo/authors-locations.R")     #                        (produces some warnings, please ignore them)
+source("./demo/country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
+source("./demo/authors-per-paper.R")     #
+source("./demo/regular-contributors.R")  # simple-summary.R
+source("./demo/papers-per-author.R")     #
+source("./demo/coauthors-per-author.R")  # authors-per-paper.R
+source("./demo/coauthors-network.R")     # regular-contributors.R simple-summary.R
+source("./demo/coauthors-worldmap.R")    # coauthors-network.R regular-contributors.R simple-summary.R
 
-#setwd("./..")
-#source("./R/graph.R")
+source("./R/cache.R")
+source("./R/graph.R")
 
 # now all should be ready!
-
-
-
-
-
-
-#
