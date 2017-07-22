@@ -77,7 +77,7 @@ colSums(contributors_flow)
 ## ... in relation to the maximum number of contributors to lose:
 max_loss <- sapply(flow,
                    function(i) {
-                     min(t1$unique_authors[i-1], t1$unique_authors[i])
+                     min(t1$'Unique Authors'[i-1], t1$'Unique Authors'[i])
                    })
 
 colSums(contributors_flow) / max_loss
