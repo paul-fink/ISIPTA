@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^unpacked-startup.R$
+^NEWS$
+^generation/*
