@@ -1,12 +1,12 @@
 ### Simple summary numbers by years.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(ggplot2)
 library(plyr)
 library(reshape2)
 
-data("papers", package = "ISIPTA")
-data("papers_authors", package = "ISIPTA")
+data("papers", package = "ISIPTA.eProceedings")
+data("papers_authors", package = "ISIPTA.eProceedings")
 
 
 t1 <- data.frame(year = sort(unique(papers$year)))

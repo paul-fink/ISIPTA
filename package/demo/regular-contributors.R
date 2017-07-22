@@ -1,13 +1,13 @@
 ### Regular contributors.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(ggplot2)
 library(plyr)
 library(reshape2)
 
-data("authors_locations", package = "ISIPTA")
+data("authors_locations", package = "ISIPTA.eProceedings")
 
-demo("simple-summary", package = "ISIPTA",
+demo("simple-summary", package = "ISIPTA.eProceedings",
      verbose = FALSE, echo = FALSE, ask = FALSE)
 
 

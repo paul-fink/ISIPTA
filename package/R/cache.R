@@ -28,7 +28,7 @@ NULL
 
 ISIPTA_cache_demo <- function() {
   envir <- new.env(parent = emptyenv())
-  file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
+  file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA.eProceedings")
   #file <- "./../inst/extdata/demo-cache.RData" # if called in ISIPTA/R
   #file <- "./inst/extdata/demo-cache.RData"     # if called in ISIPTA
   load(file, envir = envir)

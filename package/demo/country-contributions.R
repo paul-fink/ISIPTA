@@ -2,16 +2,16 @@
 
 #source("demo/authors-locations.R")
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(colorspace)
 library(ggplot2)
 library(plyr)
 library(reshape2)
 library(rworldmap)
 
-data("papers_authors", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA.eProceedings")
 
-demo("authors-locations", package = "ISIPTA",
+demo("authors-locations", package = "ISIPTA.eProceedings",
      verbose = FALSE, echo = FALSE, ask = FALSE)
 
 

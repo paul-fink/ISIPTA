@@ -9,11 +9,11 @@ load_demos <- function(package = TRUE) {
   envir <- new.env()
   
   if(package){ # when the package is packed
-    data("papers", package = "ISIPTA", envir = envir)
-    data("papers_authors", package = "ISIPTA", envir = envir)
-    data("authors_locations", package = "ISIPTA", envir = envir)
-    data("conferences", package = "ISIPTA", envir = envir)
-    data("papers_keywords", package = "ISIPTA", envir = envir)
+    data("papers", package = "ISIPTA.eProceedings", envir = envir)
+    data("papers_authors", package = "ISIPTA.eProceedings", envir = envir)
+    data("authors_locations", package = "ISIPTA.eProceedings", envir = envir)
+    data("conferences", package = "ISIPTA.eProceedings", envir = envir)
+    data("papers_keywords", package = "ISIPTA.eProceedings", envir = envir)
   } else { # when package is not ready
     load("./../../data/papers.RData", envir = envir)
     load("./../../data/papers_authors.RData", envir = envir)
@@ -23,10 +23,10 @@ load_demos <- function(package = TRUE) {
   }
   # when the package is packed
   if(package) {
-    demos <- list.files(system.file("demo", package = "ISIPTA"),
+    demos <- list.files(system.file("demo", package = "ISIPTA.eProceedings"),
                         pattern = ".R", full.names = TRUE)
   # when package is not ready
-  # (one needs to comment out all library("ISIPTA"), data(..., library="ISIPTA") statements in the demos)
+  # (one needs to comment out all library("ISIPTA.eProceedings"), data(..., library="ISIPTA.eProceedings") statements in the demos)
   } else {
     sys.source("../../R/utils.R")
     demos <- paste0("./../../demo/", c("simple-summary.R",

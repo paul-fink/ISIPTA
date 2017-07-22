@@ -1,13 +1,13 @@
 ### Number of unqiue authors by year and country.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(colorspace)
 library(ggplot2)
 library(plyr)
 library(reshape2)
 library(rworldmap)
 
-data("authors_locations", package = "ISIPTA")
+data("authors_locations", package = "ISIPTA.eProceedings")
 
 #follow an author's movements
 authors_locations[authors_locations$author == "Sebastien Destercke",]

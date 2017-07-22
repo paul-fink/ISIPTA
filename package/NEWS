@@ -1,0 +1,46 @@
+Changes in ISIPTA-eProceedings version 0.2-0
+
+  o Fork of package ISIPTA: https://github.com/mjaeugster/ISIPTA
+
+  o Updated data with ISIPTA 2015 & 2017 conference proceedings.
+
+  o Method to obtain author location changed:
+    from automatic and often faulty email-based geoiplookup 
+    to semi-automatic geocode lookup based on manually filled city name
+
+  o Documentation of functions and data with roxygen2
+
+  o Overhaul of demos:
+    - generated graphics have more meaningful descriptions
+    - some data generations simplified
+
+  o Improvements of exported functions exploring the collaboration network
+
+  o Not re-published to CRAN yet
+
+
+Changes in ISIPTA version 0.1-9
+
+  o Updated data with ISIPTA 2013 conference proceedings.
+
+
+Changes in ISIPTA version 0.1-8
+
+  o Changed igraph to igraph0 dependency.
+
+
+Changes in ISIPTA version 0.1-7
+
+  o Corrected "Inadvisable code" noted by Brian Ripley.
+
+
+Changes in ISIPTA version 0.1-6
+
+  o Updated data with ISIPTA 2011 conference proceedings.
+
+  o Published on CRAN.
+
+
+Changes in ISIPTA version 0.1-5
+
+  o ISIPTA '11 version.

@@ -1,8 +1,8 @@
-Package: ISIPTA
+Package: ISIPTA.eProceedings
 Type: Package
 Title: Information on Papers and Authors from ISIPTA Electronic Proceedings
 Version: 0.2-0
-Date: 2017-07-16
+Date: 2017-07-22
 Authors@R:
     c(person("Paul","Fink", role = c("aut", "cre"),
              email = "paul.fink@stat.uni-muenchen.de"),
@@ -11,7 +11,10 @@ Authors@R:
       person("Thomas", "Augustin", role = "aut"))
 Description: A data collection on the Imprecise
     Probability Community based on ISIPTA Electronic
-    Proceedings (see http://www.sipta.org/).
+    Proceedings (see http://www.sipta.org/). 
+    It contains information about each paper contribution 
+    and the respective authors as well as their location
+    at the time of contribution.
 Imports:  
     igraph
 Suggests:

@@ -1,11 +1,11 @@
 ### Authors per paper.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(ggplot2)
 library(plyr)
 library(reshape2)
 
-data("papers_authors", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA.eProceedings")
 
 
 papers_nauthors <-

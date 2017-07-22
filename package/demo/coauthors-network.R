@@ -1,13 +1,13 @@
 ### Coauthors network; i.e., authors as vertices and two vertices
 ### joined by an edge if the two authors have written a joint paper.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(ggplot2)
 library(igraph)
 library(plyr)
 library(reshape2)
 
-demo("regular-contributors", package = "ISIPTA",
+demo("regular-contributors", package = "ISIPTA.eProceedings",
      verbose = FALSE, echo = FALSE, ask = FALSE)
 
 

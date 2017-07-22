@@ -1,12 +1,12 @@
 ### Coauthors per author. See demo("coauthor-network") for a detailed
 ## analysis on the unique pairs of coauthors.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(ggplot2)
 library(plyr)
 library(reshape2)
 
-demo("authors-per-paper", package = "ISIPTA",
+demo("authors-per-paper", package = "ISIPTA.eProceedings",
      verbose = FALSE, echo = FALSE, ask = FALSE)
 
 

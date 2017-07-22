@@ -1,6 +1,6 @@
 ### Coauthors network on the world map.
 
-library("ISIPTA")
+library("ISIPTA.eProceedings")
 library(geosphere)
 library(ggplot2)
 library(igraph)
@@ -8,9 +8,9 @@ library(plyr)
 library(reshape2)
 library(rworldmap)
 
-data("authors_locations", package = "ISIPTA")
+data("authors_locations", package = "ISIPTA.eProceedings")
 
-demo("coauthors-network", package = "ISIPTA",
+demo("coauthors-network", package = "ISIPTA.eProceedings",
      verbose = FALSE, echo = FALSE, ask = FALSE)
 
 
