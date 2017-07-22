@@ -1,12 +1,15 @@
 ### Coauthors network; i.e., authors as vertices and two vertices
 ### joined by an edge if the two authors have written a joint paper.
 
-#library("ISIPTA")
+library("ISIPTA")
+library(ggplot2)
+library(igraph)
+library(plyr)
+library(reshape2)
 
-#demo("regular-contributors", package = "ISIPTA",
-#     verbose = FALSE, echo = FALSE, ask = FALSE)
+demo("regular-contributors", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-#data("papers_authors", package = "ISIPTA")
 
 
 coauthors_pairs <- ddply(papers_authors, .(id),
@@ -63,20 +66,22 @@ graph <- graph.data.frame(edgelist,
                           directed = FALSE,
                           vertices = vertices)
 
-summary(graph) # no useful output???
-
 
 
 ### Visualization of the graph: ######################################
 
 set.seed(1234)
+coords <- layout_with_fr(graph = graph, niter = 2000)
 plot(graph,
      vertex.size = 5,
      vertex.color = "gray90",
+     vertex.label = rownames(vertices),
      vertex.frame.color = "gray90",
      vertex.label.color = "black",
      edge.color = "SkyBlue2",
-     layout = layout.fruchterman.reingold)
+     layout = coords,
+     main = sprintf("Complete collaboration network (%s)",
+                    max(levels(coauthors_pairs$year))))
 
 legend("topleft",
        legend = sort(unique(edgelist$width)),
@@ -121,15 +126,16 @@ regulars_distances_melt <- regulars_distances_melt[regulars_distances_melt$value
 table(regulars_distances_melt$value)
 table(regulars_distances_melt$value, regulars_distances_melt$Var2)
 
-#ggplot(melt(regulars_distances_melt), aes(value)) +
+#ggplot(melt(regulars_distances_melt, id.vars = c("Var1", "Var2")), aes(value)) +
 #  geom_density(aes(y = ..count..), fill = "SkyBlue2") +
 #  facet_grid(. ~ Var2)
 
-ggplot(melt(regulars_distances_melt), aes(ordered(value))) +
+ggplot(melt(regulars_distances_melt, id.vars = c("Var1", "Var2")), aes(ordered(value))) +
   geom_bar(fill = "SkyBlue2") +
-  facet_grid(. ~ Var2)
-# Barbara and Jirina are apparently not part of the largest cluster in the graph,
-# otherwise they would have higher distances
+  facet_grid(. ~ Var2) + labs(x = "Distances") + 
+  labs(title = "Distribution of distances of persons with paper at all ISIPTAs")
+# Barbara is apparently not part of the largest cluster in the graph,
+# otherwise she would have higher distances
 
 ### Evolution of the network over time: ##############################
 
@@ -158,8 +164,8 @@ years <- levels(coauthors_pairs$year)
 years <- sapply(years, grep,
                 colnames(coauthors_years), value = TRUE)
 
-op <- par(mfrow = c(1, length(years)))
-#op <- par(mfrow = c(2, length(years)/2)) # currently 8 conferences
+
+op <- par(mfrow = c(2, ceiling(length(years)/2)))
 
 for ( i in years ) {
 

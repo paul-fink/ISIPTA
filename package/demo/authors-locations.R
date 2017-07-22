@@ -1,9 +1,13 @@
 ### Number of unqiue authors by year and country.
 
-#library("ISIPTA")
-library("rworldmap")
+library("ISIPTA")
+library(colorspace)
+library(ggplot2)
+library(plyr)
+library(reshape2)
+library(rworldmap)
 
-#data("authors_locations", package = "ISIPTA")
+data("authors_locations", package = "ISIPTA")
 
 #follow an author's movements
 authors_locations[authors_locations$author == "Sebastien Destercke",]
@@ -21,7 +25,8 @@ t2absolut <- data.frame(country_code = colnames(t2),
 t2map <- joinCountryData2Map(t2absolut, joinCode = "ISO2",
                              nameJoinColumn = "country_code")
 
-values <- seq(min(t2absolut$value), max(t2absolut$value))
+values <- seq(floor(min(t2absolut$value)), 
+              ceiling(max(t2absolut$value)))
 pal <- rev(sequential_hcl(length(values)-1, power = 1.2))
 
 
@@ -29,7 +34,7 @@ pal <- rev(sequential_hcl(length(values)-1, power = 1.2))
 mapCountryData(t2map, nameColumnToPlot = "value",
                colourPalette = pal,
                catMethod = values,
-               mapTitle = "",
+               mapTitle = "Absolute frequency of contributors",
                addLegend = TRUE,
                oceanCol = gray(0.95),
                missingCountryCol = "white")
@@ -39,7 +44,7 @@ mapCountryData(t2map, nameColumnToPlot = "value",
                mapRegion = "europe",
                colourPalette = pal,
                catMethod = values,
-               mapTitle = "",
+               mapTitle = "Absolute frequency of contributors from Europe",
                addLegend = TRUE,
                oceanCol = gray(0.95),
                missingCountryCol = "white")
@@ -53,20 +58,18 @@ data("countryRegions", package = "rworldmap")
 t2melt <- melt(t2, varnames = c("year", "country_code"))
 # countryRegions now has only ISO3 country codes,
 # so we must convert the two-letter ISO2 to the three-letter ISO3 code
-t2melt$country_code3 <- NA
 # isoToName() does not like character vectors.
-# this loop throws 8 warnings but the result still seems fine (?)
-for (i in 1:dim(t2melt)[1]){
-  t2melt$country_code3[i] <- isoToName(iso=as.character(t2melt$country_code[i]), nameColumn='ISO_A3')
-}
+# Sometimes more than one value is found, getting only the first
+t2melt$country_code3 <- sapply(as.character(t2melt$country_code),
+                               function(x) {isoToName(x, nameColumn = "ISO_A3")[1]})
 t2melt$region <- countryRegions[match(t2melt$country_code3,
                                       countryRegions$ISO3), "GEO3major"]
-t2melt$region <- t2melt$region[, drop = TRUE]
 t2melt$year <- ordered(t2melt$year)
 
 t2melt <- ddply(t2melt, .(year, region), numcolwise(sum))
 
 
 ggplot(t2melt, aes(year, value, group = region, colour = region)) +
-  geom_point() + geom_line()
+  geom_point() + geom_line() + labs(x = "Year", y = "Unique authors") +
+  labs(colour = "Region", title = "Unique authors by region and year")
 

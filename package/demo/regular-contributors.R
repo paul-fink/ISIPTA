@@ -1,13 +1,18 @@
 ### Regular contributors.
 
-#library("ISIPTA")
+library("ISIPTA")
+library(ggplot2)
+library(plyr)
+library(reshape2)
 
-#demo("simple-summary", package = "ISIPTA",
-#     verbose = FALSE, echo = FALSE, ask = FALSE)
+data("authors_locations", package = "ISIPTA")
 
-#data("authors_locations", package = "ISIPTA")
+demo("simple-summary", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-#converts the variable year into an ordered factor
+
+
+## converts the variable year into an ordered factor
 authors_locations$year <- ordered(authors_locations$year)
 
 conferences_contributors <-
@@ -23,7 +28,8 @@ colnames(conferences_contributors) <-
 authors_ncontributions <-
   data.frame(author = conferences_contributors$author,
              ncontribs = rowSums(conferences_contributors[, -1]))
-# these are not number of papers, but number of times the author was at a ISIPTA!
+## these are not number of papers, 
+## but number of times the author contributed paper at a ISIPTA!
 
 
 ### Contribution "distribution": #####################################
@@ -33,7 +39,10 @@ t5
 
 
 ggplot(melt(t5, varnames = c("ncontribs")),
-       aes(ordered(ncontribs), value)) + geom_bar(stat="identity")
+       aes(ordered(ncontribs), value)) + geom_bar(stat = "identity") +
+  labs(x = "Distinct ISIPTA conferences") + 
+  labs(y = "Authors") + 
+  labs(title = "Authors by contribution to distinct ISIPTA conferences")
 
 
 
@@ -72,3 +81,4 @@ max_loss <- sapply(flow,
                    })
 
 colSums(contributors_flow) / max_loss
+

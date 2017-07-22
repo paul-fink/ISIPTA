@@ -1,9 +1,12 @@
 ### Simple summary numbers by years.
 
-#library("ISIPTA")
+library("ISIPTA")
+library(ggplot2)
+library(plyr)
+library(reshape2)
 
-#data("papers", package = "ISIPTA")
-#data("papers_authors", package = "ISIPTA")
+data("papers", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA")
 
 
 t1 <- data.frame(year = sort(unique(papers$year)))
@@ -27,9 +30,10 @@ t1
 
 ### Visualization by year: ###########################################
 
+names(t1) <- c("year", "Papers", "Paper authors", "Unique authors")
 t1melt <- melt(t1, id = "year")
 t1melt$year <- ordered(t1melt$year)
 
 ggplot(t1melt, aes(year, value, group = variable, colour = variable)) +
-  geom_point() + geom_line()
-
+  geom_point() + geom_line() + labs(x = "Year", colour = "") + 
+  labs(y = "Frequency of ...", title = "Summary")

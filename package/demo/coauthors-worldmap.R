@@ -1,37 +1,45 @@
 ### Coauthors network on the world map.
 
-#library("ISIPTA")
-library("rworldmap")
+library("ISIPTA")
+library(geosphere)
+library(ggplot2)
+library(igraph)
+library(plyr)
+library(reshape2)
+library(rworldmap)
 
-#demo("coauthors-network", package = "ISIPTA",
-#     verbose = FALSE, echo = FALSE, ask = FALSE)
+data("authors_locations", package = "ISIPTA")
 
-#data("authors_locations", package = "ISIPTA")
+demo("coauthors-network", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
+
 
 
 ## Extend with geolocations:
-coauthors_pairs <- merge(coauthors_pairs, authors_locations,
+coauthors_pairs_loc <- merge(coauthors_pairs, authors_locations,
                          by.x = c("author2", "year"),
                          by.y = c("author", "year"),
                          sort = FALSE)
 
-coauthors_pairs <- merge(coauthors_pairs, authors_locations,
+coauthors_pairs_loc <- merge(coauthors_pairs_loc, authors_locations,
                          by.x = c("author1", "year"),
                          by.y = c("author", "year"),
                          suffixes = c(".author2", ".author1"),
                          sort = FALSE)
-
+coauthors_pairs_loc <- subset(coauthors_pairs_loc,
+                              (!is.na(city_lon.author2) & !is.na(city_lat.author2) & 
+                                 !is.na(city_lon.author2) & !is.na(city_lat.author2)))
 
 
 ### Visualization of the world map: ##################################
 
-plot(getMap())
-for ( i in seq(length = nrow(coauthors_pairs)) ) {
-  p1 <- c(x = coauthors_pairs[i, "city_lon.author1"],
-          y = coauthors_pairs[i, "city_lat.author1"])
+plot(getMap(), main = "Collaboration Map")
+for ( i in seq(length = nrow(coauthors_pairs_loc)) ) {
+  p1 <- c(x = coauthors_pairs_loc[i, "city_lon.author1"],
+          y = coauthors_pairs_loc[i, "city_lat.author1"])
 
-  p2 <- c(x = coauthors_pairs[i, "city_lon.author2"],
-          y = coauthors_pairs[i, "city_lat.author2"])
+  p2 <- c(x = coauthors_pairs_loc[i, "city_lon.author2"],
+          y = coauthors_pairs_loc[i, "city_lat.author2"])
 
   l <- gcIntermediate(p1, p2, n = 100,
                       breakAtDateLine = TRUE,

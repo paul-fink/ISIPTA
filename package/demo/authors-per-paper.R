@@ -1,8 +1,11 @@
 ### Authors per paper.
 
-#library("ISIPTA")
+library("ISIPTA")
+library(ggplot2)
+library(plyr)
+library(reshape2)
 
-#data("papers_authors", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA")
 
 
 papers_nauthors <-
@@ -29,12 +32,18 @@ t4
 
 ## Absolute numbers of authors per paper:
 ggplot(papers_nauthors, aes(nauthors, fill = nauthors)) +
-  geom_bar() + xlab("Authors per paper") + ylab("Papers")
+  geom_bar() + labs(x = "Authors", y = "Papers") +
+  labs(title = "Authors per paper")
 
 
 ## Numbers of authors per paper per year:
-ggplot(papers_nauthors, aes(nauthors, fill = year)) + geom_bar()
-ggplot(papers_nauthors, aes(year, fill = nauthors)) + geom_bar()
+ggplot(papers_nauthors, aes(nauthors, fill = year)) + geom_bar() +
+  labs(x = "Authors per paper", y = "Papers", fill = "Year") +
+  labs(title = "Paper distribution")
+
+ggplot(papers_nauthors, aes(year, fill = nauthors)) + geom_bar() +
+  labs(x = "Year", y = "Papers", fill = "Authors per paper") +
+  labs(title = "Paper distribution")
 
 
 
@@ -49,9 +58,13 @@ t4melt <- within(t4melt, {
 
 ## ... grouped by year:
 ggplot(t4melt, aes(nauthors, value, group = year, colour = year)) +
-    geom_point() + geom_line()
+  geom_point() + geom_line() + labs(x = "Authors per paper") +
+  labs(y = "Papers", colour = "Year") + 
+  labs(title = "Development of authors per paper")
 
 
 ## ... grouped by number of authors:
 ggplot(t4melt, aes(year, value, group = nauthors, colour = nauthors)) +
-  geom_point() + geom_line() + xlab("Year") + ylab("Papers")
+  geom_point() + geom_line() + labs(x = "Year", y = "Papers") +
+  labs(colour = "Authors per paper") +
+  labs(title = "Development of authors per paper")

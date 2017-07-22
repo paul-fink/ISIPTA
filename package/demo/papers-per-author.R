@@ -1,8 +1,11 @@
 ### Papers per author.
 
-#library("ISIPTA")
+library("ISIPTA")
+library(ggplot2)
+library(plyr)
+library(reshape2)
 
-#data("papers_authors", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA")
 
 
 authors_npapers <-
@@ -15,7 +18,7 @@ authors_npapers <-
 
 authors_npapers$year <- ordered(authors_npapers$year)
 
-table(authors_npapers$npapers) # so 6 times did someone have 4 papers at a single conference
+table(authors_npapers$npapers) # so 8 times did someone have 4 papers at a single conference
 subset(authors_npapers, npapers == 4) # here they are
 subset(authors_npapers, npapers == 3) # and those who had 3 papers at a single conference
 
@@ -31,7 +34,9 @@ t6
 
 
 ggplot(melt(t6, varnames = c("npapers")),
-       aes(ordered(npapers), value)) + geom_bar(stat="identity")
+       aes(ordered(npapers), value)) + geom_bar(stat = "identity") +
+  labs(x = "Papers in ISIPTA proceedings", y = "Authors") +
+  labs(title = "Paper contributions by author")
 
 
 ## Who are the authors with a high number of papers?

@@ -1,13 +1,19 @@
 ### Number of contributions by year and country.
 
-#library("ISIPTA")
-library("rworldmap")
+#source("demo/authors-locations.R")
 
-#demo("authors-locations", package = "ISIPTA",
-#     verbose = FALSE, echo = FALSE, ask = FALSE)
+library("ISIPTA")
+library(colorspace)
+library(ggplot2)
+library(plyr)
+library(reshape2)
+library(rworldmap)
 
-#data("papers_authors", package = "ISIPTA")
-#data("authors_locations", package = "ISIPTA")
+data("papers_authors", package = "ISIPTA")
+
+demo("authors-locations", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
+
 
 
 papers_authors_locations <- merge(papers_authors,
@@ -42,7 +48,6 @@ t3 <- daply(papers_country_contributions, .(year),
 t3
 
 
-
 ### Visualization by region and by year: #############################
 
 data("countryRegions", package = "rworldmap")
@@ -50,31 +55,29 @@ data("countryRegions", package = "rworldmap")
 t3melt <- melt(t3, varnames = c("year", "country_code"))
 # countryRegions now has only ISO3 country codes,
 # so we must convert the two-letter ISO2 to the three-letter ISO3 code
-t3melt$country_code3 <- NA
 # isoToName() does not like character vectors.
-# this loop throws 8 warnings but the result still seems fine (?)
-for (i in 1:dim(t3melt)[1]){
-  t3melt$country_code3[i] <- isoToName(iso=as.character(t3melt$country_code[i]), nameColumn='ISO_A3')
-}
+# Sometimes more than one value is found, getting only the first
+t3melt$country_code3 <- sapply(as.character(t3melt$country_code),
+                               function(x) {isoToName(x, nameColumn = "ISO_A3")[1]})
 t3melt$region <- countryRegions[match(t3melt$country_code3,
                                       countryRegions$ISO3), "GEO3major"]
-t3melt$region <- t3melt$region[, drop = TRUE]
 t3melt$year <- ordered(t3melt$year)
 
 t3melt <- ddply(t3melt, .(year, region), numcolwise(sum))
 
-
 ggplot(t3melt, aes(year, value, group = region, colour = region)) +
-  geom_point() + geom_line()
+  geom_point() + geom_line() + labs(x = "Year", y = "Papers") +
+  labs(colour = "Region", title = "Papers by world region")
 
 
 
 ### Visualization of authors locations versus country contributions: #
 
 t23melt <- rbind(cbind(t2melt, what = "Unique authors"),
-                 cbind(t3melt, what = "Contributions"))
-t23melt$what <- factor(t23melt$what, levels = c("Unique authors", "Contributions"))
+                 cbind(t3melt, what = "Papers"))
+t23melt$what <- factor(t23melt$what, levels = c("Unique authors", "Papers"))
 
 ggplot(t23melt, aes(year, value, group = region, colour = region)) +
-  geom_point() + geom_line() +
-  facet_grid(. ~ what)
+  geom_point() + geom_line() + facet_grid(. ~ what) + labs(x ="Year") +
+  labs(y = "Frequency of unique authors and papers", colour = "Region") +
+  labs(title = "Comparison unique authors and papers by world region")
