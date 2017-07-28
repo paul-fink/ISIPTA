@@ -50,7 +50,7 @@
   </paper>
   <paper>
     <id>051</id>
-    <title>On the Suboptimality of the Generalized Bayes Rule and Robust Bayesian Procedures from the Decision Theoretic Point of View --- a Cautionary Note on Updating Imprecise Priors</title>
+    <title>On the Suboptimality of the Generalized Bayes Rule and Robust Bayesian Procedures from the Decision Theoretic Point of View: a Cautionary Note on Updating Imprecise Priors</title>
     <authors>
       <author>
         <name>Thomas Augustin</name>
@@ -355,8 +355,16 @@
     <title>Bounding the risk of lung cancer attributed to other environmental pollutants</title>
     <authors>
       <author>
-        <name>Minh Ha Duong</name>
+        <name>Minh Ha-Duong</name>
         <email>minh.ha.duong@cmu.edu</email>
+      </author>
+      <author>
+        <name>Elizabeth Casman</name>
+        <email>casman@andrew.cmu.edu</email>
+      </author>
+      <author>
+        <name>Granger Morgan</name>
+        <email>granger.morgan@andrew.cmu.edu</email>
       </author>
     </authors>
     <keywords>
@@ -381,11 +389,11 @@
         <email>jrmartin@unex.es</email>
       </author>
       <author>
-        <name>Jose Pablo Arias</name>
+        <name>Jose Arias</name>
         <email>jparias@unex.es</email>
       </author>
       <author>
-        <name>Alfonso Suarez-Llorens</name>
+        <name>Alfonso Suarez</name>
         <email>alfonso.suarez@uca.es</email>
       </author>
     </authors>
@@ -710,6 +718,10 @@
       <author>
         <name>Gerd Peschl</name>
         <email>peschl@tugraz.at</email>
+      </author>
+      <author>
+        <name>Helmut Schweiger</name>
+        <email>helmut.schweiger@tugraz.at</email>
       </author>
     </authors>
     <keywords>

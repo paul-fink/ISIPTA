@@ -60,6 +60,14 @@
         <name>Cedric Baudrit</name>
         <email>cbaudrit@grignon.inra.fr</email>
       </author>
+      <author>
+        <name>Arnaud Helias</name>
+        <email>arnaud.helias@grignon.inra.fr</email>
+      </author>
+      <author>
+        <name>Nathalie Perrot</name>
+        <email>nathalie.perrot@grignon.inra.fr</email>
+      </author>
     </authors>
     <keywords>
       <keyword>imprecise probabilities</keyword>
@@ -143,7 +151,7 @@
         <email>acu@decsai.ugr.es</email>
       </author>
       <author>
-        <name>Manuel Gomez</name>
+        <name>Manuel Gomez-Olmedo</name>
         <email>mgomez@decsai.ugr.es</email>
       </author>
       <author>
@@ -771,7 +779,7 @@
   </paper>
   <paper>
     <id>076</id>
-    <title>Entropy minimization and imprecise probabilities</title>
+    <title>Scoring Rules, Entropy, and Imprecise Probabilities</title>
     <authors>
       <author>
         <name>Robert Nau</name>
@@ -787,9 +795,13 @@
       </author>
     </authors>
     <keywords>
-      <keyword></keyword>
+      <keyword>entropy</keyword>
+      <keyword>divergence</keyword>
+      <keyword>scoring rules</keyword>
+      <keyword>portfolio optimization</keyword>
+      <keyword>incomplete markets</keyword>
     </keywords>
-    <abstract>Suppose that a risk-averse expected utility maximizer with a precise probability distribution p bets optimally against a risk neutral opponent (or equivalently an incomplete market for contingent claims) whose beliefs are described by a convex set Q of probability distributions. The utility-maximization problem turns out to be precisely the dual of the problem of finding the distribution q in Q that minimizes a generalized divergence with respect to p. A special case is the one in which the decision maker has logarithmic utility, in which case the divergence is just the Kullback-Leibler divergence, but we present a closed-form solution for the entire family of linear-risk-tolerance (a.k.a. HARA) utility functions and show that this corresponds to a particular parametric family of generalized divergences, which is derived from an entropy measure originally proposed by Arimoto and which is also related to the pseudospherical scoring rule originally proposed by I.J. Good.</abstract>
+    <abstract>Suppose that a risk-averse expected utility maximizer with a precise probability distribution p bets optimally against a risk neutral opponent (or equivalently invests in an incomplete market for contingent claims) whose beliefs (or prices) are described by a convex set Q of probability distributions. This utility-maximization problem is the dual of the problem of finding the distribution q in Q that minimizes a generalized divergence (relative entropy) with respect to p. A special case is that of logarithmic utility, in which the corresponding divergence is the Kullback-Leibler divergence, but we present a closed-form solution for the entire family of linear-risk-tolerance (a.k.a. HARA) utility functions and show that this corresponds to a particular parametric family of generalized divergences, which is derived from an entropy measure originally proposed by Arimoto and which is also related to a generalization of pseudospherical scoring rule originally proposed by I.J. Good. A variant of this decision problem, in which the decision maker has quasilinear utility for consumption over two periods, leads to the family of power divergences, which is related to a generalization of the power family of scoring rules.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s076.pdf</pdf>
   </paper>
   <paper>
@@ -908,7 +920,7 @@
         <email>fabio.trojani@unisg.ch</email>
       </author>
       <author>
-        <name>Hutter Marcus</name>
+        <name>Marcus Hutter</name>
         <email>marcus@hutter1.net</email>
       </author>
     </authors>

@@ -1660,4 +1660,48 @@
       <longitude>14.21021</longitude>
     </city>
   </location>
+  <location>
+    <country>
+      <code>US</code>
+      <name>United States</name>
+    </country>
+    <city>
+      <name>Iowa City</name>
+      <latitude>41.63421</latitude>
+      <longitude>-91.49905</longitude>
+    </city>
+  </location>
+  <location>
+    <country>
+      <code>IT</code>
+      <name>Italy</name>
+    </country>
+    <city>
+      <name>Naples</name>
+      <latitude>40.83333</latitude>
+      <longitude>14.25000</longitude>
+    </city>
+  </location>
+  <location>
+    <country>
+      <code>FR</code>
+      <name>France</name>
+    </country>
+    <city>
+      <name>Villetaneuse</name>
+      <latitude>48.95833</latitude>
+      <longitude>2.34167</longitude>
+    </city>
+  </location>
+  <location>
+    <country>
+      <code>CA</code>
+      <name>Canada</name>
+    </country>
+    <city>
+      <name>Sainte-Foy</name>
+      <latitude>46.75615</latitude>
+      <longitude>-71.29543</longitude>
+    </city>
+  </location>
 </locations>

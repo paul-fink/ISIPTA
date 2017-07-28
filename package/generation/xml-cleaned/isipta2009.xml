@@ -443,7 +443,7 @@
         <email>fgcozman@usp.br</email>
       </author>
       <author>
-        <name>Ricardo Shirota Filho</name>
+        <name>Ricardo Shirota</name>
         <email>ricardo.shirota@poli.usp.br</email>
       </author>
     </authors>
@@ -712,6 +712,10 @@
         <name>Anbu Yue</name>
         <email>a.yue@qub.ac.uk</email>
       </author>
+      <author>
+        <name>David Timson</name>
+        <email>d.timson@qub.ac.uk</email>
+      </author>
     </authors>
     <keywords>
       <keyword>imprecise probabilistic knowledge</keyword>
@@ -949,6 +953,10 @@
       <author>
         <name>Michael Smithson</name>
         <email>Michael.Smithson@anu.edu.au</email>
+      </author>
+      <author>
+        <name>Paul Campbell</name>
+        <email>paul.campbell@abs.gov.au</email>
       </author>
     </authors>
     <keywords>

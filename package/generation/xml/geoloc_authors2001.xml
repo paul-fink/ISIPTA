@@ -476,6 +476,25 @@
     </location>
   </author>
   <author>
+    <name>Michel Grabisch</name>
+    <email>michel.grabisch@lip6.fr</email>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Paris</name>
+        <latitude>48.85341</latitude>
+        <longitude>2.34880</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
     <name>Serena Doria</name>
     <email>s.doria@dst.unich.it</email>
     <location>
@@ -647,6 +666,44 @@
     </location>
   </author>
   <author>
+    <name>Eric Parent</name>
+    <email>parent@engref.fr</email>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Paris</name>
+        <latitude>48.85341</latitude>
+        <longitude>2.34880</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
+    <name>Bernard Bobee</name>
+    <email>bernard_bobee@inrs-eau.uquebec.ca</email>
+    <location>
+      <country>
+        <code>CA</code>
+        <name>Canada</name>
+      </country>
+      <city>
+        <name>Sainte-Foy</name>
+        <latitude>46.75615</latitude>
+        <longitude>-71.29543</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
     <name>Jim Hall</name>
     <email>jim.hall@bristol.ac.uk</email>
     <location>
@@ -799,6 +856,25 @@
     </location>
   </author>
   <author>
+    <name>Joel Horowitz</name>
+    <email>joel-horowitz@uiowa.edu</email>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Iowa City</name>
+        <latitude>41.63421</latitude>
+        <longitude>-91.49905</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
     <name>Massimo Marinacci</name>
     <email>massimo@econ.unito.it</email>
     <location>
@@ -810,6 +886,25 @@
         <name>Torino</name>
         <latitude>45.05000</latitude>
         <longitude>7.66667</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
+    <name>Adriana Castaldo</name>
+    <email>acastald@unina.it</email>
+    <location>
+      <country>
+        <code>IT</code>
+        <name>Italy</name>
+      </country>
+      <city>
+        <name>Naples</name>
+        <latitude>40.83333</latitude>
+        <longitude>14.25000</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -981,6 +1076,25 @@
         <name>Innsbruck</name>
         <latitude>47.26266</latitude>
         <longitude>11.39454</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
+    <name>Francesco Russo</name>
+    <email>russo@math.univ-paris16.fr3</email>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Villetaneuse</name>
+        <latitude>48.95833</latitude>
+        <longitude>2.34167</longitude>
       </city>
       <university>
         <name>NA</name>

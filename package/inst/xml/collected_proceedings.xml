@@ -3348,6 +3348,25 @@
             </university>
           </location>
         </author>
+        <author>
+          <name>Michel Grabisch</name>
+          <email>michel.grabisch@lip6.fr</email>
+          <location>
+            <country>
+              <code>FR</code>
+              <name>France</name>
+            </country>
+            <city>
+              <name>Paris</name>
+              <latitude>48.85341</latitude>
+              <longitude>2.34880</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
       </authors>
       <keywords>
         <keyword>quantile</keyword>
@@ -3598,6 +3617,44 @@
               <name>Varennes</name>
               <latitude>45.68338</latitude>
               <longitude>-73.43246</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Eric Parent</name>
+          <email>parent@engref.fr</email>
+          <location>
+            <country>
+              <code>FR</code>
+              <name>France</name>
+            </country>
+            <city>
+              <name>Paris</name>
+              <latitude>48.85341</latitude>
+              <longitude>2.34880</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Bernard Bobee</name>
+          <email>bernard_bobee@inrs-eau.uquebec.ca</email>
+          <location>
+            <country>
+              <code>CA</code>
+              <name>Canada</name>
+            </country>
+            <city>
+              <name>Sainte-Foy</name>
+              <latitude>46.75615</latitude>
+              <longitude>-71.29543</longitude>
             </city>
             <university>
               <name>NA</name>
@@ -3896,6 +3953,25 @@
             </university>
           </location>
         </author>
+        <author>
+          <name>Joel Horowitz</name>
+          <email>joel-horowitz@uiowa.edu</email>
+          <location>
+            <country>
+              <code>US</code>
+              <name>United States</name>
+            </country>
+            <city>
+              <name>Iowa City</name>
+              <latitude>41.63421</latitude>
+              <longitude>-91.49905</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
       </authors>
       <keywords>
         <keyword>identification regions</keyword>
@@ -3922,6 +3998,25 @@
               <name>Torino</name>
               <latitude>45.05000</latitude>
               <longitude>7.66667</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Adriana Castaldo</name>
+          <email>acastald@unina.it</email>
+          <location>
+            <country>
+              <code>IT</code>
+              <name>Italy</name>
+            </country>
+            <city>
+              <name>Naples</name>
+              <latitude>40.83333</latitude>
+              <longitude>14.25000</longitude>
             </city>
             <university>
               <name>NA</name>
@@ -4199,6 +4294,25 @@
               <name>Innsbruck</name>
               <latitude>47.26266</latitude>
               <longitude>11.39454</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Francesco Russo</name>
+          <email>russo@math.univ-paris16.fr3</email>
+          <location>
+            <country>
+              <code>FR</code>
+              <name>France</name>
+            </country>
+            <city>
+              <name>Villetaneuse</name>
+              <latitude>48.95833</latitude>
+              <longitude>2.34167</longitude>
             </city>
             <university>
               <name>NA</name>
@@ -4661,7 +4775,7 @@
     </paper>
     <paper>
       <id>051</id>
-      <title>On the Suboptimality of the Generalized Bayes Rule and Robust Bayesian Procedures from the Decision Theoretic Point of View --- a Cautionary Note on Updating Imprecise Priors</title>
+      <title>On the Suboptimality of the Generalized Bayes Rule and Robust Bayesian Procedures from the Decision Theoretic Point of View: a Cautionary Note on Updating Imprecise Priors</title>
       <authors>
         <author>
           <name>Thomas Augustin</name>
@@ -5281,8 +5395,46 @@
       <title>Bounding the risk of lung cancer attributed to other environmental pollutants</title>
       <authors>
         <author>
-          <name>Minh Ha Duong</name>
+          <name>Minh Ha-Duong</name>
           <email>minh.ha.duong@cmu.edu</email>
+          <location>
+            <country>
+              <code>US</code>
+              <name>United States</name>
+            </country>
+            <city>
+              <name>Pittsburgh</name>
+              <latitude>40.47441</latitude>
+              <longitude>-79.95097</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Elizabeth Casman</name>
+          <email>casman@andrew.cmu.edu</email>
+          <location>
+            <country>
+              <code>US</code>
+              <name>United States</name>
+            </country>
+            <city>
+              <name>Pittsburgh</name>
+              <latitude>40.47441</latitude>
+              <longitude>-79.95097</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Granger Morgan</name>
+          <email>granger.morgan@andrew.cmu.edu</email>
           <location>
             <country>
               <code>US</code>
@@ -5352,7 +5504,7 @@
           </location>
         </author>
         <author>
-          <name>Jose Pablo Arias</name>
+          <name>Jose Arias</name>
           <email>jparias@unex.es</email>
           <location>
             <country>
@@ -5371,7 +5523,7 @@
           </location>
         </author>
         <author>
-          <name>Alfonso Suarez-Llorens</name>
+          <name>Alfonso Suarez</name>
           <email>alfonso.suarez@uca.es</email>
           <location>
             <country>
@@ -6116,6 +6268,25 @@
         <author>
           <name>Gerd Peschl</name>
           <email>peschl@tugraz.at</email>
+          <location>
+            <country>
+              <code>AT</code>
+              <name>Austria</name>
+            </country>
+            <city>
+              <name>Graz</name>
+              <latitude>47.06667</latitude>
+              <longitude>15.45000</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Helmut Schweiger</name>
+          <email>helmut.schweiger@tugraz.at</email>
           <location>
             <country>
               <code>AT</code>
@@ -9133,6 +9304,44 @@
             </university>
           </location>
         </author>
+        <author>
+          <name>Arnaud Helias</name>
+          <email>arnaud.helias@grignon.inra.fr</email>
+          <location>
+            <country>
+              <code>FR</code>
+              <name>France</name>
+            </country>
+            <city>
+              <name>Thiverval-Grignon</name>
+              <latitude>48.85108</latitude>
+              <longitude>1.91710</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Nathalie Perrot</name>
+          <email>nathalie.perrot@grignon.inra.fr</email>
+          <location>
+            <country>
+              <code>FR</code>
+              <name>France</name>
+            </country>
+            <city>
+              <name>Thiverval-Grignon</name>
+              <latitude>48.85108</latitude>
+              <longitude>1.91710</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
       </authors>
       <keywords>
         <keyword>imprecise probabilities</keyword>
@@ -9321,7 +9530,7 @@
           </location>
         </author>
         <author>
-          <name>Manuel Gomez</name>
+          <name>Manuel Gomez-Olmedo</name>
           <email>mgomez@decsai.ugr.es</email>
           <location>
             <country>
@@ -10759,7 +10968,7 @@
     </paper>
     <paper>
       <id>076</id>
-      <title>Entropy minimization and imprecise probabilities</title>
+      <title>Scoring Rules, Entropy, and Imprecise Probabilities</title>
       <authors>
         <author>
           <name>Robert Nau</name>
@@ -10820,9 +11029,13 @@
         </author>
       </authors>
       <keywords>
-        <keyword/>
+        <keyword>entropy</keyword>
+        <keyword>divergence</keyword>
+        <keyword>scoring rules</keyword>
+        <keyword>portfolio optimization</keyword>
+        <keyword>incomplete markets</keyword>
       </keywords>
-      <abstract>Suppose that a risk-averse expected utility maximizer with a precise probability distribution p bets optimally against a risk neutral opponent (or equivalently an incomplete market for contingent claims) whose beliefs are described by a convex set Q of probability distributions. The utility-maximization problem turns out to be precisely the dual of the problem of finding the distribution q in Q that minimizes a generalized divergence with respect to p. A special case is the one in which the decision maker has logarithmic utility, in which case the divergence is just the Kullback-Leibler divergence, but we present a closed-form solution for the entire family of linear-risk-tolerance (a.k.a. HARA) utility functions and show that this corresponds to a particular parametric family of generalized divergences, which is derived from an entropy measure originally proposed by Arimoto and which is also related to the pseudospherical scoring rule originally proposed by I.J. Good.</abstract>
+      <abstract>Suppose that a risk-averse expected utility maximizer with a precise probability distribution p bets optimally against a risk neutral opponent (or equivalently invests in an incomplete market for contingent claims) whose beliefs (or prices) are described by a convex set Q of probability distributions. This utility-maximization problem is the dual of the problem of finding the distribution q in Q that minimizes a generalized divergence (relative entropy) with respect to p. A special case is that of logarithmic utility, in which the corresponding divergence is the Kullback-Leibler divergence, but we present a closed-form solution for the entire family of linear-risk-tolerance (a.k.a. HARA) utility functions and show that this corresponds to a particular parametric family of generalized divergences, which is derived from an entropy measure originally proposed by Arimoto and which is also related to a generalization of pseudospherical scoring rule originally proposed by I.J. Good. A variant of this decision problem, in which the decision maker has quasilinear utility for consumption over two periods, leads to the family of power divergences, which is related to a generalization of the power family of scoring rules.</abstract>
       <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s076.pdf</pdf>
     </paper>
     <paper>
@@ -11121,7 +11334,7 @@
           </location>
         </author>
         <author>
-          <name>Hutter Marcus</name>
+          <name>Marcus Hutter</name>
           <email>marcus@hutter1.net</email>
           <location>
             <country>
@@ -12708,7 +12921,7 @@
           </location>
         </author>
         <author>
-          <name>Ricardo Shirota Filho</name>
+          <name>Ricardo Shirota</name>
           <email>ricardo.shirota@poli.usp.br</email>
           <location>
             <country>
@@ -13292,6 +13505,25 @@
             </university>
           </location>
         </author>
+        <author>
+          <name>David Timson</name>
+          <email>d.timson@qub.ac.uk</email>
+          <location>
+            <country>
+              <code>GB</code>
+              <name>United Kingdom</name>
+            </country>
+            <city>
+              <name>Belfast</name>
+              <latitude>54.58333</latitude>
+              <longitude>-5.93333</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
       </authors>
       <keywords>
         <keyword>imprecise probabilistic knowledge</keyword>
@@ -13844,6 +14076,25 @@
         <author>
           <name>Michael Smithson</name>
           <email>Michael.Smithson@anu.edu.au</email>
+          <location>
+            <country>
+              <code>AU</code>
+              <name>Australia</name>
+            </country>
+            <city>
+              <name>Canberra</name>
+              <latitude>-35.28346</latitude>
+              <longitude>149.12807</longitude>
+            </city>
+            <university>
+              <name>NA</name>
+              <department>NA</department>
+            </university>
+          </location>
+        </author>
+        <author>
+          <name>Paul Campbell</name>
+          <email>paul.campbell@abs.gov.au</email>
           <location>
             <country>
               <code>AU</code>
@@ -14808,7 +15059,7 @@
           </location>
         </author>
         <author>
-          <name>Manuel Gomez</name>
+          <name>Manuel Gomez-Olmedo</name>
           <email>mgomez@decsai.ugr.es</email>
           <location>
             <country>
@@ -18773,8 +19024,8 @@
           <longitude>14.21021</longitude>
         </city>
         <university>
-          <name/>
-          <department/>
+          <name>University G. d'Annunzio</name>
+          <department>Department of Engineering and Geology</department>
         </university>
       </location>
     </conference>

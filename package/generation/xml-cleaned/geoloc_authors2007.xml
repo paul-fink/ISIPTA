@@ -96,6 +96,44 @@
     </location>
   </author>
   <author>
+    <name>Arnaud Helias</name>
+    <email>arnaud.helias@grignon.inra.fr</email>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Thiverval-Grignon</name>
+        <latitude>48.85108</latitude>
+        <longitude>1.91710</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
+    <name>Nathalie Perrot</name>
+    <email>nathalie.perrot@grignon.inra.fr</email>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Thiverval-Grignon</name>
+        <latitude>48.85108</latitude>
+        <longitude>1.91710</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
     <name>Mikelis Bickis</name>
     <email>bickis@snoopy.usask.ca</email>
     <location>
@@ -229,7 +267,7 @@
     </location>
   </author>
   <author>
-    <name>Manuel Gomez</name>
+    <name>Manuel Gomez-Olmedo</name>
     <email>mgomez@decsai.ugr.es</email>
     <location>
       <country>
@@ -1369,7 +1407,7 @@
     </location>
   </author>
   <author>
-    <name>Hutter Marcus</name>
+    <name>Marcus Hutter</name>
     <email>marcus@hutter1.net</email>
     <location>
       <country>

@@ -389,6 +389,10 @@
         <name>Dieter Denneberg</name>
         <email>denneberg@math.uni-bremen.de</email>
       </author>
+      <author>
+        <name>Michel Grabisch</name>
+        <email>michel.grabisch@lip6.fr</email>
+      </author>
     </authors>
     <keywords>
       <keyword>quantile</keyword>
@@ -510,6 +514,14 @@
       <author>
         <name>Vincent Fortin</name>
         <email>vinfort@ireq.ca</email>
+      </author>
+      <author>
+        <name>Eric Parent</name>
+        <email>parent@engref.fr</email>
+      </author>
+      <author>
+        <name>Bernard Bobee</name>
+        <email>bernard_bobee@inrs-eau.uquebec.ca</email>
       </author>
     </authors>
     <keywords>
@@ -652,6 +664,10 @@
         <name>Charles Manski</name>
         <email>cfmanski@northwestern.edu</email>
       </author>
+      <author>
+        <name>Joel Horowitz</name>
+        <email>joel-horowitz@uiowa.edu</email>
+      </author>
     </authors>
     <keywords>
       <keyword>identification regions</keyword>
@@ -669,6 +685,10 @@
       <author>
         <name>Massimo Marinacci</name>
         <email>massimo@econ.unito.it</email>
+      </author>
+      <author>
+        <name>Adriana Castaldo</name>
+        <email>acastald@unina.it</email>
       </author>
     </authors>
     <keywords>
@@ -796,6 +816,10 @@
       <author>
         <name>Michael Oberguggenberger</name>
         <email>michael@mat1.uibk.ac.at</email>
+      </author>
+      <author>
+        <name>Francesco Russo</name>
+        <email>russo@math.univ-paris13.fr</email>
       </author>
     </authors>
     <keywords>

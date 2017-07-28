@@ -666,7 +666,7 @@
     </location>
   </author>
   <author>
-    <name>Ricardo Shirota Filho</name>
+    <name>Ricardo Shirota</name>
     <email>ricardo.shirota@poli.usp.br</email>
     <location>
       <country>
@@ -1065,6 +1065,25 @@
     </location>
   </author>
   <author>
+    <name>David Timson</name>
+    <email>d.timson@qub.ac.uk</email>
+    <location>
+      <country>
+        <code>GB</code>
+        <name>United Kingdom</name>
+      </country>
+      <city>
+        <name>Belfast</name>
+        <latitude>54.58333</latitude>
+        <longitude>-5.93333</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
     <name>Kevin Loquin</name>
     <email>loquin@irit.fr</email>
     <location>
@@ -1352,6 +1371,25 @@
   <author>
     <name>Michael Smithson</name>
     <email>Michael.Smithson@anu.edu.au</email>
+    <location>
+      <country>
+        <code>AU</code>
+        <name>Australia</name>
+      </country>
+      <city>
+        <name>Canberra</name>
+        <latitude>-35.28346</latitude>
+        <longitude>149.12807</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </author>
+  <author>
+    <name>Paul Campbell</name>
+    <email>paul.campbell@abs.gov.au</email>
     <location>
       <country>
         <code>AU</code>
