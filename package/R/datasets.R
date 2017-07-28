@@ -212,7 +212,7 @@
 #'  \item{\code{id}}{A numeric vector as the unique paper id.
 #'        See \code{\link{papers}} for details.}
 #'  \item{\code{keyword}}{A character vector with the papers' keywords.
-#'        The keywords are as-is.}
+#'        The keywords are slightly normalized.}
 #' }
 #'
 #' @source
