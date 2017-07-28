@@ -18,7 +18,7 @@
       </city>
       <university>
         <name>University of Lugano</name>
-        <department></department>
+        <department/>
       </university>
     </location>
   </conference>
@@ -60,7 +60,7 @@
       <keyword>weichselberger</keyword>
       <keyword>kurt</keyword>
       <keyword>interval probability</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>logical probability</keyword>
       <keyword>symmetric theory</keyword>
       <keyword>history of probability and statistics</keyword>
@@ -120,8 +120,8 @@
     </authors>
     <keywords>
       <keyword>desirability</keyword>
-      <keyword>credal sets</keyword>
-      <keyword>lexicographic probabilities</keyword>
+      <keyword>credal set</keyword>
+      <keyword>lexicographic probability</keyword>
       <keyword>separation theorem</keyword>
       <keyword>polarity</keyword>
     </keywords>
@@ -150,13 +150,13 @@
       </author>
     </authors>
     <keywords>
-      <keyword>markov decision processes</keyword>
+      <keyword>markov decision process</keyword>
       <keyword>mdp</keyword>
       <keyword>mdpip</keyword>
       <keyword>mdpst</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>non-determinism</keyword>
-      <keyword>probabilistic logic programming</keyword>
+      <keyword>probabilistic logic program</keyword>
       <keyword>credal semantics</keyword>
     </keywords>
     <abstract>We study languages that specify Markov Decision Processes with Imprecise Probabilities (MDPIPs) by mixing probabilities and logic programming. We propose a novel language that can capture MDPIPs and Markov Decision Processes with Set-valued Transitions (MDPSTs) we then obtain the complexity of one-step inference for the resulting MDPIPs and MDPSTs. We also present results of independent interest on the complexity of inference with probabilistic logic programs containing interval-valued probabilistic assessments. Finally, we also discuss policy generation techniques.</abstract>
@@ -172,7 +172,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>frequentist interpretation</keyword>
       <keyword>empirical meaning</keyword>
       <keyword>bag of marbles</keyword>
@@ -228,8 +228,8 @@
     </authors>
     <keywords>
       <keyword>weak dutch books</keyword>
-      <keyword>(williams') coherence</keyword>
-      <keyword>convex previsions</keyword>
+      <keyword>williams coherence</keyword>
+      <keyword>convex prevision</keyword>
       <keyword>strict consistency</keyword>
     </keywords>
     <abstract>Several consistency notions for lower previsions (coherence, convexity, others) require that the suprema of certain gambles, having the meaning of gains, are non-negative. The limit situation that a gain supremum is zero is termed Weak Dutch Book (WDB). In the literature, the special case of WDBs with precise probabilities has mostly been analysed, and strict coherence has been proposed as a radical alternative. In this paper the focus is on WDBs and generalised strict coherence, termed strict consistency, with imprecise previsions. We discuss properties of lower previsions incurring WDBs and conditions for strict consistency, showing in both cases how they are differentiated by the degree of consistency of the given uncertainty assessment.</abstract>
@@ -274,7 +274,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
       <keyword>sets of probability measures</keyword>
       <keyword>preference axioms</keyword>
       <keyword>convexity</keyword>
@@ -294,11 +294,11 @@
     <keywords>
       <keyword>independent natural extension</keyword>
       <keyword>epistemic independence</keyword>
-      <keyword>williams-coherence</keyword>
+      <keyword>williams coherence</keyword>
       <keyword>infinite spaces</keyword>
       <keyword>external additivity</keyword>
-      <keyword>factorisation</keyword>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>factorization</keyword>
+      <keyword>set of desirable gambles</keyword>
       <keyword>conditional lower previsions</keyword>
     </keywords>
     <abstract>We define the independent natural extension of two local models for the general case of infinite spaces, using both sets of desirable gambles and conditional lower previsions. In contrast to Miranda and Zaffalon (2015), we adopt Williams-coherence instead of Walley-coherence. We show that our notion of independent natural extension always exists___whereas theirs does not___and that it satisfies various convenient properties, including factorisation and external additivity.</abstract>
@@ -319,7 +319,7 @@
     </authors>
     <keywords>
       <keyword>computable randomness</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>game-theoretic probability</keyword>
       <keyword>interval forecast</keyword>
       <keyword>supermartingale</keyword>
@@ -419,7 +419,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>partial preferences</keyword>
+      <keyword>partial preference</keyword>
       <keyword>ordinality</keyword>
       <keyword>cardinality</keyword>
       <keyword>decision making under uncertainty</keyword>
@@ -451,7 +451,7 @@
     </authors>
     <keywords>
       <keyword>continuous-time hidden markov chains</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>updating</keyword>
     </keywords>
     <abstract>We consider the problem of performing inference with imprecise continuous-time hidden Markov chains, that is, imprecise continuous-time Markov chains that are augmented with random output variables whose distribution depends on the hidden state of the chain. The prefix ___imprecise' refers to the fact that we do not consider a classical continuous-time Markov chain, but replace it with a robust extension that allows us to represent various types of model uncertainty, using the theory of imprecise probabilities. The inference problem amounts to computing lower expectations of functions on the state-space of the chain, given observations of the output variables. We develop and investigate this problem with very few assumptions on the output variables in particular, they can be chosen to be either discrete or continuous random variables. Our main result is a polynomial runtime algorithm to compute the lower expectation of functions on the state-space at any given time-point, given a collection of observations of the output variables.</abstract>
@@ -503,7 +503,7 @@
       <keyword>game solutions</keyword>
       <keyword>probability transformations</keyword>
       <keyword>lower probabilities</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>core</keyword>
       <keyword>shapley value</keyword>
       <keyword>banzhaf value</keyword>
@@ -531,9 +531,9 @@
     </authors>
     <keywords>
       <keyword>pari-mutuel bets</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
       <keyword>probability intervals</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>information fusion</keyword>
     </keywords>
     <abstract>The Pari-Mutuel model is a distortion model that has its origin in horse racing. Since then, it has been applied in many different fields, such as finance or risk analysis. In this paper we investigate the properties of the Pari-Mutuel model within the framework of Imprecise Probabilities. Since a Pari-Mutuel model induces (2-monotone) coherent lower and upper probabilities, we investigate its connections with other relevant models within this theory, such as probability intervals and belief functions. We also determine the number of extreme points of the credal set induced by the Pari-Mutuel model and study how to combine the information given by multiple Pari-Mutuel models.</abstract>
@@ -621,11 +621,11 @@
       </author>
     </authors>
     <keywords>
-      <keyword>dempster-shafer belief theory</keyword>
+      <keyword>dempster-shafer's belief function theory</keyword>
       <keyword>dempster's conditional</keyword>
       <keyword>fagin-halpern conditional</keyword>
       <keyword>data structures</keyword>
-      <keyword>algorithms</keyword>
+      <keyword>algorithm</keyword>
       <keyword>computational complexity</keyword>
     </keywords>
     <abstract>Dempster-Shafer (DS) belief theory is a powerful general framework for dealing with a wider variety of uncertainties in data. As in Bayesian probability theory, the conditional operation plays a critical role in DS theoretic strategies for evidence updating and fusion. A major limitation associated with the application of DS theoretic techniques for reasoning under uncertainty is the absence of a feasible computational framework to overcome the prohibitive computational burden this conditional operation entails. This paper addresses this critical challenge via a novel generalized conditional computational model ___ DS-Conditional-One ___ which allows the conditional to be computed in significantly less computational and space complexity. This computational model also provides valuable insight into the DS theoretic conditional itself and can be utilized as a tool for visualizing the conditional computation. We provide a thorough analysis and experimental validation of the utility, efficiency, and implementation of the proposed data structures and algorithms for carrying out both the Dempster's conditional and Fagin-Halpern conditional, the two most widely utilized DS theoretic conditional strategies.</abstract>
@@ -744,7 +744,7 @@
       <keyword>importance sampling</keyword>
       <keyword>lower prevision</keyword>
       <keyword>monte carlo</keyword>
-      <keyword>optimisation</keyword>
+      <keyword>optimization</keyword>
     </keywords>
     <abstract>This brief paper is an exploratory investigation of how we can apply sensitivity analysis over importance sampling weights in order to obtain sampling estimates of lower previsions described by a parametric family of distributions. We demonstrate our results on the imprecise Dirichlet model, where we can compare with the analytically exact solution. We discuss the computational limitations of the approach, and propose a simple iterative importance sampling method in order to overcome these limitations. We find that the proposed method works pretty well, at least in the example studied, and we discuss some further possible extensions.</abstract>
     <pdf>http://proceedings.mlr.press/v62/troffaes17a/troffaes17a.pdf</pdf>
@@ -791,9 +791,9 @@
     </authors>
     <keywords>
       <keyword>exchangeability</keyword>
-      <keyword>choice functions</keyword>
+      <keyword>choice function</keyword>
       <keyword>indifference</keyword>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>set of desirable gambles</keyword>
       <keyword>representation</keyword>
     </keywords>
     <abstract>We investigate how to model exchangeability with choice functions. Exchangeability is a structural assessment on a sequence of uncertain variables. We show how such assessments constitute a special kind of indifference assessment, and how this idea leads to a counterpart of de Finetti's Representation Theorem, both in a finite and a countable context.</abstract>

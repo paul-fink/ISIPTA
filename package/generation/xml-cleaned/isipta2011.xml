@@ -42,7 +42,7 @@
     <keywords>
       <keyword>classification</keyword>
       <keyword>naive credal classifier</keyword>
-      <keyword>naive bayes classifier</keyword>
+      <keyword>naive bayesian classifier</keyword>
       <keyword>likelihood-based learning</keyword>
     </keywords>
     <abstract>The naive credal classifier extends the classical naive Bayes classifier to imprecise probabilities, substituting the imprecise Dirichlet model for the uniform prior. As an alternative to the naive credal classifier, we present a likelihood-based approach, which extends in a novel way the naive Bayes towards imprecise probabilities, by considering any possible quantification (each one defining a naive Bayes classifier) apart from those assigning to the available data a probability below a given threshold level. Besides the available supervised data, in the likelihood evaluation we also consider the instance to be classified, for which the value of the class variable is assumed missing-at-random. We obtain a closed formula to compute the dominance according to the maximality criterion for any threshold level. As there are currently no well-established metrics for comparing credal classifiers which have considerably different determinacy, we compare the two classifiers when they have comparable determinacy, finding that in those cases they generate almost equivalent classifications.</abstract>
@@ -131,7 +131,7 @@
     </authors>
     <keywords>
       <keyword>fuzzy probabilities</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>failure probability</keyword>
       <keyword>reliability analysis</keyword>
     </keywords>
@@ -212,7 +212,7 @@
       <keyword>2-monotone capacities</keyword>
       <keyword>least favorable pairs</keyword>
       <keyword>huber-strassen theory</keyword>
-      <keyword>kullback-leibler distance</keyword>
+      <keyword>kullback-leibler divergence</keyword>
     </keywords>
     <abstract>In this paper we provide the algebraic description of the minmax problem solutions, which are considered in Huber-Strassen theory providing effective algorithms of searching least favorable pairs. This investigation gives also new insights to understanding well-known algorithms for maximizing Shannon entropy and other functionals.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s006.pdf</pdf>
@@ -239,9 +239,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>inference algorithms</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>bayesian networks</keyword>
       <keyword>variable elimination</keyword>
       <keyword>probability trees</keyword>
@@ -294,7 +294,7 @@
       <keyword>informative coarsening</keyword>
       <keyword>complex uncertainty</keyword>
       <keyword>interval dominance</keyword>
-      <keyword>identification regions</keyword>
+      <keyword>identification region</keyword>
     </keywords>
     <abstract>We introduce a robust regression method for imprecise data, and apply it to social survey data. Our method combines nonparametric likelihood inference with imprecise probability, so that only very weak assumptions are needed and different kinds of uncertainty can be taken into account. The proposed regression method is based on interval dominance: interval estimates of quantiles of the error distribution are used to identify plausible descriptions of the relationship of interest. In the application to social survey data, the resulting set of plausible descriptions is relatively large, reflecting the amount of uncertainty inherent in the analyzed data set.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s015.pdf</pdf>
@@ -428,7 +428,7 @@
       <keyword>probability of failure</keyword>
       <keyword>limit state functions</keyword>
       <keyword>parameterized probability measures</keyword>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>random set independence</keyword>
       <keyword>epistemic irrelevance</keyword>
       <keyword>strong independence</keyword>
@@ -524,7 +524,7 @@
     </authors>
     <keywords>
       <keyword>multidimensional models</keyword>
-      <keyword>graphical models</keyword>
+      <keyword>graphical model</keyword>
       <keyword>conditional independence</keyword>
       <keyword>factorization</keyword>
       <keyword>computations</keyword>
@@ -609,7 +609,7 @@
     </authors>
     <keywords>
       <keyword>parameter uncertainty</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>generalized bayesian theorem</keyword>
       <keyword>nuclear risk assessment</keyword>
     </keywords>
@@ -679,7 +679,7 @@
     </authors>
     <keywords>
       <keyword>probabilistic graphical models</keyword>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>approximation scheme</keyword>
       <keyword>valuation algebra</keyword>
     </keywords>
@@ -707,7 +707,7 @@
       <keyword>conglomerability</keyword>
       <keyword>natural extension</keyword>
       <keyword>desirable gambles</keyword>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
     </keywords>
     <abstract>We study the weakest conglomerable model that is implied by desirability or probability assessments: the \emph{conglomerable natural extension}. We show that taking the natural extension of the assessments while imposing conglomerability -the procedure adopted in Walley's theory- does not yield, in general, the conglomerable natural extension (but it does so in the case of the marginal extension). Iterating this process produces a sequence of models that approach the conglomerable natural extension, although it is not known, at this point, whether it is attained in the limit. We give sufficient conditions for this to happen in some special cases, and study the differences between working with coherent sets of desirable gambles and coherent lower previsions. Our results indicate that it might be necessary to re-think the foundations of Walley's theory of coherent conditional lower previsions for infinite partitions of conditioning events.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s030.pdf</pdf>
@@ -743,7 +743,7 @@
     </authors>
     <keywords>
       <keyword>random set</keyword>
-      <keyword>choquet theorem</keyword>
+      <keyword>choquet's theorem</keyword>
       <keyword>capacity functional</keyword>
       <keyword>joint distribution</keyword>
       <keyword>daniell-kolmogorov theorem</keyword>
@@ -804,7 +804,7 @@
       <keyword>subjective probability</keyword>
       <keyword>probability expression</keyword>
       <keyword>elicitation</keyword>
-      <keyword>conjugacy</keyword>
+      <keyword>conjugate</keyword>
       <keyword>risk communication</keyword>
       <keyword>climate change</keyword>
     </keywords>
@@ -921,15 +921,15 @@
       </author>
     </authors>
     <keywords>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>classification</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval-valued observations</keyword>
       <keyword>machine learning</keyword>
       <keyword>p-box</keyword>
       <keyword>regression</keyword>
       <keyword>risk functional</keyword>
-      <keyword>support vector machines</keyword>
+      <keyword>support vector machine</keyword>
     </keywords>
     <abstract>This paper presents a new approach for constructing regression and classification models for interval-valued data. The risk functional is considered under a set of probability distributions, resulting from the application of a chosen inferential method to the data, such that the bounding distributions of the set depend on the regression and classification parameter. Two extreme (`pessimistic' and `optimistic') strategies of decision making are presented. The method is appicable with a wide variety of inferential methods and risk functionals, in addition to the general theory the specific optimisation problems for several scenarios are formulated and discussed. In particular, the extension of the support vector machine method for the case of interval-valued data is presented.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s008.pdf</pdf>
@@ -946,7 +946,7 @@
     <keywords>
       <keyword>evidence theory</keyword>
       <keyword>multidimensional models</keyword>
-      <keyword>conditioning rules</keyword>
+      <keyword>conditioning rule</keyword>
       <keyword>conditional independence</keyword>
       <keyword>conditional irrelevance</keyword>
     </keywords>
@@ -1004,7 +1004,7 @@
       <keyword>empirical evaluations</keyword>
       <keyword>discounted accuracy</keyword>
       <keyword>utility</keyword>
-      <keyword>risk-aversion</keyword>
+      <keyword>risk aversion</keyword>
     </keywords>
     <abstract>Predictions made by imprecise-probability models are often indeterminate (that is, set-valued). Measuring the quality of an indeterminate prediction by a single number is important to fairly compare different models, but a principled approach to this problem is currently missing. In this paper we derive a measure to evaluate the predictions of credal classifiers from a set of assumptions. The measure turns out to be made of an objective component, and another that is related to the decision-maker's degree of risk-aversion. We discuss when the measure can be rendered independent of such a degree, and provide insights as to how the comparison of classifiers based on the new measure changes with the number of predictions to be made. Finally, we empirically study the behavior of the proposed measure.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s016.pdf</pdf>

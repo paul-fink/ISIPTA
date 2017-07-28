@@ -276,7 +276,7 @@ xml2onefile <- function(filename) {
     xml_location <- xmlTreeParse(file_location, useInternalNodes = TRUE, encoding = "UTF-8")
     authors_isipta <- getNodeSet(xml_isipta, "//author")
     
-    authors_loc <-getNodeSet(xml_location, "//author")
+    authors_loc <- getNodeSet(xml_location, "//author")
     authors_loc_names <- sapply(authors_loc, function(x) {xmlValue(x[[1]])})
     
     for(i in seq_along(authors_isipta)){

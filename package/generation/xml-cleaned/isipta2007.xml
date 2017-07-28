@@ -44,7 +44,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>information fusion</keyword>
       <keyword>sensor management</keyword>
       <keyword>tracking systems</keyword>
@@ -70,9 +70,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
-      <keyword>p-boxes</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>p-box</keyword>
+      <keyword>belief function</keyword>
       <keyword>possibility</keyword>
       <keyword>food processing</keyword>
       <keyword>cheese ripening</keyword>
@@ -119,7 +119,7 @@
       <keyword>lower and upper probabilities</keyword>
       <keyword>uncertainty based information</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s030.pdf</pdf>
   </paper>
   <paper>
@@ -136,7 +136,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>integer programming</keyword>
     </keywords>
     <abstract>A credal network associates a directed acyclic graph with a collection of sets of probability measures; it offers a compact representation for sets of multivariate distributions. In this paper we present a new algorithm for inference in credal networks based on an integer programming reformulation. We are concerned with computation of lower/upper probabilities for a variable in a given credal network. Experiments reported in this paper indicate that this new algorithm has better performance than existing ones for some important classes of networks.</abstract>
@@ -214,7 +214,7 @@
       <keyword>ca model</keyword>
       <keyword>imprecise dirichlet model</keyword>
       <keyword>nonparametric predictive inference</keyword>
-      <keyword>probability wheel representation</keyword>
+      <keyword>probability wheel</keyword>
     </keywords>
     <abstract>Nonparametric predictive inference (NPI) is a powerful tool for predictive inference under nearly complete prior ignorance. After summarizing our NPI approach for multinomial data, as presented in Coolen &amp; Augustin (2005, 2007), both for situations with and without known total number of possible categories, we illustrate how this approach can be generalized to deal with sub-categories, enabling consistent inferences at different levels of detail for the specification of observations. This approach deals with main categories and sub-categories in a logical manner, directly based on the powerful probability wheel representation for multinomial data that is central to our method and that ensures strong internal consistency properties. Detailed theory for such inferences, enabling for example more layers of sub-categories as might occur in tree-like data base structures, has yet to be developed, but is conceptually straightforward and in line with the illustrations for more basic inferences presented in this paper.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s038.pdf</pdf>
@@ -287,7 +287,7 @@
     <keywords>
       <keyword>evidence theory</keyword>
       <keyword>independence</keyword>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>sets of probabilities</keyword>
     </keywords>
     <abstract>We study three conditions of independence within Evidence Theory framework. First condition refers to the selection of pairs of focal sets. The remaining two are related to the choice of a pair of elements, once a pair of focal sets has been selected. These three concepts allow us to formalize the ideas of lack of interaction between variables and between their (imprecise) observations. We illustrate the difference between both types of independence with simple examples about drawing balls from urns. We show that there are not implication relationships between both of them. We derive interesting conclusions about the relationships between the concepts of "independence in the selection'' and "random set independence''.</abstract>
@@ -308,7 +308,7 @@
     </authors>
     <keywords>
       <keyword>game-theoretic probability</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>coherence</keyword>
       <keyword>conglomerability</keyword>
       <keyword>event tree</keyword>
@@ -342,7 +342,7 @@
       <keyword>predictive inference</keyword>
       <keyword>immediate prediction</keyword>
       <keyword>lower prevision</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>coherence</keyword>
       <keyword>exchangeability</keyword>
       <keyword>representation invariance</keyword>
@@ -394,10 +394,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>random sets</keyword>
-      <keyword>possibility distributions</keyword>
+      <keyword>random set</keyword>
+      <keyword>possibility distribution</keyword>
       <keyword>probability intervals</keyword>
-      <keyword>p-boxes</keyword>
+      <keyword>p-box</keyword>
       <keyword>clouds</keyword>
     </keywords>
     <abstract>There exist many practical representations of probability families that make them easier to handle. Among them are random sets, possibility distributions, probability intervals, Ferson's p-boxes and Neumaier's clouds. Both for theoretical and practical considerations, it is important to know whether one representation has the same expressive power than other ones, or can be approximated by other ones. In this paper, we mainly study the relationships between the two latter representations and the three other ones.</abstract>
@@ -445,11 +445,11 @@
     </authors>
     <keywords>
       <keyword>decision analysis</keyword>
-      <keyword>imprecise probabilities</keyword>
-      <keyword>imprecise utilities</keyword>
-      <keyword>hierarchical models</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>imprecise utility</keyword>
+      <keyword>hierarchical model</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s028.pdf</pdf>
   </paper>
   <paper>
@@ -462,7 +462,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>lower and upper probabilities</keyword>
       <keyword>sets of probability measures</keyword>
       <keyword>parameterized probability measures</keyword>
@@ -484,7 +484,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>foundations of probability</keyword>
       <keyword>chaotic probability models</keyword>
       <keyword>frequentist interpretation</keyword>
@@ -546,9 +546,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>bayesian networks</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
       <keyword>approximate inference</keyword>
       <keyword>logical compilation</keyword>
       <keyword>hill-climbing</keyword>
@@ -694,7 +694,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>convex risk measures</keyword>
+      <keyword>convex risk measure</keyword>
       <keyword>convex upper previsions</keyword>
       <keyword>model uncertainty</keyword>
       <keyword>sigma-additive robust representation</keyword>
@@ -768,10 +768,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>walley's coherence</keyword>
+      <keyword>walley coherence</keyword>
       <keyword>weak coherence</keyword>
-      <keyword>coherent lower previsions</keyword>
-      <keyword>graphical models</keyword>
+      <keyword>coherent lower prevision</keyword>
+      <keyword>graphical model</keyword>
       <keyword>coherence graph</keyword>
     </keywords>
     <abstract>We consider the task of proving Walley's (joint or strong) coherence of a number of probabilistic assessments, when these assessments are represented as a collection of conditional lower previsions. In order to maintain generality in the analysis, we assume to be given nearly no information about the numbers that make up the lower previsions in the collection. Under this condition, we investigate the extent to which the above global task can be decomposed into simpler and more local ones. This is done by introducing a graphical representation of the conditional lower previsions, that we call the coherence graph: we show that the coherence graph allows one to isolate some subsets of the collection whose coherence is sufficient for the coherence of all the assessments. The situation is shown to be completely analogous in the case of Walley's notion of weak coherence, for which we prove in addition that the subsets found are optimal, in the sense that they embody the maximal degree to which the task of checking weak coherence can be decomposed. In doing all of this, we obtain a number of related results: we give a new characterisation of weak coherence; we characterise, by means of a special kind of coherence graph, when the local notion of separate coherence is sufficient for coherence; and we provide an envelope theorem for collections of lower previsions whose graph is of the latter type.</abstract>
@@ -824,8 +824,8 @@
     <keywords>
       <keyword>reliability of structures</keyword>
       <keyword>sensitivity analysis</keyword>
-      <keyword>random sets</keyword>
-      <keyword>fuzzy sets</keyword>
+      <keyword>random set</keyword>
+      <keyword>fuzzy set</keyword>
       <keyword>simulation methods</keyword>
       <keyword>aerospace engineering</keyword>
     </keywords>
@@ -849,9 +849,9 @@
       <keyword>decision making under ambiguity</keyword>
       <keyword>discretization</keyword>
       <keyword>gaussian quadrature</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval probability</keyword>
-      <keyword>linear  programming</keyword>
+      <keyword>linear programming</keyword>
       <keyword>luceno</keyword>
       <keyword>numerical integration</keyword>
     </keywords>
@@ -875,10 +875,10 @@
       <keyword>conditional lower previsions</keyword>
       <keyword>product rule</keyword>
       <keyword>bayes' theorem</keyword>
-      <keyword>williams' coherence</keyword>
+      <keyword>williams coherence</keyword>
       <keyword>centered convex previsions</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s047.pdf</pdf>
   </paper>
   <paper>
@@ -898,7 +898,7 @@
       <keyword>mental probability logic</keyword>
       <keyword>modus ponens</keyword>
       <keyword>coherence</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>The 'modus ponens' is, along with 'modus tollens' and the two logically not valid counterparts 'denying the antecedent' and 'affirming the consequent', the argument form that was most often investigated in the psychology of human reasoning. The present contribution reports the results of three experiments on the probabilistic versions of 'modus ponens' and 'denying the antecedent'. In probability logic these arguments lead to conclusions with imprecise probabilities. In the 'modus ponens' tasks the participants inferred probabilities that agreed much better with the coherent normative values than in the 'denying the antecedent' tasks, a result that mirrors results found with the classical argument versions. For 'modus ponens' a surprisingly high number of lower and upper probabilities agreed perfectly with the conjugacy property (upper probabilities equal one complements of the lower probabilities). When the probabilities of the premises are imprecise the participants do not ignore irrelevant ('silent') boundary probabilities. The results show that human mental probability logic is close to predictions derived from probability logic for the most elementary argument form, but has considerable difficulties with the more complex forms involving negations.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s050.pdf</pdf>
@@ -929,7 +929,7 @@
       <keyword>latent and manifest variables</keyword>
       <keyword>observational processes</keyword>
       <keyword>vacuous beliefs</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>It is well known that complete prior ignorance is not compatible with learning, at least in a coherent theory of (epistemic) uncertainty. What is less widely known, is that there is a state similar to full ignorance, that Walley calls near-ignorance, that permits learning to take place. In this paper we provide new and substantial evidence that also near-ignorance cannot be really regarded as a way out of the problem of starting statistical inference in conditions of very weak beliefs. The key to this result is focusing on a setting characterized by a variable of interest that is latent. We argue that such a setting is by far the most common case in practice, and we show, for the case of categorical latent variables (and general manifest variables) that there is a sufficient condition that, if satisfied, prevents learning to take place under prior near-ignorance. This condition is shown to be easily satisfied in the most common statistical problems.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s049.pdf</pdf>
@@ -944,7 +944,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>foundations of probability</keyword>
       <keyword>church place selection rules</keyword>
       <keyword>probabilistic reasoning</keyword>
@@ -964,7 +964,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>probabilistic logic programming</keyword>
+      <keyword>probabilistic logic program</keyword>
       <keyword>probabilistic reasoning</keyword>
       <keyword>knowledge representation</keyword>
     </keywords>
@@ -989,14 +989,14 @@
       </author>
     </authors>
     <keywords>
-      <keyword>choice functions</keyword>
+      <keyword>choice function</keyword>
       <keyword>coherence</keyword>
       <keyword>gamma-maximin</keyword>
       <keyword>maximality</keyword>
       <keyword>uncertainty</keyword>
       <keyword>state-independent utility</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s015.pdf</pdf>
   </paper>
   <paper>
@@ -1042,8 +1042,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>markov chains</keyword>
-      <keyword>interval probabilities</keyword>
+      <keyword>markov chain</keyword>
+      <keyword>interval probability</keyword>
     </keywords>
     <abstract>In Markov chain theory a stochastic matrix $P$ is regular if some matrix power $P^n$ contains only strictly positive elements. Regularity of transition matrix of a Markov chain guarantees the existence of a unique invariant distribution which is also the limiting distribution. In the present paper a similar result is shown for the generalized Markov chain model that replaces classical probabilities with interval probabilities. We generalize the concept of regularity and show that for a regular interval transition matrix sets of probabilities corresponding to consecutive steps of a Markov chain converge to a unique limiting set of distributions that only depends on transition matrix and is independent of the initial distribution. A similar convergence result is also shown for approximations of the invariant set.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s033.pdf</pdf>
@@ -1103,8 +1103,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>p-boxes</keyword>
-      <keyword>random sets</keyword>
+      <keyword>p-box</keyword>
+      <keyword>random set</keyword>
       <keyword>linear programming</keyword>
       <keyword>lower/upper expectation</keyword>
       <keyword>optimization</keyword>
@@ -1130,7 +1130,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>\textsc{airgene} study</keyword>
+      <keyword>airgene study</keyword>
       <keyword>analysis of variance</keyword>
       <keyword>exponential family</keyword>
       <keyword>(imprecise) conjugate priors</keyword>

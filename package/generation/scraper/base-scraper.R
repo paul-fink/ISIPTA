@@ -1,5 +1,7 @@
 
 library("stringr")
+### keyword-normalizing
+KEYWORDS <- read.csv("../scraper/keywords.csv")
 
 
 ### Data cleaning:
@@ -8,6 +10,14 @@ clean_title <- function(title) {
   title <- str_trim(title)
   title <- str_replace_all(title, "\\.+$", "")
   title
+}
+
+normalize_keyword <- function(keyword) {
+  ret <- KEYWORDS[KEYWORDS$old == keyword, "new"]
+  if(length(ret) == 0) {
+    ret <- keyword
+  }
+  ret
 }
 
 
@@ -19,7 +29,8 @@ clean_keywords <- function(keywords, pretext = "Keywords.") {
   tmp <- tolower(tmp)
 
   tmp <- iconv(tmp, from = "UTF-8", to = "latin1")
-
+  tmp <- sapply(tmp, function(kw) {normalize_keyword(kw)}, 
+                USE.NAMES = FALSE)
   tmp
 }
 

@@ -174,7 +174,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>propositional logic</keyword>
       <keyword>relational logic</keyword>
       <keyword>complexity</keyword>
@@ -261,9 +261,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>upper and lower probability</keyword>
       <keyword>imprecise random variables</keyword>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>propagation of uncertainty through a function</keyword>
       <keyword>monte carlo simulation</keyword>
     </keywords>
@@ -287,7 +287,7 @@
       <keyword>possibility theory</keyword>
       <keyword>fuzzy intervals</keyword>
       <keyword>maximum likelihood</keyword>
-      <keyword>robust optimisation</keyword>
+      <keyword>robust optimization</keyword>
       <keyword>epistemic uncertainty</keyword>
     </keywords>
     <abstract>This paper deals with the derivation of a probabilistic parametric model from interval or fuzzy data using the maximum likelihood principle. In contrast with classical techniques such as the EM algorithm, that define a precise likelihood function by averaging inside each imprecise observations, our approach presupposes that each imprecise observation underlies a precise one, and that the uncertainty that pervades its observation is epistemic, rather than representing noise. We define an interval-valued likelihood function and apply robust optimisation methods to find a safe plausible estimate of the statistical parameters. The resulting density has a standard deviation that is large enough to cover the imprecision of the observations, making a pessimistic assumption on dispersion. This approach is extended to fuzzy data by optimizing the average of lower likelihoods over a collection of data sets obtained from cuts of the fuzzy intervals, as a trade off between optimistic and pessimistic interpretations of fuzzy data. The principles of this method are compared with those of other existing approaches to handle incompleteness of observations, especially the EM technique.</abstract>
@@ -394,7 +394,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>set of desirable gambles</keyword>
       <keyword>epistemic irrelevance</keyword>
       <keyword>epistemic independence</keyword>
@@ -422,7 +422,7 @@
       <keyword>copulas</keyword>
       <keyword>lower probabilities</keyword>
       <keyword>belief function</keyword>
-      <keyword>p-boxes</keyword>
+      <keyword>p-box</keyword>
     </keywords>
     <abstract>Two random variables are called comonotone when there is an increasing relation between them, in the sense that when one of them increases (decreases), the other one also increases (decreases). This notion has been widely investigated in probability theory, and is related to the theory of copulas. This contribution studies the notion of comonotonicity in an imprecise setting. We define comonotone lower probabilities and investigate its characterizations. Also, we provide some sufficient conditions allowing to define a comonotone belief function with fixed marginals and characterize comonotone bivariate p-boxes.</abstract>
     <pdf>http://www.sipta.org/isipta15/data/paper/4.pdf</pdf>
@@ -559,7 +559,7 @@
       <keyword>ontic data imprecision</keyword>
       <keyword>survey methodology</keyword>
       <keyword>election polls</keyword>
-      <keyword>multinomial logistic models</keyword>
+      <keyword>multinomial logistic regression</keyword>
       <keyword>discrete choice models</keyword>
       <keyword>imprecise classification trees</keyword>
       <keyword>conjunctive random sets</keyword>
@@ -589,7 +589,7 @@
     </authors>
     <keywords>
       <keyword>probabilistic logic</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>upper and lower probability</keyword>
       <keyword>axiomatization</keyword>
       <keyword>completeness theorem</keyword>
     </keywords>
@@ -719,7 +719,7 @@
     <keywords>
       <keyword>credal set</keyword>
       <keyword>strong independence</keyword>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>separate specification</keyword>
       <keyword>compositional models</keyword>
     </keywords>

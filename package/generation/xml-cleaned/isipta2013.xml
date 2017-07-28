@@ -78,8 +78,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
-      <keyword>imprecise hidden markov models</keyword>
+      <keyword>credal network</keyword>
+      <keyword>imprecise hidden markov model</keyword>
       <keyword>credal classification</keyword>
     </keywords>
     <abstract>A new procedure to classify temporal data with im- precise hidden Markov models is proposed. A differ- ent model is learned from each sequence by coupling the imprecise Dirichlet model with the EM algorithm. As a descriptor of the model associated to a sequence, we consider the expected value of the manifest vari- able in the limit of stationarity of the Markov chain. For imprecise models, only the bounds of this descrip- tor can be evaluated. In practice, the sequence, which can be regarded as a trajectory in the features space, is summarized by this method as a hyperbox in the same space. These static but interval-valued data are classified by a credal extension of the k-NN algorithm. Experiments on human action recognition data show that the method achieves the required robustness and outperforms other imprecise methods.</abstract>
@@ -100,7 +100,7 @@
     </authors>
     <keywords>
       <keyword>2-monotone measures</keyword>
-      <keyword>extreme points</keyword>
+      <keyword>extreme point</keyword>
       <keyword>additivity on lattices</keyword>
       <keyword>filters</keyword>
       <keyword>partially ordered sets</keyword>
@@ -120,7 +120,7 @@
     </authors>
     <keywords>
       <keyword>robustness</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>bayesian analysis</keyword>
       <keyword>credibility</keyword>
       <keyword>decision making</keyword>
@@ -194,9 +194,9 @@
     <keywords>
       <keyword>natural extension</keyword>
       <keyword>conditional plausibilities</keyword>
-      <keyword>t-conditional possibilities</keyword>
+      <keyword>t-conditional possibility</keyword>
       <keyword>generalized bayesian inference</keyword>
-      <keyword>fuzzy sets</keyword>
+      <keyword>fuzzy set</keyword>
     </keywords>
     <abstract>Consistency of partial assessments with different frameworks (probability, possibility, plausibility) is studied. We are interested in inferential processes like the Bayesian one, with particular attention when a part of the information is expressed in natural language and can be modeled by a possibilistic or a plausibilistic likelihood.</abstract>
     <pdf>http://www.sipta.org/isipta13/proceedings/papers/s007.pdf</pdf>
@@ -240,7 +240,7 @@
       <keyword>independence concepts</keyword>
       <keyword>graphoids</keyword>
       <keyword>lexicographic probability</keyword>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>set of desirable gambles</keyword>
     </keywords>
     <abstract>In this paper we examine concepts of independence for sets of full conditional measures; that is, for measures where conditional probability is the primitive concept, and where conditioning can be considered on events of probability zero. We also discuss the related issue of independence for lexicographic measures and for sets of desirable gambles.</abstract>
     <pdf>http://www.sipta.org/isipta13/proceedings/papers/s009.pdf</pdf>
@@ -259,12 +259,12 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>epistemic irrelevance</keyword>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>set of desirable gambles</keyword>
       <keyword>graphoid properties</keyword>
       <keyword>irrelevant natural extension</keyword>
-      <keyword>lower previsions</keyword>
+      <keyword>lower prevision</keyword>
       <keyword>coherence</keyword>
     </keywords>
     <abstract>We present a new approach to credal networks, which are graphical models that generalise Bayesian nets to deal with imprecise probabilities. Instead of applying the commonly used notion of strong independence, we replace it by the weaker notion of epistemic irrelevance. We show how assessments of epistemic irrelevance allow us to construct a global model out of given local uncertainty models, leading to an intuitive expression for the so-called irrelevant natural extension of a network. In contrast with Cozman (2000), who introduced this notion in terms of credal sets, our main results are presented using the language of sets of desirable gambles. This has allowed us to derive a number of useful properties of the irrelevant natural extension. It has powerful marginalisation properties and satisfies all graphoid properties but symmetry, both in their direct and reverse forms.</abstract>
@@ -284,10 +284,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>epistemic irrelevance</keyword>
-      <keyword>lower previsions</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>lower prevision</keyword>
+      <keyword>credal set</keyword>
       <keyword>coherence</keyword>
       <keyword>irrelevant natural extension</keyword>
       <keyword>independent natural extension</keyword>
@@ -338,7 +338,7 @@
       <keyword>confidence intervals</keyword>
       <keyword>confidence structures</keyword>
       <keyword>c-boxes</keyword>
-      <keyword>p-boxes</keyword>
+      <keyword>p-box</keyword>
       <keyword>probability bounds analysis</keyword>
       <keyword>binomial probability</keyword>
       <keyword>imprecise beta model</keyword>
@@ -383,7 +383,7 @@
     </authors>
     <keywords>
       <keyword>marginal problem</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>algorithm</keyword>
       <keyword>multidimensional model</keyword>
       <keyword>convergence</keyword>
@@ -439,7 +439,7 @@
     <keywords>
       <keyword>second-order credal combination</keyword>
       <keyword>imprecise probability</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
       <keyword>second-order probability</keyword>
       <keyword>combination</keyword>
       <keyword>evidence</keyword>
@@ -463,7 +463,7 @@
     <keywords>
       <keyword>evidential combination</keyword>
       <keyword>imprecise probability</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
     </keywords>
     <abstract>We present an experiment for evaluating precise and imprecise evidential combination operators. The experiment design is based on the assumption that only limited statistical information is available in the form of multinomial observations. We evaluate three different evidential combination operators; one precise, the Bayesian combination operator, and two imprecise, the credal and Dempster's combination operator, for combining independent pieces of evidence regarding some discrete state space of interest. The evaluation is performed by using a score function that takes imprecision into account. The results show that the precise framework, i.e., the precise Dirichlet model and the Bayesian combination operator, seems to perform equally well as the imprecise frameworks based on the imprecise Dirichlet model and the imprecise operators.</abstract>
     <pdf>http://www.sipta.org/isipta13/proceedings/papers/s018.pdf</pdf>
@@ -479,7 +479,7 @@
     </authors>
     <keywords>
       <keyword>game theory</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>rationalizability</keyword>
       <keyword>gamma-maximin rationalizability</keyword>
     </keywords>
@@ -540,7 +540,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>learning</keyword>
       <keyword>imprecise sample size dirichlet model</keyword>
       <keyword>search algorithms</keyword>
@@ -585,9 +585,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>n-monotonicity</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>minitive measures</keyword>
       <keyword>natural extension</keyword>
       <keyword>regular extension</keyword>
@@ -609,7 +609,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>conglomerability</keyword>
       <keyword>conglomerable natural extension</keyword>
       <keyword>natural extension</keyword>
@@ -686,13 +686,13 @@
     </authors>
     <keywords>
       <keyword>partial identification</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval data</keyword>
       <keyword>sharp identification regions</keyword>
       <keyword>coarse data</keyword>
       <keyword>adjunctions</keyword>
       <keyword>partially ordered sets</keyword>
-      <keyword>linear regression model</keyword>
+      <keyword>linear regression</keyword>
       <keyword>best linear predictor</keyword>
       <keyword>set-domained loss function</keyword>
     </keywords>
@@ -738,7 +738,7 @@
       <keyword>uncertainty</keyword>
       <keyword>ambiguity</keyword>
       <keyword>conflict</keyword>
-      <keyword>judgment</keyword>
+      <keyword>judgement</keyword>
       <keyword>decision</keyword>
     </keywords>
     <abstract>The proposition that conflict and ambiguity are distinct kinds of uncertainty remains debatable, although there is substantial behavioral and some neurological evidence favoring this claim. Recently formal decisional models that combine ambiguity and conflict have been proposed. This paper presents empirical tests of four hypotheses and five models of uncertainty judgments under ambiguity and conflict, via comparisons between pairs of conflicting and ambiguous interval estimates by a sample of 395 adults. The main findings are as follows.</abstract>
@@ -871,8 +871,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal sets</keyword>
-      <keyword>graphical models</keyword>
+      <keyword>credal set</keyword>
+      <keyword>graphical model</keyword>
       <keyword>conditional independence</keyword>
     </keywords>
     <abstract>This paper is the first attempt to introduce the operator of composition, already known from probability, possibility and evidence theories, also for credal sets. We prove that the proposed definition preserves all the necessary properties of the operator enabling us to define compositional models as an efficient tool for multidimensional models representation. Theoretical results are accompanied by numerous illustrative examples.</abstract>
@@ -892,7 +892,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>accept and reject statement-based uncertainty models</keyword>
       <keyword>classical propositional logic</keyword>
       <keyword>belief structure</keyword>

@@ -18,7 +18,7 @@
       </city>
       <university>
         <name>Ghent University</name>
-        <department></department>
+        <department/>
       </university>
     </location>
   </conference>
@@ -36,7 +36,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>uncertainty</keyword>
       <keyword>imprecision</keyword>
       <keyword>non-specificity</keyword>
@@ -74,9 +74,9 @@
     <keywords>
       <keyword>interval probability</keyword>
       <keyword>f-probability</keyword>
-      <keyword>capacities</keyword>
+      <keyword>capacity</keyword>
       <keyword>neyman-pearson testing</keyword>
-      <keyword>huber-strassen theorem</keyword>
+      <keyword>huber-strassen theory</keyword>
       <keyword>generalized neighborhood models</keyword>
       <keyword>least favorable pseudo-capacities</keyword>
     </keywords>
@@ -97,9 +97,9 @@
       <keyword>logical model</keyword>
       <keyword>measure of association</keyword>
       <keyword>multivariate implicative index</keyword>
-      <keyword>boolean  methods</keyword>
-      <keyword>bayesian  inference</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>boolean methods</keyword>
+      <keyword>bayesian inference</keyword>
+      <keyword>upper and lower probability</keyword>
     </keywords>
     <abstract>Bayesian implicative analysis was proposed for summarizing the association in a $2\times 2$ contingency table in terms possibly, asymmetrical such as, \eg, ``presence of feature $a$ implies, in general, presence of feature $b$'' (``$a$ quasi-implies $b$'' in short). Here, we consider the multivariate version of this problem: having $n$ units which are classified according to $\Qcard$ binary questions, we want to summarize the association between questions in terms of quasi-implications between features. We will first show how at a descriptive level the notion of implication can be weakened into that of quasi-implication. The inductive step assumes that the $n$ units are a sample from a $2^\Qcard$-multinomial population. Uncertainty about the patterns' true frequencies is expressed by an imprecise Dirichlet model which yields upper and lower posterior probabilities for any quasi-implicative statement. This model is shown to have several advantages over the Bayesi
  an models based on a single Dirichlet prior, especially whenever $2^\Qcard$ is large and many patterns are thus unobserved by design.</abstract>
@@ -120,12 +120,12 @@
     </authors>
     <keywords>
       <keyword>conditional events</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>generalized coherence</keyword>
       <keyword>coherence</keyword>
       <keyword>natural extension</keyword>
-      <keyword>extensions</keyword>
-      <keyword>algorithms</keyword>
+      <keyword>extension</keyword>
+      <keyword>algorithm</keyword>
       <keyword>probability logic</keyword>
       <keyword>probabilistic deduction</keyword>
       <keyword>probabilistic satisfiability</keyword>
@@ -156,7 +156,7 @@
     </authors>
     <keywords>
       <keyword>betting</keyword>
-      <keyword>multiple prior</keyword>
+      <keyword>multiple priors</keyword>
       <keyword>full insurance</keyword>
       <keyword>pareto optimality</keyword>
       <keyword>separation theorem</keyword>
@@ -209,7 +209,7 @@
     <keywords>
       <keyword>propagation algorithms</keyword>
       <keyword>valuation based systems</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>This paper reviews algorithms for local computation with imprecise probabilities. These algorithms try to solve problems of inference (calculation of conditional or unconditional probabilities) in cases in which there are a large number of variables. There are two main types in the literature depending on the nature of assumed independence relationships in each case. In both of them the global knowledge is composed of several pieces of information. The objective is to carry out a sound global computation bu using mainly the initial local representation.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/065.pdf</pdf>
@@ -229,7 +229,7 @@
     </authors>
     <keywords>
       <keyword>qualitative representation of uncertainty</keyword>
-      <keyword>axiomatic</keyword>
+      <keyword>axiomatization</keyword>
     </keywords>
     <abstract>In this paper we focus on the theoretical properties of non-numerical representation of the uncertainty. As usual, this representation is realized by an ``ordinal relation" (or, equivalently, by a ``comparative scale'') among the ``entities" (events, alternatives or acts) of a specific problem. After giving an overview of different known axioms characterizing some classes of ordinal relations (and their duals), we introduce some axioms capable to enclose the necessary and sufficient conditions for the representability of ordinal relations defined on arbitrary finite sets of events by the best-known uncertainty measures.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/036.pdf</pdf>
@@ -249,9 +249,9 @@
     </authors>
     <keywords>
       <keyword>open-frame beliefs</keyword>
-      <keyword>dempster conditioning</keyword>
+      <keyword>dempster's conditioning rule</keyword>
       <keyword>incomplete probabilities</keyword>
-      <keyword>interval probabilities</keyword>
+      <keyword>interval probability</keyword>
     </keywords>
     <abstract>The second author has put forward a theory of incomplete interval probabilities meant to give a common framework to both interval probabilities and open-frame bodies of evidence, as obtained by application of the non-normalized (open-frame) Dempster rule. Below we re-describe this proposal and then compare two possible ways of "conditioning" based on the open-frame Dempster rule: namely, we condition the original (possibly incomplete) knowledge by pooling it with new evidence which assigns certainty to the conditioning event. The idea is trying to build a probabilistic theory which would be able to cope not only wth uncertainty and ignorance, but also with [forms of] contradictoriness, to be included into the description of a possible state of knowledge.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/007.pdf</pdf>
@@ -293,7 +293,7 @@
     <keywords>
       <keyword>optimal pollution control</keyword>
       <keyword>environmental risk</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>random intervals</keyword>
       <keyword>representation of uncertainty</keyword>
     </keywords>
@@ -324,9 +324,9 @@
     <keywords>
       <keyword>decision making</keyword>
       <keyword>uncertainty</keyword>
-      <keyword>capacities</keyword>
+      <keyword>capacity</keyword>
       <keyword>updating</keyword>
-      <keyword>conditioning rules</keyword>
+      <keyword>conditioning rule</keyword>
     </keywords>
     <abstract>Ambiguous beliefs`` are beliefs which are inconsistent with a unique, additive prior. The problem of their update in face of new information has been dealt with in the theoretical literature, and received several contradictory answers. In particular, the ``maximum likelihood update`` and the ``full Bayesian update`` have been axiomatized. This experimental study attempts to test the descriptive validity of these two theories by using the Ellsberg experiment framework.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/053.pdf</pdf>
@@ -347,7 +347,7 @@
     <keywords>
       <keyword>coherence</keyword>
       <keyword>bayesian updating</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>upper and lower probability</keyword>
     </keywords>
     <abstract>The main concern of this paper is to show by means of suitable examples that a ``naif'' use of Bayesian updating can lead to wrong conclusions. Given some possible diseases (that could explain an initial piece of information) and a relevant tentative probability assessment, a doctor has usually at his disposal also a data base consisting of conditional probabilities P(E|K), where each K is a disease and each evidence E comes from a suitable test. Once the coherence (de Finetti) of the whole assessment is checked, we want to suitably update the prior probabilities: since we do not assume that the diseases constitute a partition of the certain event, the usual Bayes theorem cannot be applied. Then we proceed by referring to the relevant atoms (whose coherent probability assessment is, in a sense, ``imprecise'', since in general it is not unique). By checking again the coherence of the whole updated assessment, it turns out that we get upper and lower cond
  itional probabilities. These steps are iterated until a degree of belief sufficient to make a diagnosis is reached: the coherence condition acts as a control tool on every stage.</abstract>
@@ -390,7 +390,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>independence</keyword>
       <keyword>conditioning</keyword>
       <keyword>convex sets of probabilities</keyword>
@@ -429,7 +429,7 @@
       <keyword>product measures</keyword>
       <keyword>core of cooperative game</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/011.pdf</pdf>
   </paper>
   <paper>
@@ -451,7 +451,7 @@
     </authors>
     <keywords>
       <keyword>engineering applications</keyword>
-      <keyword>finite element methods</keyword>
+      <keyword>finite element method</keyword>
       <keyword>queueing models</keyword>
       <keyword>imprecise parameters</keyword>
       <keyword>possibility and evidence theory</keyword>
@@ -531,7 +531,7 @@
     <keywords>
       <keyword>satisfiability</keyword>
       <keyword>probability intervals</keyword>
-      <keyword>qualitative probabilities</keyword>
+      <keyword>qualitative probability</keyword>
       <keyword>polyhedra</keyword>
       <keyword>linear programming</keyword>
       <keyword>column generation</keyword>
@@ -552,7 +552,7 @@
     <keywords>
       <keyword>generalized markov decision process</keyword>
       <keyword>sequential decision making</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval utilities</keyword>
     </keywords>
     <abstract>This paper is a first step towards generalizing the concept of Markov decision process to imprecise probabilities. A concept of generalized Markov decision process is defined and a solution procedure for it presented.</abstract>
@@ -568,7 +568,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>rationality</keyword>
       <keyword>dynamic decision making</keyword>
       <keyword>resolute choice</keyword>
@@ -617,7 +617,7 @@
       <keyword>coinsurance</keyword>
       <keyword>deductibles</keyword>
       <keyword>ambiguity</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>This article deals with demand for insurance under non-probabilized uncertainty: the available information allows only to locate the loss probability into a given interval. In this context, we apply a model, generalizing expected utility which involves, besides the standard utility function, a pessimism-optimism index representing the agent's attitude towards ambiguity. In this context, choices empirically observed, but impossible to explain with the vNM model, are enlightened: when the insurance premium is fair, risk averse agents can choose not to buy insurance, while with loaded premium, there are agents who buy full coverage. Choices of this type appear with both linear and non-linear contracts.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/059.pdf</pdf>
@@ -633,9 +633,9 @@
     </authors>
     <keywords>
       <keyword>possibility theory</keyword>
-      <keyword>random sets</keyword>
-      <keyword>fuzzy measures</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>random set</keyword>
+      <keyword>fuzzy measure</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>general information theory</keyword>
       <keyword>possibilistic processes</keyword>
     </keywords>
@@ -705,9 +705,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>uncertainty measures</keyword>
-      <keyword>uncertainty-based information</keyword>
+      <keyword>uncertainty based information</keyword>
       <keyword>evidence theory</keyword>
       <keyword>possibility theory</keyword>
       <keyword>hartley-like measure</keyword>
@@ -726,9 +726,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>reliability assessments</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>analogy</keyword>
     </keywords>
     <abstract>The paper summarizes the author's experience in dealing with the Dempster-Shafer theory relating to reliability assessments and demonstrates how to make components and systems reliability assessments based on the theory of coherent imprecise previsions. The procedure of prior imprecise probability elicitation of components is based on analogical reasoning, and two cases of precise and imprecise probabilities of prototypes are considered. Cases of combining different reliability judgements on the same component are analyzed. The formulae obtained for systems reliability assessments allow getting the lower and upper probabilities without the presumption of a conditional independence.</abstract>
@@ -750,7 +750,7 @@
     <keywords>
       <keyword>vagueness</keyword>
       <keyword>ambiguity</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>ellsberg's paradox</keyword>
     </keywords>
     <abstract>We explore a generalization of Ellsberg's paradox (2-color scenario) to the Vague-Vague (V-V) case, in which neither of the probabilities (urns) is specified precisely, but one urn is always more precise than the other. One hundred and seven undergraduate students compared 63 pairs of urns involving positive outcomes. The paradox is as prevalent in the V-V case, as in the standard Precise-Vague (P-V) case. The paradox occurs more often when differences between ranges of vagueness are large and occurs less often with extreme midpoints. The urn with more vagueness was avoided for moderate to high expected probabilities and preferred for low expected probabilities in P-V cases, and the opposite pattern was found for the V-V cases. Models that capture adequately the relationships between the prevalence of vagueness avoidance and the lotteries' parameters (e.g. differences between the two ranges) were fitted for the P-V and V-V cases.</abstract>
@@ -766,7 +766,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>keywords.  strict bayesian</keyword>
+      <keyword>strict bayesian</keyword>
       <keyword>quasi bayesian</keyword>
       <keyword>e-admissibility</keyword>
       <keyword>e-maximality</keyword>
@@ -804,7 +804,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>upper probabilities</keyword>
+      <keyword>upper probability</keyword>
       <keyword>symmetric capacities</keyword>
     </keywords>
     <abstract>We show that a class of upper probabilities arising in many robustness models, turns out to be additive under a fairly weak condition.</abstract>
@@ -824,7 +824,7 @@
       <keyword>uncertainty</keyword>
       <keyword>knightian uncertainty</keyword>
       <keyword>non-additive probabilities</keyword>
-      <keyword>capacities</keyword>
+      <keyword>capacity</keyword>
       <keyword>choquet expectation</keyword>
       <keyword>economic contracts</keyword>
       <keyword>financial markets</keyword>
@@ -990,7 +990,7 @@
     </authors>
     <keywords>
       <keyword>reliability</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>natural extension</keyword>
       <keyword>monotone systems</keyword>
       <keyword>mean time to failure</keyword>
@@ -1030,8 +1030,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent imprecise probabilities</keyword>
-      <keyword>(epistemic) independence</keyword>
+      <keyword>coherent imprecise probability</keyword>
+      <keyword>epistemic independence</keyword>
       <keyword>logical independence</keyword>
       <keyword>factorization</keyword>
     </keywords>
@@ -1071,10 +1071,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>complete ignorance</keyword>
       <keyword>bayesianism</keyword>
-      <keyword>nonadditive measures</keyword>
+      <keyword>non-additive measure</keyword>
       <keyword>ambiguity</keyword>
     </keywords>
     <abstract>This paper shows that a "principle of complete ignorance" plays a central role in decisions based on Dempster belief functions. Such belief functions occur when, in a first stage, a random message is received and then, in a second stage, a true state of nature obtains. The uncertainty about the random message in the first stage is probabilizable, in agreement with the Bayesian principles. For the uncertainty in the second stage no probabilities are given. The Bayesian and belief function approaches part ways in the processing of uncertainty in the second stage. The Bayesian approach requires that this uncertainty also be probabilized, which may require a resort to subjective information. Belief functions follow the principle of complete ignorance in the second stage, which permits strict adherence to objective inputs.</abstract>
@@ -1112,7 +1112,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>interval-probability</keyword>
+      <keyword>interval probability</keyword>
       <keyword>uncertainty</keyword>
       <keyword>conditional probability</keyword>
       <keyword>bayes' rule</keyword>
@@ -1148,9 +1148,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
-      <keyword>credal sets</keyword>
-      <keyword>classication</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>credal set</keyword>
+      <keyword>classification</keyword>
       <keyword>naive bayesian classification</keyword>
       <keyword>bayesian networks</keyword>
     </keywords>

@@ -18,7 +18,7 @@
       </city>
       <university>
         <name>Carnegie Mellon University</name>
-        <department></department>
+        <department/>
       </university>
     </location>
   </conference>
@@ -81,7 +81,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>ellsberg</keyword>
+      <keyword>ellsberg's paradox</keyword>
       <keyword>comparative ignorance</keyword>
       <keyword>ambiguity aversion</keyword>
     </keywords>
@@ -102,10 +102,10 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>possibility</keyword>
-      <keyword>belief functions</keyword>
-      <keyword>probability-boxes</keyword>
+      <keyword>belief function</keyword>
+      <keyword>probability boxes</keyword>
       <keyword>dependency bounds</keyword>
     </keywords>
     <abstract>Probability-boxes, numerical possibility theory and belief functions have been suggested as useful tools to represent imprecise, vague or incomplete information. They are particularly appropriate in environment risk assessment where information is typically tainted with imprecision or incompleteness. Based on these notions, we present and compare four different methods to propagate objective and subjective uncertainties through multivariate functions. Lastly, we use these different techniques on an environmental real case of soil contamination by lead on an ironworks brownfield.</abstract>
@@ -189,9 +189,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower probabilities</keyword>
+      <keyword>coherent lower probability</keyword>
       <keyword>aggregation functions</keyword>
-      <keyword>coherent</keyword>
+      <keyword>coherence</keyword>
     </keywords>
     <abstract>The paper gives sufficient and necessary conditions for eventwise aggregation of various families of lower probabilities, in particular, of coherent lower probabilities, and properties of the corresponding aggregation functions.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s008.pdf</pdf>
@@ -211,8 +211,8 @@
     </authors>
     <keywords>
       <keyword>lower and upper expectations</keyword>
-      <keyword>credal sets</keyword>
-      <keyword>credal networks</keyword>
+      <keyword>credal set</keyword>
+      <keyword>credal network</keyword>
       <keyword>multilinear programming</keyword>
     </keywords>
     <abstract>This papers investigates the computation of lower/upper expectations that must cohere with a collection of probabilistic assessments and a collection of judgements of epistemic independence. New algorithms, based on multilinear programming, are presented, both for independence among events and among gambles. Separation properties of graphical models are also investigated.</abstract>
@@ -277,8 +277,8 @@
       <keyword>prior ignorance</keyword>
       <keyword>minimax criterion</keyword>
       <keyword>likelihood function</keyword>
-      <keyword>imprecise probabilities</keyword>
-      <keyword>nonadditive measure</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>non-additive measure</keyword>
       <keyword>completely maxitive measure</keyword>
       <keyword>shilkret integral</keyword>
       <keyword>choquet integral</keyword>
@@ -323,7 +323,7 @@
     </authors>
     <keywords>
       <keyword>imprecise dirichlet model</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval probability</keyword>
       <keyword>multinomial data</keyword>
       <keyword>nonparametric predictive inference</keyword>
@@ -349,7 +349,7 @@
       <keyword>pose estimation</keyword>
       <keyword>training set</keyword>
       <keyword>feature-pose maps</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>evidential model</keyword>
     </keywords>
     <abstract>Pose estimation involves reconstructing the configura- tion of a moving body from images sequences. In this paper we present a general framework for pose esti- mation of unknown objects based on Shafer's eviden- tial reasoning. During learning an evidential model of the object is built, integrating different image fea- tures to improve both estimation robustness and pre- cision. All the measurements coming from one or more views are expressed as belief functions, and com- bined through Dempster's rule. The best pose esti- mate at each time step is then extracted from the resulting belief function by probabilistic approxima- tion. The choice of a sufficiently dense training set is a critical problem. Experimental results concerning a human tracking system are shown.</abstract>
@@ -420,7 +420,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>linear constraints</keyword>
+      <keyword>linear constraint</keyword>
       <keyword>probability assessment</keyword>
       <keyword>convex family of prior</keyword>
       <keyword>polytope</keyword>
@@ -465,7 +465,7 @@
     </authors>
     <keywords>
       <keyword>imprecise probabilistic information</keyword>
-      <keyword>ellsberg paradox</keyword>
+      <keyword>ellsberg's paradox</keyword>
       <keyword>second order beliefs</keyword>
       <keyword>ambiguity aversion</keyword>
       <keyword>non-additive probabilities</keyword>
@@ -529,7 +529,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>variational methods</keyword>
       <keyword>inferences</keyword>
     </keywords>
@@ -554,7 +554,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>fuzzy measures</keyword>
+      <keyword>fuzzy measure</keyword>
       <keyword>operational semantics</keyword>
       <keyword>uncertain models</keyword>
       <keyword>emission scenarios</keyword>
@@ -574,7 +574,7 @@
     <keywords>
       <keyword>decision making</keyword>
       <keyword>fuzzy probabilities</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>The standard framework of decision theory has no answer to the question how to deal with partial or fuzzy information. In this article two frameworks are presented and compared. The first one uses fuzzy probabilities as in [Buckley 2003] and has been developed by Dubois/Prade [Dubois 1979]. The data-based case is added here. The second framework deals with imprecise probabilities as in [Walley 1991] and proposes a model similar to that by [Kofler 1976]. Furthermore the two frameworks are compared with classical statistical decision theory. It is shown that both of them are similar concerning the mathematical techniques they require but are different regarding the knowledge the decision maker has about the probabilities.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s036.pdf</pdf>
@@ -609,7 +609,7 @@
     </authors>
     <keywords>
       <keyword>coherent previsions</keyword>
-      <keyword>coherent risk measures</keyword>
+      <keyword>coherent risk measure</keyword>
       <keyword>variability measures</keyword>
       <keyword>fair price</keyword>
       <keyword>conditioning</keyword>
@@ -735,7 +735,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>foundations of probability</keyword>
       <keyword>church place selection rules</keyword>
       <keyword>probabilistic reasoning</keyword>
@@ -762,7 +762,7 @@
       <keyword>dempster-shafer's belief function theory</keyword>
       <keyword>spohn's epistemic beliefs theory</keyword>
       <keyword>possibility theory</keyword>
-      <keyword>valuation-based systems</keyword>
+      <keyword>valuation based systems</keyword>
     </keywords>
     <abstract>The main goal of this paper is to describe a new semantic for conditional independence in terms of no double counting of uncertain evidence. For ease of exposition, we use probability calculus to state all results. But the results generalize easily to any calculus that fits in the framework of valuation-based systems. Thus, the results described in this paper apply also, for example, to Dempster-Shafer's (D-S) belief function theory, to Spohn's epistemic beliefs theory, and to Zadeh's possibility theory. The concept of independent (or distinct) evidence in D-S belief function theory is analogous to the concept of conditional independence for variables in probability theory.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s003.pdf</pdf>
@@ -782,10 +782,10 @@
     </authors>
     <keywords>
       <keyword>elicitation</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>inferential skill</keyword>
       <keyword>convex set</keyword>
-      <keyword>imprecise dirichlet models</keyword>
+      <keyword>imprecise dirichlet model</keyword>
     </keywords>
     <abstract>A protocol for the elicitation of imprecise probabilities based on linear programming is applied for the case of two continuous variables. Two medical experts were elicited. The resulting convex set of probability distributions was compared with the results obtained by the application of an imprecise Dirichlet model to a data base. An indicator is introduced to assess the inferential skill of the medical experts.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s025.pdf</pdf>
@@ -864,7 +864,7 @@
       <keyword>choquet expected utility</keyword>
       <keyword>decision making</keyword>
       <keyword>e-admissibility</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>interval probability</keyword>
       <keyword>interval statistical models</keyword>
       <keyword>linear programming</keyword>
@@ -892,13 +892,13 @@
       </author>
     </authors>
     <keywords>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>coarse data</keyword>
       <keyword>decision making</keyword>
       <keyword>hodges-lehmann criterion</keyword>
       <keyword>imperfect measurements</keyword>
       <keyword>imprecise dirichlet model</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>incomplete data</keyword>
       <keyword>interval probability</keyword>
       <keyword>interval statistical models</keyword>
@@ -950,7 +950,7 @@
       <keyword>marginal problem</keyword>
       <keyword>consistency</keyword>
       <keyword>ipfp</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>coherence</keyword>
     </keywords>
     <abstract>A version of a marginal problem considered in this paper was connected, in the 80ies of the last century, with the necessity to cope with a task of knowledge integration in probabilistic expert systems. In practical situations marginal distributions representing pieces of local knowledge were often inconsistent. The present paper introduces an interval-valued solution of a marginal problem, which always exists, even in cases when, because of inconsistencies, one cannot get a solution in a classical sense. The paper shows how famous Iterative Proportional Fitting Procedure, which is often used to get a classical solution of a consistent problem, can be exploited also when constructing an interval-valued solution, and how any solution can be optimized.</abstract>

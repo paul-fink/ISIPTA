@@ -18,7 +18,7 @@
       </city>
       <university>
         <name>University of Lugano</name>
-        <department></department>
+        <department/>
       </university>
     </location>
   </conference>
@@ -36,14 +36,14 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>uncertainty</keyword>
-      <keyword>maximum  entropy</keyword>
+      <keyword>maximum entropy</keyword>
       <keyword>imprecision</keyword>
       <keyword>non-specificity</keyword>
       <keyword>classification</keyword>
       <keyword>classification trees</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
     </keywords>
     <abstract>We present one application of the measure of maximum entropy for credal sets: as a total uncertainty measure to branch classification trees based on imprecise probabilities. In this paper we justify the use of maximum entropy as a global uncertainty measure for credal sets. A deduction of this measure, based on the best lower expectation of the logarithmic score is presented. We have also carried out several experiments in which credal classification trees are built taking a global uncertainty measure as basis. The results show that the error is lower when the maximum entropy is used as global uncertainty measure.</abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/002.pdf</pdf>
@@ -83,8 +83,8 @@
       <keyword>logical model</keyword>
       <keyword>directional association model</keyword>
       <keyword>statistical inference</keyword>
-      <keyword>upper and lower probabilities</keyword>
-      <keyword>idm</keyword>
+      <keyword>upper and lower probability</keyword>
+      <keyword>imprecise dirichlet model</keyword>
       <keyword>prior ignorance</keyword>
       <keyword>bayesian inference</keyword>
     </keywords>
@@ -112,7 +112,7 @@
       <keyword>uncertain knowledge</keyword>
       <keyword>coherence</keyword>
       <keyword>g-coherence</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>conditional probability bounds</keyword>
       <keyword>lower and upper probabilities</keyword>
       <keyword>non relevant gains</keyword>
@@ -132,7 +132,7 @@
     </authors>
     <keywords>
       <keyword>possibility measure</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>upper and lower probability</keyword>
       <keyword>maximal variation</keyword>
     </keywords>
     <abstract>The paper gives the solution of calculating maximal variation of fuzzy interval in the scope of the theory of imprecise probabilities. As it appears, this problem is more difficult than analogous one connected with evaluation of lower and upper expectations of fuzzy interval. This paper gives some contribution to possibility theory in the framework of probability approach.</abstract>
@@ -158,7 +158,7 @@
       <keyword>linguistic probabilities</keyword>
       <keyword>inter-personal conversion</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/008.pdf</pdf>
   </paper>
   <paper>
@@ -189,14 +189,14 @@
       </author>
     </authors>
     <keywords>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>propositional logic</keyword>
       <keyword>combination</keyword>
-      <keyword>dempster's rule</keyword>
+      <keyword>dempster's rule of combination</keyword>
       <keyword>independence</keyword>
       <keyword>conflict</keyword>
       <keyword>monotonicity</keyword>
-      <keyword>nonspecificity</keyword>
+      <keyword>non-specificity</keyword>
       <keyword>idempotency</keyword>
       <keyword>associativity</keyword>
       <keyword>bayes' theorem</keyword>
@@ -238,7 +238,7 @@
     </authors>
     <keywords>
       <keyword>sets of probability distributions</keyword>
-      <keyword>lower expectations</keyword>
+      <keyword>lower expectation</keyword>
       <keyword>expectation intervals</keyword>
       <keyword>independence concepts</keyword>
     </keywords>
@@ -275,7 +275,7 @@
     </authors>
     <keywords>
       <keyword>assessment</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>imprecise prevision</keyword>
       <keyword>coherence</keyword>
       <keyword>natural extension</keyword>
@@ -345,7 +345,7 @@
       <keyword>subjective probability</keyword>
       <keyword>upper and lower prevision</keyword>
       <keyword>updating</keyword>
-      <keyword>event trees</keyword>
+      <keyword>event tree</keyword>
     </keywords>
     <abstract>This article introduces a new way of understanding subjective probability and its generalization to lower and upper prevision. Instead of asking whether a person is willing to pay given prices for given risky payoffs, we ask whether the person believes he can make a lot of money at those prices. If not---if the person is convinced that no strategy for exploiting the prices can make him very rich in the long run---then the prices measure his subjective uncertainty about the events involved. This new understanding justifies Peter Walley's updating principle, which applies when new information is anticipated exactly. It also justifies a weaker principle that is more useful for planning because it applies even when new information is not anticipated exactly. This weaker principle can serve as a basis for flexible probabilistic planning in event trees.</abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/038.pdf</pdf>
@@ -458,7 +458,7 @@
     </authors>
     <keywords>
       <keyword>multidimensional distributions</keyword>
-      <keyword>approximations</keyword>
+      <keyword>approximation</keyword>
       <keyword>conditional independence</keyword>
       <keyword>operator of composition</keyword>
     </keywords>
@@ -476,7 +476,7 @@
     </authors>
     <keywords>
       <keyword>uncertainty</keyword>
-      <keyword>uncertainty-based information</keyword>
+      <keyword>uncertainty based information</keyword>
       <keyword>generalized information theory</keyword>
     </keywords>
     <abstract>The purpose of this paper is to survey recent developments and trends in the area of generalized information theory (GIT) and to discuss some of the issues of current interest in GIT regarding the measurement of uncertainty-based information for imprecise probabilities on finite crisp sets.</abstract>
@@ -496,7 +496,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>probability density function</keyword>
       <keyword>reliability</keyword>
     </keywords>
@@ -520,8 +520,8 @@
       <keyword>climate change</keyword>
       <keyword>climate sensitivity</keyword>
       <keyword>imprecise probability</keyword>
-      <keyword>random sets</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>random set</keyword>
+      <keyword>belief function</keyword>
     </keywords>
     <abstract>We apply random set theory to an analysis of future climate change. Bounds on cumulative probability are used to quantify uncertainties in natural and socio-economic factors that influence estimates of global mean temperature. We explore the link of random sets to lower envelopes of probability families bounded by cumulative probability intervals. By exploiting this link, a random set for a simple climate change model is constructed, and projected onto an estimate of global mean warming in the 21st century. Results show that warming estimates on this basis can generate very imprecise uncertainty models.</abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/026.pdf</pdf>
@@ -549,7 +549,7 @@
     </authors>
     <keywords>
       <keyword>decision analysis</keyword>
-      <keyword>interval probabilities</keyword>
+      <keyword>interval probability</keyword>
       <keyword>utility theory</keyword>
       <keyword>decision tools</keyword>
     </keywords>
@@ -570,7 +570,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>linear constraints</keyword>
+      <keyword>linear constraint</keyword>
       <keyword>probability assessment</keyword>
       <keyword>bayesian inference</keyword>
       <keyword>metropolis-hastings algorithm</keyword>
@@ -588,7 +588,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>moebius transform</keyword>
       <keyword>choquet's theorem</keyword>
       <keyword>bishop-de leeuw theorem</keyword>
@@ -642,8 +642,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>random sets</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>random set</keyword>
+      <keyword>upper and lower probability</keyword>
       <keyword>measurable selections</keyword>
       <keyword>choquet integral</keyword>
     </keywords>
@@ -664,7 +664,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>statistical inference</keyword>
       <keyword>dynamic systems</keyword>
       <keyword>convex sets of probability measures</keyword>
@@ -703,7 +703,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise previsions</keyword>
+      <keyword>imprecise prevision</keyword>
       <keyword>convex imprecise previsions</keyword>
       <keyword>convex natural extension</keyword>
       <keyword>risk measures</keyword>
@@ -772,7 +772,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>fuzzy sets</keyword>
+      <keyword>fuzzy set</keyword>
       <keyword>option pricing</keyword>
       <keyword>sensitivity analysis</keyword>
     </keywords>
@@ -793,7 +793,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>credal networks</keyword>
+      <keyword>credal network</keyword>
       <keyword>strong independence</keyword>
       <keyword>probability intervals</keyword>
       <keyword>inference</keyword>
@@ -825,7 +825,7 @@
     </authors>
     <keywords>
       <keyword>bayes admissible</keyword>
-      <keyword>e-admissible</keyword>
+      <keyword>e-admissibility</keyword>
       <keyword>gamma-maximin</keyword>
       <keyword>maximality</keyword>
       <keyword>convex set</keyword>
@@ -844,8 +844,8 @@
     </authors>
     <keywords>
       <keyword>products of capacities</keyword>
-      <keyword>capacities</keyword>
-      <keyword>non-additive measures</keyword>
+      <keyword>capacity</keyword>
+      <keyword>non-additive measure</keyword>
       <keyword>increasing capacities</keyword>
       <keyword>distorted measures</keyword>
     </keywords>
@@ -869,7 +869,7 @@
       <keyword>optimal control</keyword>
       <keyword>dynamic programming</keyword>
       <keyword>uncertainty</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>We generalise the optimisation technique of dynamic programming for discrete-time systems with an uncertain gain function. We assume that uncertainty about the gain function is described by an imprecise probability model, which generalises the well-known Bayesian, or precise, models. We compare various optimality criteria that can be associated with such a model, and which coincide in the precise case: maximality, robust optimality and maximinity. We show that (only) for the first two an optimal feedback can be constructed by solving a Bellman-like equation.</abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/013.pdf</pdf>
@@ -890,7 +890,7 @@
     <keywords>
       <keyword>decision making</keyword>
       <keyword>generalized expected utility</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>second-order uncertainty</keyword>
       <keyword>natural extension</keyword>
       <keyword>linear programming</keyword>
@@ -909,7 +909,7 @@
     </authors>
     <keywords>
       <keyword>stress-strength reliability</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>second-order uncertainty</keyword>
       <keyword>natural extension</keyword>
       <keyword>previsions</keyword>
@@ -994,7 +994,7 @@
       <keyword>conditioning</keyword>
       <keyword>updating</keyword>
       <keyword>theorem of total probability</keyword>
-      <keyword>markov chains</keyword>
+      <keyword>markov chain</keyword>
       <keyword>bayes' theorem</keyword>
       <keyword>decision theory</keyword>
     </keywords>

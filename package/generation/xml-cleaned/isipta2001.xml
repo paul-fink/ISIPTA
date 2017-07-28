@@ -18,7 +18,7 @@
       </city>
       <university>
         <name>Cornell University</name>
-        <department></department>
+        <department/>
       </university>
     </location>
   </conference>
@@ -36,13 +36,13 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>uncertainty</keyword>
       <keyword>imprecision</keyword>
       <keyword>non-specificity</keyword>
       <keyword>classification</keyword>
       <keyword>classification trees</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>credal set</keyword>
     </keywords>
     <abstract>We present an application of the measure of total uncertainty on convex sets of probability distributions, also called credal sets, to the construction of classification trees. In these classification trees the probabilities of the classes in each one of its leaves is estimated by using the imprecise Dirichlet model. In this way, smaller samples give rise to wider probability intervals. Branching a classification tree can decrease the entropy associated to the classes but, at the same time, as the sample is divided among the branches the non-specificity increases. We use a total uncertainty measure (entropy + non-specificity) as branching criterion. The stopping rule is not to increase the total uncertainty. The good behavior of this procedure for standard classification problems is shown. It is important to remark that it does not suffer of overfitting, with similar results in the training and test samples.</abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s060.ps</pdf>
@@ -61,7 +61,7 @@
       <keyword>generalized expected utility</keyword>
       <keyword>ambiguity</keyword>
       <keyword>linear programming chooquet expected utility</keyword>
-      <keyword>$\gamma$-minimax principle</keyword>
+      <keyword>gamma-minimax principle</keyword>
       <keyword>critic of robust bayesian analysis</keyword>
     </keywords>
     <abstract>The standard framework of decision theory suffers from the fact that ambiguity (non-stochastic uncertainty, indeterminacy) can not be taken properly into account. In most applications, neither the maximin paradigm (relying on complete ignorance on the states of nature) nor the classical Bayesian paradigm (assuming perfect probabilistic information on the states of nature) adequately reflects the situation under consideration. This paper extends classical decision theory to situations where prior and/or sampling information is ambiguous. It gives a framework to generalize expected utility theory to interval probability and imprecise probabilities. Firstly, a general algorithm will be presented to calculate optimal actions under ambiguous prior information. Then it is shown how to incorporate ambiguous sampling information. As a by-product, the results also lead to a question concerning coherent inference with imprecise probabilities and robust Bayesian inference.
@@ -150,8 +150,8 @@
       <keyword>dirichlet distribution</keyword>
       <keyword>l-dirichlet distribution</keyword>
       <keyword>prior ignorance</keyword>
-      <keyword>idm</keyword>
-      <keyword>upper and lower probabilities</keyword>
+      <keyword>imprecise dirichlet model</keyword>
+      <keyword>upper and lower probability</keyword>
     </keywords>
     <abstract>We observe a random sample of $n$ observations from an unknown distribution having mean $\mu$. In this paper we consider the problem of making inferences about the unknown parameter $\mu$ and other charasteristics of the unknown distribution by adopting a non-parametric and objective minded framework, in which the observations are considered bounded and discrete (finite precision measurement). We first review the Bayesian approach based on Dirichlet priors and discuss the problems encountered by the usual vague priors. An alternative approach is then proposed which models prior ignorance by an imprecise Dirichlet model (IDM) with parameter $\ps$ (Walley, 1996). The comparison of inferences produced by the IDM with the ones from more common parametric approaches gives support for setting $\ps=2$ in the IDM. The new method of inference is illustrated on Darwin's maize data.</abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s050.ps</pdf>
@@ -265,7 +265,7 @@
     </authors>
     <keywords>
       <keyword>sets of probability measures</keyword>
-      <keyword>lower expectations</keyword>
+      <keyword>lower expectation</keyword>
       <keyword>graphoid axioms</keyword>
       <keyword>independence concepts</keyword>
     </keywords>
@@ -283,9 +283,9 @@
     </authors>
     <keywords>
       <keyword>sets of probability measures</keyword>
-      <keyword>lower expectations</keyword>
+      <keyword>lower expectation</keyword>
       <keyword>independence concepts</keyword>
-      <keyword>extensions</keyword>
+      <keyword>extension</keyword>
     </keywords>
     <abstract>The purpose of this paper is to investigate a condition, suggested by Kuznetsov, to be required of independent variables. Kuznetsov's condition demands decomposable functions to be associated with decomposable expectation intervals. The paper demonstrates that Kuznetsov's condition does enlarge the universe of models based on sets of probability measures, as the condition is not equivalent to existing concepts of independence.</abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s011.ps</pdf>
@@ -373,7 +373,7 @@
       <keyword>belief model</keyword>
       <keyword>belief revision</keyword>
       <keyword>classical propositional logic</keyword>
-      <keyword>impreciseprobability</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>order theory</keyword>
       <keyword>possibility measure</keyword>
       <keyword>system of spheres</keyword>
@@ -440,7 +440,7 @@
     </authors>
     <keywords>
       <keyword>quantitative possibility</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword></keyword>
     </keywords>
     <abstract>New semantics for numerical values given to possibility measures are provided. For epistemic possibilities, the new approach is based on the semantics of the Transferable Belief Model itself based on betting odds interpreted in a less drastic way than what subjective probabilities presupposes. It is shown that the least informative among the belief structures that are compatible with prescribed betting rates is nested, i.e. corresponds to a possibility measure. It is also proved that the idempotent conjunctive combination of two possibility measures corresponds to the hyper-cautious conjunctive combination of the belief functions induced by the possibility measures. This view differs from the subjective semantics first proposed by Giles and relying on upper and lower probability induced by non-exchangeable bets. For objective possibility degrees, the semantics is based on the most informative possibilistic approximation of a probability measure derived from a hi
@@ -460,7 +460,7 @@
       <keyword>timber management</keyword>
       <keyword>investment analysis</keyword>
       <keyword>intertemporal preferences</keyword>
-      <keyword>upper and lower previsions</keyword>
+      <keyword>upper and lower prevision</keyword>
     </keywords>
     <abstract>Timber management involves making long-term investment decisions. However, timber prices are characterized by interannual volatility, and the future costs and revenues of management depend on a changing social, technological, and environmental context. Timber management with fluctuating prices is commonly analyzed using an asset pricing model that can be solved as a recursive dynamic program. I reformulate the model in terms of previsions for gambles, and introduce imprecision in both future prices and discount rates. Imprecision in prices and intertemporal preferences leads to imprecise buying and selling prices for timber and for timberland. The results have behavioral implications which may assist in understanding individual landowners and timber markets.</abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s008.pdf</pdf>
@@ -476,9 +476,9 @@
     </authors>
     <keywords>
       <keyword>weighted focal sets</keyword>
-      <keyword>random sets</keyword>
-      <keyword>possibility measures</keyword>
-      <keyword>plausibility measures</keyword>
+      <keyword>random set</keyword>
+      <keyword>possibility measure</keyword>
+      <keyword>plausibility measure</keyword>
       <keyword>lower and upper probabilities</keyword>
       <keyword>sets of probability measures</keyword>
     </keywords>
@@ -550,7 +550,7 @@
     <keywords>
       <keyword>reliability analysis</keyword>
       <keyword>imprecise failure probabilities</keyword>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>linguistic labels</keyword>
     </keywords>
     <abstract>Reliability analysis of engineering systems conventionally represents the system state variables as precise probability distributions and generates precise estimates of the probability of system failure. It is demonstrated how this conventional approach can be extended to handle imprecise knowledge about the system state variables, represented in general as random sets, in order to generate bounds on the probability of failure. The conventional assumption of a precise limit state function is then relaxed. A new method based on linguistic covering of the state variable space with fuzzy set labels is introduced and is used to generate an imprecise limit state function from very scarce experimental data.</abstract>
@@ -584,7 +584,7 @@
     </authors>
     <keywords>
       <keyword>coherence</keyword>
-      <keyword>natural extension rule</keyword>
+      <keyword>natural extension</keyword>
       <keyword>dempster's conditioning rule</keyword>
       <keyword>possibility measure</keyword>
       <keyword>upper probability</keyword>
@@ -649,7 +649,7 @@
     </authors>
     <keywords>
       <keyword>exact functionals</keyword>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>exact cooperative games</keyword>
       <keyword>core</keyword>
     </keywords>
@@ -670,7 +670,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>identification regions</keyword>
+      <keyword>identification region</keyword>
       <keyword>interval data</keyword>
       <keyword>missing data</keyword>
       <keyword>nonparametric regression</keyword>
@@ -692,9 +692,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>random correspondences</keyword>
-      <keyword>capacities</keyword>
+      <keyword>capacity</keyword>
     </keywords>
     <abstract>We prove results that relate random correspondences with their measurable selections, thus providing a foundation for viewing random correspondences as "bundles" of random variables.</abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s062.pdf</pdf>
@@ -709,7 +709,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>set of desirable gambles</keyword>
       <keyword>epistemic irrelevance</keyword>
       <keyword>graphoid axioms</keyword>
       <keyword>natural extension</keyword>
@@ -732,7 +732,7 @@
     </authors>
     <keywords>
       <keyword>evidence theory</keyword>
-      <keyword>fuzzy sets</keyword>
+      <keyword>fuzzy set</keyword>
       <keyword>options</keyword>
       <keyword>pricing</keyword>
     </keywords>
@@ -803,7 +803,7 @@
     <keywords>
       <keyword>discriminant analysis</keyword>
       <keyword>interval arithmetic</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>In a statistical pattern recognition context, probabilistic algorithms like -par ametric or nonparametric- discriminant analysis are designed to classify, when p ossible, objects into predefined classes. Because these methods require precise input data, they cannot propagate uncertainties in the classifying process. In r eal case studies, this could lead to drastic misinterpretations of objects. We h ave thus developed an extension of these methods to directly propagate imprecise interval-form data. The computations are based on interval arithmetic, which ap pears to be an efficient tool to handle intervals. They consist in calculating s uccessively interval conditional probability density functions and interval post erior probabilities, whose definitions are closely associated with the imprecise probability theory. The algorithms eventually assign any object to a subset of classes, consistent with the data and its uncertainties. The resulting classifyi ng model
   is thus less precise, but much more realistic than the standard one. Th e efficiency of this algorithm is tested on a synthetic case study.</abstract>
@@ -823,9 +823,9 @@
       </author>
     </authors>
     <keywords>
-      <keyword>fuzzy sets</keyword>
+      <keyword>fuzzy set</keyword>
       <keyword>random variables</keyword>
-      <keyword>stochastic differential equations</keyword>
+      <keyword>stochastic differential equation</keyword>
       <keyword>parameter uncertainty</keyword>
       <keyword>civil engineering models</keyword>
     </keywords>
@@ -843,7 +843,7 @@
     </authors>
     <keywords>
       <keyword>dutch book</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>uncertain reasoning</keyword>
     </keywords>
     <abstract>The paper presents a rather general proof of the so called Dutch Book argument and shows how it may also be applied to yield the corresponding analogs of probability functions for various non-classical propositional logics, for example modal, intuitionistic, and paraconsistent logics.</abstract>
@@ -881,7 +881,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>graphical models</keyword>
+      <keyword>graphical model</keyword>
       <keyword>conditional independence</keyword>
       <keyword>lower probability</keyword>
       <keyword>separation criteria</keyword>
@@ -900,7 +900,7 @@
     </authors>
     <keywords>
       <keyword>marginal problem</keyword>
-      <keyword>possibility distributions</keyword>
+      <keyword>possibility distribution</keyword>
       <keyword>triangular norm</keyword>
       <keyword>conditioning</keyword>
       <keyword>conditional independence</keyword>
@@ -974,12 +974,12 @@
       </author>
     </authors>
     <keywords>
-      <keyword>fuzzy measures</keyword>
+      <keyword>fuzzy measure</keyword>
       <keyword>cardinality based measures</keyword>
       <keyword>entropy</keyword>
       <keyword>attitude</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s004.pdf</pdf>
   </paper>
   <paper>
@@ -995,8 +995,8 @@
       <keyword>credal classification</keyword>
       <keyword>classification</keyword>
       <keyword>naive credal classifier</keyword>
-      <keyword>naive bayes classifier</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>naive bayesian classifier</keyword>
+      <keyword>credal set</keyword>
       <keyword>imprecise dirichlet model</keyword>
       <keyword>inference</keyword>
       <keyword>missing data</keyword>

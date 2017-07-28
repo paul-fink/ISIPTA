@@ -40,7 +40,7 @@
       <keyword>decisions from experience</keyword>
       <keyword>random selection</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s056.pdf</pdf>
   </paper>
   <paper>
@@ -105,7 +105,7 @@
     </authors>
     <keywords>
       <keyword>information fusion</keyword>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>independent natural extension</keyword>
       <keyword>generalized bayes rule</keyword>
     </keywords>
@@ -124,7 +124,7 @@
     <keywords>
       <keyword>binary hypothesis tests</keyword>
       <keyword>distributional uncertainty</keyword>
-      <keyword>info-gaps</keyword>
+      <keyword>info-gap</keyword>
       <keyword>robustness</keyword>
       <keyword>tests of the mean</keyword>
       <keyword>t test</keyword>
@@ -221,10 +221,10 @@
     </authors>
     <keywords>
       <keyword>bayesian networks</keyword>
-      <keyword>credal networks</keyword>
-      <keyword>graphical models</keyword>
+      <keyword>credal network</keyword>
+      <keyword>graphical model</keyword>
       <keyword>d-separation</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>updating</keyword>
       <keyword>likelihood function</keyword>
       <keyword>hierarchical model</keyword>
@@ -293,7 +293,7 @@
     </authors>
     <keywords>
       <keyword>epistemic irrelevance</keyword>
-      <keyword>laws of large numbers</keyword>
+      <keyword>law of large numbers</keyword>
       <keyword>concentration inequalities</keyword>
     </keywords>
     <abstract>This paper presents concentration inequalities and laws of large numbers under weak assumptions of irrelevance, expressed through lower and upper expectations. The results are variants and extensions of De Cooman and Miranda's recent inequalities and laws of large numbers. The proofs indicate connections between concepts of irrelevance for lower/upper expectations and the standard theory of martingales.</abstract>
@@ -323,7 +323,7 @@
     <keywords>
       <keyword>absorbing state</keyword>
       <keyword>imprecise probability</keyword>
-      <keyword>markov chains</keyword>
+      <keyword>markov chain</keyword>
       <keyword>time inhomogeneity</keyword>
     </keywords>
     <abstract>Several authors have presented methods for considering the behaviour of Markov chains in the generalised setting of imprecise probability. Some assume a constant transition matrix which is not known precisely, instead bounds are given for each element. Others consider a transition matrix which is neither known precisely nor assumed to be constant, though each element is known to exist within intervals that are constant over time. In both cases results have been published regarding the long-term behaviour of such chains. When a finite Markov chain is considered with a single absorbing state, however, eventual absorption is generally certain in both cases. Thus it is of interest to consider the long-term behaviour of the chain, conditioned on non-absorption, within the setting of imprecise probability. Methods have previously been presented for the case of a constant transition matrix, and submitted for the case of a non-constant transition matrix. In this paper the methods for the two cases are compared.</abstract>
@@ -339,8 +339,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>belief functions</keyword>
-      <keyword>credal sets</keyword>
+      <keyword>belief function</keyword>
+      <keyword>credal set</keyword>
       <keyword>bayesian transformations</keyword>
       <keyword>upper and lower simplices</keyword>
       <keyword>focus</keyword>
@@ -416,7 +416,7 @@
     <keywords>
       <keyword>desirability</keyword>
       <keyword>weak desirability</keyword>
-      <keyword>sets of desirable gambles</keyword>
+      <keyword>set of desirable gambles</keyword>
       <keyword>coherence</keyword>
       <keyword>exchangeability</keyword>
       <keyword>representation</keyword>
@@ -494,7 +494,7 @@
     </authors>
     <keywords>
       <keyword>robust decisions</keyword>
-      <keyword>imprecise utilities</keyword>
+      <keyword>imprecise utility</keyword>
       <keyword>utility hierarchies</keyword>
       <keyword>mutual utility independence</keyword>
       <keyword>boundary linear utility</keyword>
@@ -515,12 +515,12 @@
     <keywords>
       <keyword>confidence intervals</keyword>
       <keyword>non-parametric models of uncertainty</keyword>
-      <keyword>random sets</keyword>
-      <keyword>fuzzy sets</keyword>
+      <keyword>random set</keyword>
+      <keyword>fuzzy set</keyword>
       <keyword>upper probability</keyword>
       <keyword>independence</keyword>
       <keyword>unknown interaction</keyword>
-      <keyword>fr\'echet bounds</keyword>
+      <keyword>frechet bounds</keyword>
     </keywords>
     <abstract>This article is devoted to the propagation of families of confidence intervals obtained by non-parametric methods through multivariate functions comprising the semantics of confidence limits. At fixed confidence level, local random sets are defined whose aggregation admits the calculation of upper probabilities of events. In the multivariate case, a number of ways of combinations is highlighted to encompass independence and unknown interaction using random set independence and Fr\'echet bounds. For all cases we derive formulas for the corresponding upper probabilities and elaborate how they relate. The methods are exemplified by means of an example from structural mechanics.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s038.pdf</pdf>
@@ -535,8 +535,8 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>minimum distance estimator</keyword>
       <keyword>empirical measure</keyword>
       <keyword>r project for statistical computing</keyword>
@@ -582,7 +582,7 @@
       <keyword>game theory</keyword>
       <keyword>surreal number</keyword>
     </keywords>
-    <abstract></abstract>
+    <abstract/>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s049.pdf</pdf>
   </paper>
   <paper>
@@ -603,7 +603,7 @@
       <keyword>partial ordering</keyword>
       <keyword>optimality</keyword>
       <keyword>decision trees</keyword>
-      <keyword>choice functions</keyword>
+      <keyword>choice function</keyword>
       <keyword>backward induction</keyword>
     </keywords>
     <abstract>We prove necessary and sufficient conditions on choice functions for factuality to hold in normal form sequential decision problems. We find that factuality is sufficient for backward induction to work. However, choice must be induced by a total preorder for factuality to hold. Hence, many of the optimality criteria used in imprecise probability theory (such as interval dominance, maximality, and E-admissibility) are counterfactual under normal form decision making.</abstract>
@@ -619,7 +619,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>dempster-shafer theory of evidence</keyword>
+      <keyword>dempster-shafer theory</keyword>
       <keyword>multidimensionality</keyword>
       <keyword>operator of composition</keyword>
       <keyword>conditional independence</keyword>
@@ -646,7 +646,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>robust bayesian combination</keyword>
       <keyword>credal set</keyword>
       <keyword>discounting</keyword>
@@ -693,7 +693,7 @@
     <keywords>
       <keyword>label semantics</keyword>
       <keyword>prototype theory</keyword>
-      <keyword>random sets</keyword>
+      <keyword>random set</keyword>
       <keyword>lower and upper distributions</keyword>
       <keyword>second order distributions</keyword>
     </keywords>
@@ -798,7 +798,7 @@
     <keywords>
       <keyword>obstacle tracking</keyword>
       <keyword>association step</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>transferable belief model</keyword>
     </keywords>
     <abstract>The problem tackled in this paper deals with obstacle tracking in the context of vehicle driving aid, especially the association step, which consists in associating perceived objects with known objects detected at a previous time. A contribution in the modeling of this association problem in the belief function framework is introduced. By interpreting belief functions as weighted opinions according to the Transferable Belief Model semantics, pieces of information regarding the association of known objects and perceived objects can be expressed in a common global space of association to be combined by the conjunctive rule of combination, and a decision making process using the pignistic transformation can be made. This approach is validated on real data.</abstract>
@@ -818,7 +818,7 @@
       </author>
     </authors>
     <keywords>
-      <keyword>coherent lower previsions</keyword>
+      <keyword>coherent lower prevision</keyword>
       <keyword>weak and strong coherence</keyword>
       <keyword>natural extension</keyword>
       <keyword>regular extension</keyword>
@@ -849,7 +849,7 @@
       <keyword>decision analysis</keyword>
       <keyword>relative entropy</keyword>
       <keyword>utility theory</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>portfolio optimization</keyword>
     </keywords>
     <abstract>In this paper we model the problem faced by a risk-averse decision maker with a precise subjective probability distribution who bets against a risk-neutral opponent or invests in a financial market where the beliefs of the opponent or the representative agent in the market are described by a convex set of imprecise probabilities. The problem of finding the portfolio of bets or investments that maximizes the decision maker's expected utility is shown to be the dual of the problem of finding the distribution within the set that minimizes a measure of divergence, i.e., relative entropy, with respect to the decision maker's distribution. In particular, when the decision maker's utility function is drawn from the commonly used exponential/logarithmic/power family, the solutions of two generic utility maximization problems are shown to correspond exactly to the minimization of divergences drawn from two commonly-used parametric families that both generalize the Kullback-Leibler divergence. We also introduce a new parameterization of the exponential/logarithmic/power utility functions that allows the power parameter to vary continuously over all real numbers and which is a natural and convenient parameterization for modeling utility gains relative to a non-zero status quo wealth position</abstract>
@@ -875,7 +875,7 @@
     <keywords>
       <keyword>pari-mutuel model</keyword>
       <keyword>risk measures</keyword>
-      <keyword>natural  extension</keyword>
+      <keyword>natural extension</keyword>
       <keyword>dilation</keyword>
       <keyword>2-monotonicity</keyword>
     </keywords>
@@ -898,7 +898,7 @@
     <keywords>
       <keyword>transferable belief model</keyword>
       <keyword>dempster-shafer theory</keyword>
-      <keyword>belief functions</keyword>
+      <keyword>belief function</keyword>
       <keyword>information fusion</keyword>
       <keyword>uncertain reasoning</keyword>
     </keywords>
@@ -1032,8 +1032,8 @@
       <keyword>multi-criteria decision making</keyword>
       <keyword>desirable gambles</keyword>
       <keyword>dempster-shafer theory</keyword>
-      <keyword>judgments</keyword>
-      <keyword>preferences</keyword>
+      <keyword>judgment</keyword>
+      <keyword>preference</keyword>
       <keyword>pareto set</keyword>
     </keywords>
     <abstract>An axiomatic approach for solving a multi-criteria decision making problem is studied in the paper, which generally allows reducing a set of Pareto optimal solutions. The information about criteria in the problem is represented as the decision maker judgments of a special type. The judgments have a clear behavior interpretation and can be used in various decision problems. It is shown in the paper how to combine the judgments and to use them for reducing the Pareto set when they are provided by several decision makers. Two global criteria of decision making are introduced for comparing of decision alternatives. The first criterion based on the lower expectation, the second one is based on determining the belief and plausibility functions in the framework of Dempster-Shafer theory and uses the "threshold" probability for the final decision making. The numerical examples illustrate the proposed approach.</abstract>
@@ -1058,7 +1058,7 @@
     </authors>
     <keywords>
       <keyword>bayesian inference</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
       <keyword>linear regression</keyword>
       <keyword>lower and upper probability distributions</keyword>
       <keyword>maximum likelihood estimation</keyword>
@@ -1078,7 +1078,7 @@
     </authors>
     <keywords>
       <keyword>evidence theory</keyword>
-      <keyword>random sets independence</keyword>
+      <keyword>random set independence</keyword>
       <keyword>conditional independence</keyword>
       <keyword>conditional noninteractivity</keyword>
       <keyword>markov properties</keyword>
@@ -1133,7 +1133,7 @@
       <keyword>threat</keyword>
       <keyword>worst case</keyword>
       <keyword>expected value</keyword>
-      <keyword>imprecise probabilities</keyword>
+      <keyword>imprecise probability</keyword>
     </keywords>
     <abstract>This paper presents a model of how military commanders estimate the threat posed by the enemy in a tactical situation, and how they employ own forces to control that threat. The model is based on interviews with nine commanders from the Swedish navy and the purpose is to find automatic and adequate methods for reasoning about strategic issues based on the long-time experience of highly qualified military officers. The results show that the number of enemy units, the types of enemy units, the behavior of the enemy units, and the uncertainties regarding the number, types, and behavior determines the threat in a tactical situation. The own course of action works as a threat altering function to control that threat. When the commander should decide on a course of action, we suggest that it should be selected so it minimizes the expected threat.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s030.pdf</pdf>
