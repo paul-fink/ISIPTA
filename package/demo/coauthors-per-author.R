@@ -4,11 +4,6 @@
 library("ISIPTA.eProceedings")
 library(ggplot2)
 library(plyr)
-library(reshape2)
-
-demo("authors-per-paper", package = "ISIPTA.eProceedings",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
-
 
 papers_ncoauthors <- ddply(papers_authors, .(id),
                           function(x) {
@@ -54,4 +49,3 @@ ggplot(papers_ncoauthors, aes(ordered(ncoauthors))) +
 ggplot(papers_ncoauthors, aes(ordered(ncoauthors))) +
   geom_bar() + facet_grid(. ~ year) + labs(x = "Coauthors") +
   labs(y = "Authors", title = "Frequency of Coauthorship")
-

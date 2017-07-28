@@ -1,18 +1,38 @@
 ### Coauthors network on the world map.
 
 library("ISIPTA.eProceedings")
-library(geosphere)
-library(ggplot2)
-library(igraph)
 library(plyr)
-library(reshape2)
+library(geosphere)
 library(rworldmap)
 
 data("authors_locations", package = "ISIPTA.eProceedings")
+data("papers_authors", package = "ISIPTA.eProceedings")
 
-demo("coauthors-network", package = "ISIPTA.eProceedings",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
 
+### Coauthor pairs calculation: ######################################
+coauthors_pairs <- ddply(papers_authors, .(id),
+                         function(x) {
+                           if ( nrow(x) > 1 ) {
+                             authors <- sort(as.character(x$author))
+                             pairs <- combn(authors, 2)
+                             
+                             data.frame(author1 =
+                                          factor(pairs[1, ],
+                                                 levels = levels(x$author)),
+                                        
+                                        author2 =
+                                          factor(pairs[2, ],
+                                                 levels = levels(x$author)),
+                                        
+                                        year = x$year[1],
+                                        id = x$id[1])
+                           }
+                         })
+
+coauthors_pairs <- within(coauthors_pairs, {
+  year <- ordered(year)
+  id <- factor(id)
+})
 
 
 ## Extend with geolocations:
@@ -27,8 +47,10 @@ coauthors_pairs_loc <- merge(coauthors_pairs_loc, authors_locations,
                          suffixes = c(".author2", ".author1"),
                          sort = FALSE)
 coauthors_pairs_loc <- subset(coauthors_pairs_loc,
-                              (!is.na(city_lon.author2) & !is.na(city_lat.author2) & 
-                                 !is.na(city_lon.author2) & !is.na(city_lat.author2)))
+                              (!is.na(city_lon.author2) &
+                               !is.na(city_lat.author2) &
+                               !is.na(city_lon.author2) &
+                               !is.na(city_lat.author2)))
 
 
 ### Visualization of the world map: ##################################
@@ -50,5 +72,3 @@ for ( i in seq(length = nrow(coauthors_pairs_loc)) ) {
   else
     lines(l, col = 2, lwd = 1)
 }
-
-

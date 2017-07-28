@@ -7,11 +7,29 @@ library(igraph)
 library(plyr)
 library(reshape2)
 
-demo("regular-contributors", package = "ISIPTA.eProceedings",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+data("authors_locations", package = "ISIPTA.eProceedings")
+data("papers_authors", package = "ISIPTA.eProceedings")
+
+### Calculate the regularity of contributons per author ##############
+## For detailed look, see demo("regular-contributors")
+authors_locations$year <- ordered(authors_locations$year)
+
+conferences_contributors <-
+  ddply(authors_locations, .(author),
+        function(x) {
+          data.frame(t(as.matrix(table(x$year))))
+        })
+
+colnames(conferences_contributors) <-
+  c("author", sub("X", "ISIPTA", colnames(conferences_contributors)[-1]))
 
 
+authors_ncontributions <-
+  data.frame(author = conferences_contributors$author,
+             ncontribs = rowSums(conferences_contributors[, -1]))
 
+
+### Coauthor pairs calculation: ######################################
 coauthors_pairs <- ddply(papers_authors, .(id),
                          function(x) {
                            if ( nrow(x) > 1 ) {
@@ -113,29 +131,26 @@ dimnames(distances) <- list(V(graph)$name, V(graph)$name)
 
 
 ### Personal distributions of the "regular contributors":
-
 regulars <- subset(authors_ncontributions,
-                   ncontribs == nconferences)$author
+                   ncontribs == nlevels(coauthors_pairs$year))$author
 
-regulars_distances <-
+regulars_dists <-
   distances[, match(regulars, colnames(distances)), drop = FALSE]
 
-regulars_distances_melt <- melt(regulars_distances)
-regulars_distances_melt <- regulars_distances_melt[regulars_distances_melt$value != Inf,]
-regulars_distances_melt <- regulars_distances_melt[regulars_distances_melt$value != 0,]
-table(regulars_distances_melt$value)
-table(regulars_distances_melt$value, regulars_distances_melt$Var2)
+regulars_dists_melt <- melt(regulars_dists)
+regulars_dists_melt <- regulars_dists_melt[regulars_dists_melt$value < Inf,]
+regulars_dists_melt <- regulars_dists_melt[regulars_dists_melt$value > 0,]
 
-#ggplot(melt(regulars_distances_melt, id.vars = c("Var1", "Var2")), aes(value)) +
-#  geom_density(aes(y = ..count..), fill = "SkyBlue2") +
-#  facet_grid(. ~ Var2)
+## Distribution of shortest distances for regular contributors
+table(regulars_dists_melt$value, regulars_dists_melt$Var2)
 
-ggplot(melt(regulars_distances_melt, id.vars = c("Var1", "Var2")), aes(ordered(value))) +
-  geom_bar(fill = "SkyBlue2") +
+ggplot(melt(regulars_dists_melt, id.vars = c("Var1", "Var2")),
+       aes(ordered(value))) + geom_bar(fill = "SkyBlue2") +
   facet_grid(. ~ Var2) + labs(x = "Distances") + 
   labs(title = "Distribution of distances of persons with paper at all ISIPTAs")
-# Barbara is apparently not part of the largest cluster in the graph,
+# Barbara Vantaggi is apparently not part of the largest cluster in the graph,
 # otherwise she would have higher distances
+
 
 ### Evolution of the network over time: ##############################
 

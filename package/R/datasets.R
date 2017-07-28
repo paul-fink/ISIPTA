@@ -13,7 +13,7 @@
 #' @usage data(authors_locations)
 #'
 #' @format
-#' A data frame with 716 observations on the following 10 variables,
+#' A data frame with 729 observations on the following 10 variables,
 #' where each row contains information on one author in a certain year.
 #' \describe{
 #'  \item{\code{year}}{Integer vector of the year of the }
@@ -161,7 +161,7 @@
 #' @usage data(papers_authors)
 #'
 #' @format
-#' A data frame with 855 observations on the following 3 variables,
+#' A data frame with 848 observations on the following 3 variables,
 #' where each row contains one author of a paper.
 #' \describe{
 #'  \item{\code{year}}{The year in which the paper featured as numeric vector.}
@@ -205,7 +205,7 @@
 #' @usage data(papers_keywords)
 #'
 #' @format
-#' A data frame with 2180 observations on the following 3 variables,
+#' A data frame with 2184 observations on the following 3 variables,
 #' where each row contains one keyword of a paper.
 #' \describe{
 #'  \item{\code{year}}{The year in which the paper featured as numeric vector.}

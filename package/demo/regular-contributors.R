@@ -6,10 +6,8 @@ library(plyr)
 library(reshape2)
 
 data("authors_locations", package = "ISIPTA.eProceedings")
-
-demo("simple-summary", package = "ISIPTA.eProceedings",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
-
+data("papers", package = "ISIPTA.eProceedings")
+data("papers_authors", package = "ISIPTA.eProceedings")
 
 
 ## converts the variable year into an ordered factor
@@ -75,9 +73,14 @@ colSums(contributors_flow)
 
 
 ## ... in relation to the maximum number of contributors to lose:
+unique_authors <- as.numeric(daply(papers_authors, .(year),
+                                   function(x) {
+                                     nlevels(x$author[, drop = TRUE])
+                                   }))
+
 max_loss <- sapply(flow,
                    function(i) {
-                     min(t1$'Unique authors'[i-1], t1$'Unique authors'[i])
+                     min(unique_authors[i-1], unique_authors[i])
                    })
 
 colSums(contributors_flow) / max_loss

@@ -16,16 +16,15 @@ load("./data/papers.RData")
 load("./data/papers_authors.RData")
 load("./data/papers_keywords.RData")
  
-                                         # depends on...
-source("./demo/simple-summary.R")        #
-source("./demo/authors-locations.R")     #                        (produces some warnings, please ignore them)
-source("./demo/country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
-source("./demo/authors-per-paper.R")     #
-source("./demo/regular-contributors.R")  # simple-summary.R
-source("./demo/papers-per-author.R")     #
-source("./demo/coauthors-per-author.R")  # authors-per-paper.R
-source("./demo/coauthors-network.R")     # regular-contributors.R simple-summary.R
-source("./demo/coauthors-worldmap.R")    # coauthors-network.R regular-contributors.R simple-summary.R
+source("./demo/simple-summary.R")
+source("./demo/authors-locations.R")
+source("./demo/country-contributions.R")
+source("./demo/authors-per-paper.R")
+source("./demo/regular-contributors.R")
+source("./demo/papers-per-author.R")
+source("./demo/coauthors-per-author.R")
+source("./demo/coauthors-network.R")
+source("./demo/coauthors-worldmap.R")
 
 source("./R/cache.R")
 source("./R/graph.R")
