@@ -4,7 +4,7 @@
 \name{authors_locations}
 \alias{authors_locations}
 \title{(Estimated) location of authors}
-\format{A data frame with 716 observations on the following 10 variables,
+\format{A data frame with 729 observations on the following 10 variables,
 where each row contains information on one author in a certain year.
 \describe{
  \item{\code{year}}{Integer vector of the year of the }

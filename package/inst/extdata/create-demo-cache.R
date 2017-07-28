@@ -8,19 +8,6 @@ load_demos <- function(package = TRUE) {
   op <- options(warn = -1)
   envir <- new.env()
   
-  if(package){ # when the package is packed
-    data("papers", package = "ISIPTA.eProceedings", envir = envir)
-    data("papers_authors", package = "ISIPTA.eProceedings", envir = envir)
-    data("authors_locations", package = "ISIPTA.eProceedings", envir = envir)
-    data("conferences", package = "ISIPTA.eProceedings", envir = envir)
-    data("papers_keywords", package = "ISIPTA.eProceedings", envir = envir)
-  } else { # when package is not ready
-    load("./../../data/papers.RData", envir = envir)
-    load("./../../data/papers_authors.RData", envir = envir)
-    load("./../../data/authors_locations.RData", envir = envir)
-    load("./../../data/conferences.RData", envir = envir)
-    load("./../../data/papers_keywords.RData", envir = envir)
-  }
   # when the package is packed
   if(package) {
     demos <- list.files(system.file("demo", package = "ISIPTA.eProceedings"),
@@ -42,6 +29,20 @@ load_demos <- function(package = TRUE) {
   
   for ( demo in demos ) {
     load_demo(demo, envir)
+  }
+  
+  if(package){ # when the package is packed
+    data("papers", package = "ISIPTA.eProceedings", envir = envir)
+    data("papers_authors", package = "ISIPTA.eProceedings", envir = envir)
+    data("authors_locations", package = "ISIPTA.eProceedings", envir = envir)
+    data("conferences", package = "ISIPTA.eProceedings", envir = envir)
+    data("papers_keywords", package = "ISIPTA.eProceedings", envir = envir)
+  } else { # when package is not ready
+    load("./../../data/papers.RData", envir = envir)
+    load("./../../data/papers_authors.RData", envir = envir)
+    load("./../../data/authors_locations.RData", envir = envir)
+    load("./../../data/conferences.RData", envir = envir)
+    load("./../../data/papers_keywords.RData", envir = envir)
   }
   
   options(op)

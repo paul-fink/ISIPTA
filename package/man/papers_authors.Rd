@@ -4,7 +4,7 @@
 \name{papers_authors}
 \alias{papers_authors}
 \title{Authors of the ISIPTA papers}
-\format{A data frame with 855 observations on the following 3 variables,
+\format{A data frame with 848 observations on the following 3 variables,
 where each row contains one author of a paper.
 \describe{
  \item{\code{year}}{The year in which the paper featured as numeric vector.}

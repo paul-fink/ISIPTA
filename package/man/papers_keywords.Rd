@@ -4,14 +4,14 @@
 \name{papers_keywords}
 \alias{papers_keywords}
 \title{Keywords of the ISIPTA papers}
-\format{A data frame with 2180 observations on the following 3 variables,
+\format{A data frame with 2184 observations on the following 3 variables,
 where each row contains one keyword of a paper.
 \describe{
  \item{\code{year}}{The year in which the paper featured as numeric vector.}
  \item{\code{id}}{A numeric vector as the unique paper id.
        See \code{\link{papers}} for details.}
  \item{\code{keyword}}{A character vector with the papers' keywords.
-       The keywords are as-is.}
+       The keywords are slightly normalized.}
 }}
 \source{
 Information scraped from the ISIPTA websites \url{http://www.sipta.org/}.

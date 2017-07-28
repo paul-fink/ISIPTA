@@ -1,8 +1,8 @@
 Package: ISIPTA.eProceedings
 Type: Package
 Title: Information on Papers and Authors from ISIPTA Electronic Proceedings
-Version: 0.2-0
-Date: 2017-07-22
+Version: 0.2-1
+Date: 2017-07-28
 Authors@R:
     c(person("Paul","Fink", role = c("aut", "cre"),
              email = "paul.fink@stat.uni-muenchen.de"),
