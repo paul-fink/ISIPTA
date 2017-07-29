@@ -24,7 +24,8 @@ load_demos <- function(package = TRUE) {
                                        "papers-per-author.R",
                                        "coauthors-per-author.R",
                                        "coauthors-network.R",
-                                       "coauthors-worldmap.R")) 
+                                       "coauthors-worldmap.R",
+                                       "keywords.R")) 
   }
   
   for ( demo in demos ) {
@@ -51,9 +52,7 @@ load_demos <- function(package = TRUE) {
 }
 
 # when the package is packed
-#demos <- load_demos()
+demos <- load_demos()
 # when package is not ready
-demos <- load_demos(package = FALSE)
+#demos <- load_demos(package = FALSE)
 save(demos, file = "demo-cache.RData")
-
-

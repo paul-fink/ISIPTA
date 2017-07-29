@@ -1,3 +1,16 @@
+Changes in ISIPTA-eProceedings version 0.2-1
+
+  o Data basis of author names and papers
+    thoroughly checked and yet missing authors added
+    (Thank you Aziz Omar for the help!)
+
+  o Slight normalization of paper keywords
+
+  o Demos are selfcontained
+
+  o Demo for keywords
+
+
 Changes in ISIPTA-eProceedings version 0.2-0
 
   o Fork of package ISIPTA: https://github.com/mjaeugster/ISIPTA

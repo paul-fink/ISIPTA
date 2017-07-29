@@ -2,13 +2,14 @@ Package: ISIPTA.eProceedings
 Type: Package
 Title: Information on Papers and Authors from ISIPTA Electronic Proceedings
 Version: 0.2-1
-Date: 2017-07-28
+Date: 2017-07-29
 Authors@R:
     c(person("Paul","Fink", role = c("aut", "cre"),
              email = "paul.fink@stat.uni-muenchen.de"),
       person("Manuel", "J. A. Eugster", role = "aut"),
       person("Gero", "Walter", role = "aut"),
-      person("Thomas", "Augustin", role = "aut"))
+      person("Thomas", "Augustin", role = "aut"),
+      person("Aziz", "Omar", role = "ctb"))
 Description: A data collection on the Imprecise
     Probability Community based on ISIPTA Electronic
     Proceedings (see http://www.sipta.org/). 
@@ -25,7 +26,8 @@ Suggests:
     reshape2,
     rworldmap,
     stringr,
-    XML
+    XML,
+    wordcloud
 License: GPL-2
 URL: https://github.com/paul-fink/ISIPTA/
 RoxygenNote: 6.0.1
