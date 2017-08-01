@@ -2,6 +2,9 @@
 .Rhistory
 .RData
 
+# R-FIles (project specific)
+.Rproj.user
+
 # TeX-Files (generic)
 *.out
 *.log
@@ -10,4 +13,9 @@
 *.bbl
 *.blg
 *.synctex.gz
-.Rproj.user
+
+# PDF generated files in poster directories
+/poster*/*.pdf
+
+# Testing/example files
+/poster*/tex/*
