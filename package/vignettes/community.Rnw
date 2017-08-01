@@ -1,0 +1,114 @@
+%\VignetteIndexEntry{ISIPTA Community}
+%\VignetteEngine{knitr::knitr} 
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+%\usepackage{tikz}
+
+\usepackage[pdfpagemode=UseNone,pdfstartview={Fit}]{hyperref}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+
+\hypersetup{
+    pdfauthor={Paul Fink},
+    pdftitle={ISIPTA paper collaborations},
+    pdfsubject={Descriptive analysis of the ISIPTA paper contributions},
+    pdfkeywords={SIPTA, ISIPTA proceedings, collaboration network},
+    pdfproducer={TexLive}
+}
+
+<<setup, include=FALSE, cache=FALSE>>=
+library(ISIPTA.eProceedings)
+library(knitr)
+library(ggplot2)
+library(plyr)
+library(reshape2)
+
+data("authors_locations", package = "ISIPTA.eProceedings")
+data("conferences", package = "ISIPTA.eProceedings")
+data("papers", package = "ISIPTA.eProceedings")
+data("papers_authors", package = "ISIPTA.eProceedings")
+data("papers_keywords", package = "ISIPTA.eProceedings")
+opts_chunk$set(dev = 'pdf', cache = FALSE , sanitize = TRUE, echo = FALSE, results = 'asis', external = FALSE)
+@
+
+%%%% DEBUG
+\newcommand{\tocite}[1]{\textcolor{red}{\bfseries #1}}
+
+\begin{document}
+
+\section{Introduction and Background}
+The \emph{International Symposium on Imprecise Probability: Theories and Applications}\footnote{Prior to ISIPTA '05 the name of the conference was \emph{International Symposium on Imprecise Probabilities and Their Applications}.} (ISIPTA) is organized biennial since 1999. The conferences provide one of the main international forums to present and discuss new results on the theories and applications of imprecise probability.
+
+The term \emph{imprecise probability} is understood as an umbrella, covering all mathematical models which do not enforce a sharp numerical quantification of probabilities. Imprecise probability models are able to deal more reliably in situations where the information basis is scarce, ambiguous or even conflicting: This applies to statistical inference tasks as well as to decision problems.
+
+For each conference there exist (electronic) proceedings, which are compiled from all accepted paper submissions. Prior to acceptance, each paper undergoes a blind review process. Starting from ISIPTA '09 there is also the possibility for poster-only contributions.
+
+In this package the meta-data of the contributed papers as well as location information about the authors are collected. It is planned in a future version to also incorporate information on the poster-only contributions.
+
+In the following the process of obtaining the data is explained before actually looking at the data in the following sections.
+
+\section{Data Sources}
+
+The general basis for all data about the papers are the ISIPTA proceedings. For the conferences from 1999 to 2013 it was straightforward to scrap the webpages, as each paper was displayed on a page of its own containing all relevant information, i.e. authors' names, keywords and abstracts. However the structure changed in 2015, and again in 2017, where in both cases only the title and the authors' names are accessible directly from a global webpage. However, for those years the webages were not used as source, but instead the accompanying Bib\TeX file is parsed to obtain the required information.
+
+Furthermore after all scrapping and parsing is done, the obtained data is compared to the paperback proceedings to identify errors. In most cases paper authors were not displayed on the webpages, but there was even one case where the paper title was incorrect on the webpage. Additionally, the keywords are slightly normalized in order to be more informative.
+
+The process of obtaining additional information about the authors is more tedious. In the previous versions of the paper it relied on the lookup of the geolocation of the author's email address. However, it showed to be faulty in many cases and required close attention afterwards in the cleaning step. Therefore, in version 0.2.0 of the package the process was changed: It now needs manual work to gather the city and country name of the authors, but afterwards, the process to obtain the geolocation is simpler. To obtain the geolocation of a given city within a given country a lookup in the databases provided by the \tocite{Data Science Toolkit} is performed.
+In order to reduce the number of queries on \tocite{Data Science Toolkit} each successfully obtained geolocation is saved in a xml-file, which is queried first when looking for a new geolocation.
+
+The gathered information provide the basis for the 5 \emph{data.frame} objects, which the package ships. Furthermore, it provides all information in an additional XML-file, which might also be used with other software, or to extract further variable combinations. In the following the provided data.frames are shortly presented:
+
+\begin{description}
+\item[authors\_locations]\mbox{}\\
+Information about authors' location at any conference, also including the geolocation information. The authors are unique within one conference but not amongst all to account for changes in working places in the timespan covered. It currently consist of \Sexpr{nrow(authors_locations)} observations of \Sexpr{nlevels(authors_locations$author)} different authors.
+\item[conferences]\mbox{}\\
+Information about each of the \Sexpr{nrow(conferences)} conferences, detailing the place and time, in which the conference was taking place, as well as the supporting/hosting university.
+\item[papers]\mbox{}\\
+Information about the \Sexpr{nrow(papers)} contributed papers of all ISIPTAs. They contain an unique identifier, which consists of the conference's year and a unique paper number wihtin the conference, as well as title and keywords, and where available abstract and the link to the PS or PDF file of the paper. Neither the link to authors nor keywords is present in here.
+\item[papers\_authors]\mbox{}\\
+This \emph{data.frame} provides the link between the papers and the authors: Each observation matches a author name to a paper identifier.
+\item[papers\_keywords]\mbox{}\\
+This \emph{data.frame} provides the link between the papers and the keywords: Each observation matches a normlaized keyword to a paper identifier. Currently, there are \Sexpr{length(unique(papers_keywords$keyword))} different keywords used.
+\end{description}
+
+\section{Summary}
+
+To the present day, ISIPTA has taken place \Sexpr{nrow(conferences)} times in \Sexpr{length(unique(conferences$city))} different places, the first being in 1999 in Ghent (Belgium) while the last was in \Sexpr{max(conferences$year)} in \Sexpr{conferences$city[nrow(conferences)]} (\Sexpr{conferences$country_name[nrow(conferences)]}).
+
+The change in the aboslute frequencies of papers and paper authors, as well as frequency of unique authors, is displayed in \figref{fig-1}. It becomes visibsle that at the peak in authors was at the conference in 2007 and after there was a decline in papers and author. However, this trend seems to have stopped with the conference in 2017.
+\begin{figure}
+<<graphic-summary>>=
+t1 <- data.frame(
+  year = sort(unique(papers$year)),
+  ## Number of papers:
+  "Papers" = as.numeric(table(papers$year)),
+  ## Number of paper authors:
+  "Paper authors" = as.numeric(table(papers_authors$year)),
+  ## Number of unique authors:
+  "Unique authors" = as.numeric(daply(papers_authors, .(year),
+                                      function(x) {
+                                        nlevels(x$author[, drop = TRUE])
+                                      })),
+  check.names = FALSE
+)
+t1melt <- melt(t1, id = "year")
+t1melt$year <- ordered(t1melt$year)
+
+ggplot(t1melt, aes(year, value, group = variable, colour = variable)) +
+  geom_point() + geom_line() + labs(x = "Year", colour = "") + 
+  labs(y = "Frequency of ...")
+@
+\caption{bala}
+\label{fig-1}
+\end{figure}
+\end{document}
