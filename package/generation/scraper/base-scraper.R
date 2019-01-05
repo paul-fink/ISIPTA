@@ -29,7 +29,7 @@ clean_keywords <- function(keywords, pretext = "Keywords.") {
   tmp <- tolower(tmp)
 
   tmp <- iconv(tmp, from = "UTF-8", to = "latin1")
-  tmp <- sapply(tmp, function(kw) {normalize_keyword(kw)}, 
+  tmp <- sapply(tmp, function(kw) {as.character(normalize_keyword(kw))},
                 USE.NAMES = FALSE)
   tmp
 }
