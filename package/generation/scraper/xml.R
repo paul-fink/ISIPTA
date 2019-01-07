@@ -6,6 +6,9 @@ xmlProceedings <- function(year, date, location) {
   doc <- xmlTree("proceedings")
 
   doc$addNode("year", year)
+  if(!is.matrix(location)) {
+    location <- t(as.matrix(location))
+  }
   doc$addNode(xmlConference(date, location))
 
   doc
@@ -56,7 +59,7 @@ xmlPaperAuthors <- function(authors) {
 
   for ( i in seq(length = NROW(authors)) ) {
     
-    n0 <- xmlAuthor(authors[i,])
+    n0 <- xmlAuthor(authors[i,, drop = FALSE])
     n <- addChildren(n, kids = list(n0))
   }
 

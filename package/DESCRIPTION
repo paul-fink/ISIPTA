@@ -16,7 +16,7 @@ Description: A data collection on the Imprecise
     It contains information about each paper contribution 
     and the respective authors as well as their location
     at the time of contribution.
-Imports:  
+Imports: 
     igraph
 Suggests:
     colorspace,
@@ -30,4 +30,5 @@ Suggests:
     wordcloud
 License: GPL-2
 URL: https://github.com/paul-fink/ISIPTA/
-RoxygenNote: 6.0.1
+Encoding: UTF-8
+RoxygenNote: 6.1.1
